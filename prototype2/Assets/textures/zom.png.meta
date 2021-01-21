@@ -1,0 +1,1076 @@
+fileFormatVersion: 2
+guid: 21fa9f6fdc3fc52479b510ff4f79dd8d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1846212481589637270
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_0
+  - first:
+      213: -6478148197578894487
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_1
+  - first:
+      213: 2863809631873124550
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_2
+  - first:
+      213: -9219319079270842593
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_3
+  - first:
+      213: 1149907548307149805
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_4
+  - first:
+      213: 7844261713498126418
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_5
+  - first:
+      213: -2092864978055265503
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_6
+  - first:
+      213: 155902042318910801
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_7
+  - first:
+      213: -2720025215574242519
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_8
+  - first:
+      213: 302406239519965349
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_9
+  - first:
+      213: -1564952335073599007
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_10
+  - first:
+      213: 1818945293485443622
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_11
+  - first:
+      213: 2692939076467839285
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_12
+  - first:
+      213: 3190370739029912988
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_13
+  - first:
+      213: -5133926576696859838
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_14
+  - first:
+      213: 5564482048624834817
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_15
+  - first:
+      213: -355020791104454454
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_16
+  - first:
+      213: -5968262537148219759
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_17
+  - first:
+      213: -9025274963946673834
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_18
+  - first:
+      213: -16627359620391233
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_19
+  - first:
+      213: -2184987025550850254
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_20
+  - first:
+      213: 8686289811476607193
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_21
+  - first:
+      213: 8750389974155133717
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_22
+  - first:
+      213: -4521113187550679843
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_23
+  - first:
+      213: -7632265405011881272
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_24
+  - first:
+      213: -2715890198773104571
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_25
+  - first:
+      213: -2004215220619507391
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_26
+  - first:
+      213: -3508798267437646934
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_27
+  - first:
+      213: 1696154898375382605
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_28
+  - first:
+      213: 3095938984041323415
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_29
+  - first:
+      213: -7983108701938174525
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_30
+  - first:
+      213: 4654966926986377900
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_31
+  - first:
+      213: 9197411011285492828
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_32
+  - first:
+      213: -3788081052982327520
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_33
+  - first:
+      213: 9117746948229758722
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_34
+  - first:
+      213: -4652971119037776888
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_35
+  - first:
+      213: -6904888073750098274
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_36
+  - first:
+      213: 7914359789796449668
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_37
+  - first:
+      213: 1539598793850264419
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_38
+  - first:
+      213: -7308463617664340937
+    second: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690fa0968701f9910800000000000000
+      internalID: 1846212481589637270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 144
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96319f8798ef816a0800000000000000
+      internalID: -6478148197578894487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 144
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8c324efab4eb720800000000000000
+      internalID: 2863809631873124550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_3
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 144
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f7419b4266e0080800000000000000
+      internalID: -9219319079270842593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_4
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 144
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3536d92da45ff00800000000000000
+      internalID: 1149907548307149805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_5
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 144
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258b04eb77a6cdc60800000000000000
+      internalID: 7844261713498126418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_6
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 144
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12309241466a4f2e0800000000000000
+      internalID: -2092864978055265503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_7
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 144
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1553d2cd410e92200800000000000000
+      internalID: 155902042318910801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 144
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b879d4a77804ad0800000000000000
+      internalID: -2720025215574242519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_9
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 144
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a003746fdc523400800000000000000
+      internalID: 302406239519965349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e12589842c284ae0800000000000000
+      internalID: -1564952335073599007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_11
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 96
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a81147b113e3910800000000000000
+      internalID: 1818945293485443622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_12
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 96
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53152ae72dd3f5520800000000000000
+      internalID: 2692939076467839285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_13
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 96
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9dada9a849764c20800000000000000
+      internalID: 3190370739029912988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_14
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 96
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243eb0daaf0a0c8b0800000000000000
+      internalID: -5133926576696859838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 96
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109325bf0f2093d40800000000000000
+      internalID: 5564482048624834817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_16
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 96
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac04752b876b21bf0800000000000000
+      internalID: -355020791104454454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_17
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 96
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e320bf7d87c2da0800000000000000
+      internalID: -5968262537148219759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_18
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6596bbdfc38cfb280800000000000000
+      internalID: -9025274963946673834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_19
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 96
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe1648218de4cff0800000000000000
+      internalID: -16627359620391233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237443770ed5da1e0800000000000000
+      internalID: -2184987025550850254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_21
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 48
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d07825cf86eb8870800000000000000
+      internalID: 8686289811476607193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_22
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 48
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51308a7e151af6970800000000000000
+      internalID: 8750389974155133717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_23
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 48
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc25b28287c141c0800000000000000
+      internalID: -4521113187550679843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_24
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 48
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c293c63d0fb41690800000000000000
+      internalID: -7632265405011881272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_25
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 48
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5400a2de0483f4ad0800000000000000
+      internalID: -2715890198773104571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_26
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 48
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1490b8920e89f24e0800000000000000
+      internalID: -2004215220619507391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_27
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 48
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab7fd0f09e3e4fc0800000000000000
+      internalID: -3508798267437646934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_28
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 48
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4614b9b4e3f98710800000000000000
+      internalID: 1696154898375382605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_29
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 48
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b111e5a1cf6fa20800000000000000
+      internalID: 3095938984041323415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c535a19eec463190800000000000000
+      internalID: -7983108701938174525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_31
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caaf63cc1c3c99040800000000000000
+      internalID: 4654966926986377900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_32
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5420f4b594c3af70800000000000000
+      internalID: 9197411011285492828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_33
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027c9983a580e6bc0800000000000000
+      internalID: -3788081052982327520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_34
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ff221aa8eb88e70800000000000000
+      internalID: 9117746948229758722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_35
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80cf9937b635d6fb0800000000000000
+      internalID: -4652971119037776888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_36
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e4b4e61e8ec20a0800000000000000
+      internalID: -6904888073750098274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_37
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dd377fb4475dd60800000000000000
+      internalID: 7914359789796449668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_38
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b901422f0cd5510800000000000000
+      internalID: 1539598793850264419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombie-sprite-3-for-rpg-maker-xp-png-clipart-thumbnail_39
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c2047cf0f139a90800000000000000
+      internalID: -7308463617664340937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
