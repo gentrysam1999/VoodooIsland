@@ -89,25 +89,25 @@ public class Player : MonoBehaviour
         {
             float delta = speed * Time.deltaTime;
 
-            if (Input.GetKey(moveRight))
+            if (Input.GetKey(KeyCode.D))
             {
                 // Move to the right
                 transform.Translate(new Vector3(speed * delta, 0, 0));
             }
-            else if (Input.GetKey(moveLeft))
+            else if (Input.GetKey(KeyCode.A))
             {
                 // Move to the left
                 transform.Translate(new Vector3(-speed * delta, 0, 0));
             }
-            else if (Input.GetKey(moveUp))
+            else if (Input.GetKey(KeyCode.W))
             {
-                //Rotate counterclockwise
-                transform.Rotate(new Vector3(0, 0, speed * delta * 10));
+                // Move up
+                transform.Translate(new Vector3(0, speed * delta, 0));
             }
-            else if (Input.GetKey(moveDown))
+            else if (Input.GetKey(KeyCode.S))
             {
-                //Rotate clockwise
-                transform.Rotate(new Vector3(0, 0, -speed * delta * 10));
+                //Move down
+                transform.Translate(new Vector3(0, -speed * delta, 0));
             }
 
             // If close to wall and moving towards it,
@@ -126,5 +126,8 @@ public class Player : MonoBehaviour
             {
                 SceneManager.LoadScene("level2");
             }
-        }
+            // Vector3 dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
+            // float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            // transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+    }
     }
