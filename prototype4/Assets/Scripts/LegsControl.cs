@@ -46,8 +46,10 @@ public class LegsControl : MonoBehaviour
                 // Record time at animation start
                 timeAtAnimStart = Time.timeSinceLevelLoad;
 
+                //player is moving
                 idle = false;
             }else{
+                //player is stopped
                 idle = true;
             }
         }
@@ -74,6 +76,8 @@ public class LegsControl : MonoBehaviour
                     // Let the renderer know which sprite to
                     // use next      
                     animRenderer.sprite = animSprites[ frameIndex ];
+
+
                 } else {
                     // Animation finished, set the render
                     // with the idle sprite and stop the 
