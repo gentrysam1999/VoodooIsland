@@ -211,6 +211,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4599348505543349664, guid: 3d31efa0250174a3d91c405bf31c995b,
+        type: 3}
+      propertyPath: m_Simulated
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4599348505543349665, guid: 3d31efa0250174a3d91c405bf31c995b,
         type: 3}
       propertyPath: m_Name
@@ -271,5 +276,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4599348505704494200, guid: 3d31efa0250174a3d91c405bf31c995b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4599348505704494200, guid: 3d31efa0250174a3d91c405bf31c995b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 4599348505704494201, guid: 3d31efa0250174a3d91c405bf31c995b,
+        type: 3}
+      propertyPath: m_Name
+      value: Legs
+      objectReference: {fileID: 0}
+    - target: {fileID: 7998693612231811691, guid: 3d31efa0250174a3d91c405bf31c995b,
+        type: 3}
+      propertyPath: idleSprite
+      value: 
+      objectReference: {fileID: -9178309047082644820, guid: 9be79dd8636b945c48f81c7cc772bd4b,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d31efa0250174a3d91c405bf31c995b, type: 3}
