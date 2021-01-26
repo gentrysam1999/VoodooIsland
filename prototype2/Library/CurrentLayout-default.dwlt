@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
-    y: 62
-    width: 1742
-    height: 1023
+    x: 448
+    y: 134
+    width: 1956
+    height: 1186
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
@@ -325,7 +325,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b0230000
     m_LastClickedID: 9136
-    m_ExpandedIDs: 00000000103a0000
+    m_ExpandedIDs: 00000000b23a0000b43a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -353,7 +353,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000103a0000
+    m_ExpandedIDs: 00000000b23a0000b43a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -501,7 +501,7 @@ MonoBehaviour:
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
-  m_WindowGUID: 9258691753f9744248a4dbda78491a1a
+  m_WindowGUID: 99058d08d99184db5bba696e0134c866
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -529,7 +529,7 @@ MonoBehaviour:
     height: 790
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
-  m_WindowGUID: 2f825fbdc965e44cf8909f86ee28603f
+  m_WindowGUID: 2d0567c509a7f4606ba83a5285bae2d4
   m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
