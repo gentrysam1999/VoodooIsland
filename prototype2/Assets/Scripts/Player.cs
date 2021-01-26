@@ -3,12 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-
-    public KeyCode moveLeft;
-    public KeyCode moveRight;
-    public KeyCode moveUp;
-    public KeyCode moveDown;
-
     public float speed;
 
     public float low_intensity = 0.75f;
