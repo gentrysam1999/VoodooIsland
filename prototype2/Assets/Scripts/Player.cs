@@ -3,13 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-
-    public KeyCode moveLeft;
-    public KeyCode moveRight;
-    public KeyCode moveUp;
-    public KeyCode moveDown;
-
     public float speed;
+
+    public float low_intensity = 0.75f;
+    public float high_intensity = 2f;
+
+    Light flashlight;
 
     bool atTopWall = false;
 
@@ -19,6 +18,15 @@ public class Player : MonoBehaviour
     // right edge of the screen
     bool atBottomWall = false;
     bool atBottomWall2 = false;
+
+    void Start()
+    {
+        flashlight = GetComponent<Light>();
+        if (PlayerPrefs.HasKey("GB_light"))
+        {
+            flashlight.intensity = 0.75f;
+        }
+    }
 
     // On collision with a trigger collider...
     void OnTriggerEnter2D(Collider2D other)
@@ -126,8 +134,19 @@ public class Player : MonoBehaviour
             {
                 SceneManager.LoadScene("level2");
             }
-            // Vector3 dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
-            // float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            // transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+        if (Input.GetKeyDown(KeyCode.F)){
+            if  (flashlight.intensity == low_intensity) { 
+                flashlight.intensity = high_intensity;
+            }
+            else {
+                flashlight.intensity = low_intensity;
+            }
+
+            PlayerPrefs.SetFloat("GB_light", flashlight.intensity);
+        }
+        // Vector3 dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
+        // float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        // transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
     }

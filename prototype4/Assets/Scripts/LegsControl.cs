@@ -36,8 +36,9 @@ public class LegsControl : MonoBehaviour
     void FixedUpdate () {
         if(!animRunning) {
             // The animation is triggered by user input
-            float userInput = Input.GetAxis("Horizontal");
-            if(userInput != 0f) {
+            float userInputX = Input.GetAxis("Horizontal");
+            float userInputY = Input.GetAxis("Vertical");
+            if(userInputX != 0f || userInputY != 0f) {
                 // User pressed the move left or right button
                 
                 // Animation will start playing
