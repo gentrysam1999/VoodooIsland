@@ -26,9 +26,9 @@ public class ChaseNav : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Bullet")
+        //Bullet b = other.GetComponent<Bullet>();
+        if (other.tag == "Bullet")
         {
-            Destroy(other.gameObject);
             Destroy(gameObject);
         }
     }

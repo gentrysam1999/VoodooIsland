@@ -8,6 +8,9 @@ public class Player : MonoBehaviour
 
     public float speed = 10;
 
+    public float xOffSet = 3f;
+    public float yOffSet = 3f;
+
     private bool hasKey = false;
 
     private bool canPickUp = false;
@@ -59,30 +62,27 @@ public class Player : MonoBehaviour
         agent.updateUpAxis = false;
     }
 
-    // Update is called once per frame
+    // Update is called once per frames
     void Update()
     {
-        float horizontalMovement = Input.GetAxis("Horizontal");
-        float verticalMovement = Input.GetAxis("Vertical");
+      
 
         float var = Time.deltaTime * speed;
 
-        transform.Translate(new Vector3((var * horizontalMovement)+ 0.00001f,(var * verticalMovement), 0));
+        float GetX = Input.GetAxis("Horizontal");
+        float GetY = Input.GetAxis("Vertical");
+        Vector3 movement = new Vector3(GetX*speed+ 0.0005f,GetY*speed, 0);
+        Vector3 moveDestination = transform.position + movement;
+        GetComponent<NavMeshAgent>().velocity = movement;
 
-        if(canPickUp && Input.GetKeyDown(KeyCode.E))
+        if (canPickUp && Input.GetKeyDown(KeyCode.E))
         {
             hasKey = true;
             canPickUp = false;
             Destroy(key);
         }
 
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Transform shot = Instantiate(shotPrefab);
-
-            shot.position = transform.position;
-            Bullet s = shot.GetComponent<Bullet>();
-            s.created();
-        }
+        
+        
     }
 }

@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/navMesh.unity
-    guid: 37a14f67313c7594489eb6f5f9507eb1
+    path: Assets/Scenes/KeysAndDoor.unity
+    guid: ef1d4d56d0a5e4215a4162a36cef835c
   m_configObjects: {}
