@@ -52,6 +52,7 @@ public class LegsControl : MonoBehaviour
             }else{
                 //player is stopped
                 idle = true;
+                animRunning = false;
             }
         }
     }

@@ -46,7 +46,7 @@ public class PlayerControl : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log(rb.position + movement * speed * Time.fixedDeltaTime);
+        //Debug.Log(rb.position + movement * speed * Time.fixedDeltaTime);
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
 }
