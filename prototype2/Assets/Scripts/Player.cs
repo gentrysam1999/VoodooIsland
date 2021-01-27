@@ -4,11 +4,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
 
-    public KeyCode moveLeft;
-    public KeyCode moveRight;
-    public KeyCode moveUp;
-    public KeyCode moveDown;
-
+  
     public float speed;
 
     bool atTopWall = false;
@@ -89,25 +85,25 @@ public class Player : MonoBehaviour
         {
             float delta = speed * Time.deltaTime;
 
-            if (Input.GetKey(moveRight))
+            if (Input.GetKey(KeyCode.D))
             {
                 // Move to the right
                 transform.Translate(new Vector3(speed * delta, 0, 0));
             }
-            else if (Input.GetKey(moveLeft))
+            else if (Input.GetKey(KeyCode.A))
             {
                 // Move to the left
                 transform.Translate(new Vector3(-speed * delta, 0, 0));
             }
-            else if (Input.GetKey(moveUp))
+            else if (Input.GetKey(KeyCode.W))
             {
                 //Rotate counterclockwise
-                transform.Rotate(new Vector3(0, 0, speed * delta * 10));
+                transform.Translate(new Vector3(0, speed * delta, 0));
             }
-            else if (Input.GetKey(moveDown))
+            else if (Input.GetKey(KeyCode.S))
             {
                 //Rotate clockwise
-                transform.Rotate(new Vector3(0, 0, -speed * delta * 10));
+                transform.Translate(new Vector3(0, -speed * delta, 0));
             }
 
             // If close to wall and moving towards it,

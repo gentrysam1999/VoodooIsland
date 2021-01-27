@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/prototype3/Bedroomprototype.unity
+- path: Assets/Scenes/prototype3/door2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
