@@ -5,15 +5,16 @@ using UnityEngine;
 public class ArmControl : MonoBehaviour
 {
     //speed that arms rotate
-    public float speed = 5f;
+    public float speed = 15f;
 
     public bool aimDown = true;
     public bool aimRight = true;
+    private SpriteRenderer mySpriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -25,16 +26,28 @@ public class ArmControl : MonoBehaviour
         Quaternion rotation = Quaternion.AngleAxis(angle+88, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, speed * Time.deltaTime);
 
-        Debug.Log(angle);
+        //Debug.Log(angle);
         //Debug.Log(rotation);
 
         //check L&R direction of aim
         if (angle < 90  && angle > -90)
         {
             aimRight = true;
+
+            if(mySpriteRenderer != null)
+            {
+                 // flip the sprite
+                 mySpriteRenderer.flipX = false;
+            }
         }else
         {
             aimRight = false;
+            
+            if(mySpriteRenderer != null)
+            {
+                 // flip the sprite
+                 mySpriteRenderer.flipX = true;
+            }
         }
 
         //check U&D direction of aim
