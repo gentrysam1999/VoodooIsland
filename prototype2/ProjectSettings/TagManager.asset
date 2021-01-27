@@ -9,6 +9,7 @@ TagManager:
   - wall
   - TopWall2
   - BottomWall2
+  - water
   layers:
   - Default
   - TransparentFX

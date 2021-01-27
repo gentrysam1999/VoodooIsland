@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/prototype3/door2.unity
+=======
+- path: Assets/Scenes/jacobprototype/level4.unity
+>>>>>>> 5149f42bd3f0d6e01cd707a28696a7830a980379
   isLoaded: 1
   isActive: 1
   isSubScene: 0

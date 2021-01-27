@@ -5,16 +5,21 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/prototype2/level1.unity
     guid: 48441f16236130d4fbfc3e5022ba8240
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/prototype2/level2.unity
     guid: bbb3e6820cefd68419e13aa6e18d520e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/prototype2/level3.unity
     guid: 78dbe04182d17d746b3e8bb7cb0b8007
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/prototype3/Bedroomprototype.unity
     guid: e35d083a84c1e76419edb57cc34025b5
+=======
+    path: Assets/Scenes/jacobprototype/level4.unity
+    guid: 3c9ebff21fdf34741873a11a3655f959
+>>>>>>> 5149f42bd3f0d6e01cd707a28696a7830a980379
   m_configObjects: {}

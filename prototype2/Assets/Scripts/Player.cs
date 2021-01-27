@@ -3,9 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public float speed;
 
+<<<<<<< HEAD
   
     public float speed;
+=======
+    public float low_intensity = 0.75f;
+    public float high_intensity = 2f;
+
+    Light flashlight;
+>>>>>>> 5149f42bd3f0d6e01cd707a28696a7830a980379
 
     bool atTopWall = false;
 
@@ -15,6 +23,15 @@ public class Player : MonoBehaviour
     // right edge of the screen
     bool atBottomWall = false;
     bool atBottomWall2 = false;
+
+    void Start()
+    {
+        flashlight = GetComponent<Light>();
+        if (PlayerPrefs.HasKey("GB_light"))
+        {
+            flashlight.intensity = 0.75f;
+        }
+    }
 
     // On collision with a trigger collider...
     void OnTriggerEnter2D(Collider2D other)
@@ -97,12 +114,20 @@ public class Player : MonoBehaviour
             }
             else if (Input.GetKey(KeyCode.W))
             {
+<<<<<<< HEAD
                 //Rotate counterclockwise
+=======
+                // Move up
+>>>>>>> 5149f42bd3f0d6e01cd707a28696a7830a980379
                 transform.Translate(new Vector3(0, speed * delta, 0));
             }
             else if (Input.GetKey(KeyCode.S))
             {
+<<<<<<< HEAD
                 //Rotate clockwise
+=======
+                //Move down
+>>>>>>> 5149f42bd3f0d6e01cd707a28696a7830a980379
                 transform.Translate(new Vector3(0, -speed * delta, 0));
             }
 
@@ -122,5 +147,19 @@ public class Player : MonoBehaviour
             {
                 SceneManager.LoadScene("level2");
             }
+
+        if (Input.GetKeyDown(KeyCode.F)){
+            if  (flashlight.intensity == low_intensity) { 
+                flashlight.intensity = high_intensity;
+            }
+            else {
+                flashlight.intensity = low_intensity;
+            }
+
+            PlayerPrefs.SetFloat("GB_light", flashlight.intensity);
         }
+        // Vector3 dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
+        // float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        // transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+    }
     }
