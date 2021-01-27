@@ -28,7 +28,7 @@ public class ArmControl : MonoBehaviour
         Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, speed * Time.deltaTime);
 
-        Debug.Log(angle);
+        //Debug.Log(angle);
         //Debug.Log(rotation);
 
         //check L&R direction of aim
