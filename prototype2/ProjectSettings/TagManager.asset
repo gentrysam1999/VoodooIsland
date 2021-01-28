@@ -10,6 +10,7 @@ TagManager:
   - TopWall2
   - BottomWall2
   - water
+  - Battery
   layers:
   - Default
   - TransparentFX
