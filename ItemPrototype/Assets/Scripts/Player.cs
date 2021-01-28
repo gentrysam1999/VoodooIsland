@@ -6,6 +6,9 @@ using UnityEngine.AI;
 public class Player : MonoBehaviour
 {
 
+
+    public int ammo = 0;
+
     public float speed = 10;
 
     public float xOffSet = 3f;
