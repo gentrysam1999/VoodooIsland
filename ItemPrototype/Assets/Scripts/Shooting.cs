@@ -24,14 +24,14 @@ public class Shooting : MonoBehaviour
 
     void Shoot(){
 
-        Player p = transform.parent.GetComponent<Player>();
+        //Player p = transform.parent.GetComponent<Player>();
 
-        if (p.ammo > 0)
-        {
+        //if (p.ammo > 0)
+        //{
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(-(firePoint.up) * bulletForce, ForceMode2D.Impulse);
-            ammo--;
-        }
+            //ammo--;
+        //}
     }
 }
