@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+
+
     public float speed;
 
     public float low_intensity = 0.75f;
@@ -11,6 +13,8 @@ public class Player : MonoBehaviour
     Light flashlight;
 
     bool atTopWall = false;
+
+    int timeLeft = -1;
 
     bool atTopWall2 = false;
 
@@ -57,7 +61,15 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("level2");
             // If collided with the right wall, set
             // the right wall flag to true
+        }
+    }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "Battery" && Input.GetKey(KeyCode.E))
+        {
+            int timeLeft = 30;
+            flashlight.intensity = 5;
         }
     }
 
@@ -92,61 +104,70 @@ public class Player : MonoBehaviour
         }
     }
 
-        // Update is called once per frame
-        void Update()
+    // Update is called once per frame
+    void Update()
+    {
+        float delta = speed * Time.deltaTime;
+
+        if (Input.GetKey(KeyCode.D))
         {
-            float delta = speed * Time.deltaTime;
+            // Move to the right
+            transform.Translate(new Vector3(speed * delta, 0, 0));
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            // Move to the left
+            transform.Translate(new Vector3(-speed * delta, 0, 0));
+        }
+        else if (Input.GetKey(KeyCode.W))
+        {
+            // Move up
+            transform.Translate(new Vector3(0, speed * delta, 0));
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            //Move down
+            transform.Translate(new Vector3(0, -speed * delta, 0));
+        }
+        // If close to wall and moving towards it,
+        // stop the movment
+        if (atBottomWall)
+        {
+            SceneManager.LoadScene("level1");
+        }
+        if (atTopWall)
+        {
+            SceneManager.LoadScene("level2");
+        }
+        if (atTopWall2)
+        {
+            SceneManager.LoadScene("level3");
+        }
+        if (atBottomWall2)
+        {
+            SceneManager.LoadScene("level2");
+        }
 
-            if (Input.GetKey(KeyCode.D))
-            {
-                // Move to the right
-                transform.Translate(new Vector3(speed * delta, 0, 0));
-            }
-            else if (Input.GetKey(KeyCode.A))
-            {
-                // Move to the left
-                transform.Translate(new Vector3(-speed * delta, 0, 0));
-            }
-            else if (Input.GetKey(KeyCode.W))
-            {
-                // Move up
-                transform.Translate(new Vector3(0, speed * delta, 0));
-            }
-            else if (Input.GetKey(KeyCode.S))
-            {
-                //Move down
-                transform.Translate(new Vector3(0, -speed * delta, 0));
-            }
+        if (timeLeft > 0)
+        {
+            timeLeft -= 1;
+        } else if(timeLeft == 0)
+        {
+            flashlight.intensity = low_intensity;
+        }
 
-            // If close to wall and moving towards it,
-            // stop the movment
-            if (atBottomWall) {
-                SceneManager.LoadScene("level1");
-            }
-            if (atTopWall) {
-                SceneManager.LoadScene("level2");
-            }
-            if (atTopWall2)
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if (flashlight.intensity == low_intensity)
             {
-                SceneManager.LoadScene("level3");
-            }
-            if (atBottomWall2)
-            {
-                SceneManager.LoadScene("level2");
-            }
-
-        if (Input.GetKeyDown(KeyCode.F)){
-            if  (flashlight.intensity == low_intensity) { 
                 flashlight.intensity = high_intensity;
             }
-            else {
+            else
+            {
                 flashlight.intensity = low_intensity;
             }
 
             PlayerPrefs.SetFloat("GB_light", flashlight.intensity);
         }
-        // Vector3 dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
-        // float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        // transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
-    }
+}
