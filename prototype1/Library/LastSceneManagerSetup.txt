@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/single background per scene.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
