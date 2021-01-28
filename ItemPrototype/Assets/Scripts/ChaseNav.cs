@@ -23,6 +23,7 @@ public class ChaseNav : MonoBehaviour
     {
         agent.SetDestination(target.transform.position);
         Navigate.DebugDrawPath(agent.path.corners);
+        Debug.Log(agent.velocity.ToString());
     }
     void OnTriggerEnter2D(Collider2D other)
     {
