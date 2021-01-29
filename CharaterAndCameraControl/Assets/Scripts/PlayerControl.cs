@@ -15,12 +15,7 @@ public class PlayerControl : MonoBehaviour
    // Direction of the movement
    //private float movementDirX;
    //private float movementDirY;
-   
-
-    void fixedUpdate(){
-
-        
-    }
+  
 
     // Update is called once per frame
     void Update()

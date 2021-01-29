@@ -53,13 +53,13 @@ public class ArmControl : MonoBehaviour
         }
 
         //check U&D direction of aim
-        if (angle > 0)
+        if (angle > -90 && angle < 90)
         {
-            aimDown = false;
+            aimDown = true;
         }
         else
         {
-            aimDown = true;
+            aimDown = false;
         }
 
 
