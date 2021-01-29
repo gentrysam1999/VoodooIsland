@@ -1,0 +1,5 @@
+sceneSetups:
+- path: /scratch/VoodooIsland/PathFindingPrototype/Assets/Scenes/NavMeshBase.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
