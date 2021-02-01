@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class HudManager : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class HudManager : MonoBehaviour
     public GameObject textbox;
     // the text element found in textbox
     public static Text note;
+
+    public static Text ammoText;
+    public static int ammoCount;
 
     // References to UI elements on the canvas
     public GameObject Health = null;
@@ -27,6 +31,8 @@ public class HudManager : MonoBehaviour
     void Start()
     {
         note = GameObject.Find("Textbox").GetComponent<Text>();
+
+        ammoText = GameObject.Find("ammonum").GetComponent<Text>();
 
         inventoryGrid = GameObject.Find("inventorygrid");
 
@@ -50,16 +56,35 @@ public class HudManager : MonoBehaviour
 
     }
 
+    public static void AmmoUp()
+    {
+        ammoCount = Int32.Parse(ammoText.text);
+        ammoCount += 6;
+        ammoText.text = ammoCount.ToString();
+    }
+
+    public static void AmmoDown()
+    {
+        if (ammoCount > 0)
+        {
+            ammoCount = Int32.Parse(ammoText.text);
+            ammoCount = ammoCount - 1;
+            ammoText.text = ammoCount.ToString();
+        }
+
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (Note.reading == true)
-        { 
+        {
             inventoryGrid.SetActive(false);
             textbox.SetActive(true);
             Health.SetActive(false);
             Time.timeScale = 0;
-        } else if (Note.reading == false)
+        }
+        else if (Note.reading == false)
         {
             textbox.SetActive(false);
             inventoryGrid.SetActive(true);

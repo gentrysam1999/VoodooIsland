@@ -120,6 +120,10 @@ public class Player : MonoBehaviour
             //Move down
             transform.Translate(new Vector3(0, -speed * delta, 0));
         }
+        else if (Input.GetKeyDown(KeyCode.Z))
+        {
+            HudManager.AmmoDown();
+        }
         // If close to wall and moving towards it,
         // stop the movment
         if (atBottomWall)
@@ -157,7 +161,6 @@ public class Player : MonoBehaviour
             {
                 flashlight.intensity = low_intensity;
             }
-
             PlayerPrefs.SetFloat("GB_light", flashlight.intensity);
         }
     }
