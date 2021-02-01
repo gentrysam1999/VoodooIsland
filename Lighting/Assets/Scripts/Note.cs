@@ -7,7 +7,7 @@ public class Note : MonoBehaviour
 {
     public GameObject InteractKey;
     public static bool reading;
-    public string objname;
+    string objname;
     public Text textObject;
     public Text header;
     public Image headShot;
