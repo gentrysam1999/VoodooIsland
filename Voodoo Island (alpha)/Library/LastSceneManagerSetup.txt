@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/livingroom.unity
+- path: Assets/Scenes/kitchen.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
