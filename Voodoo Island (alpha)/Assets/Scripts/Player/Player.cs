@@ -6,34 +6,38 @@ using UnityEngine.AI;
 public class Player : MonoBehaviour
 {
 
-
+    //set the starting ammo
     public int ammo = 0;
 
+    //set the players speed. 
     public float speed = 10;
 
-    public float xOffSet = 3f;
-    public float yOffSet = 3f;
-
+    //set this too true if the player has key in there inventory
     private bool hasKey = false;
 
+    //set to true if the player is on a key 
     private bool canPickUp = false;
 
-    private UnityEngine.Object key;
+    //a referance to the item the player is standing on
+    private UnityEngine.Object pickupItem;
+
+    //a referance to the navmeshagent compoent to controll the players movement.
     private NavMeshAgent agent;
 
-
-    public Transform shotPrefab;
-
+    //pickUpName
+    private string name;
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        //Check if key
-        if (other.tag == "Key")
+        //Check if the player is on a key and allow the player to pick up a key
+        if (other.tag == "Key" || other.tag == "BulletPickUp")
         {
-            key = other.gameObject;
+            pickupItem = other.gameObject;
             canPickUp = true;
+            name = other.tag;
 
         }
+      
     }
 
 
@@ -41,15 +45,17 @@ public class Player : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if(other.tag == "Key")
+        //if the player is no longer on a key they can't pick it up
+        if(other.tag == "Key" || other.tag == "BulletPickUp")
         {
             canPickUp = false;
         }
     }
 
+    
     void OnCollisionEnter2D(Collision2D other)
     {
-
+        //if the player runs into a door and has a key remove the door
         if(other.gameObject.tag == "Door" && hasKey)
         {
             hasKey = false;
@@ -60,6 +66,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //do not allow the agent compoent to rotate the player
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -69,20 +76,30 @@ public class Player : MonoBehaviour
     void Update()
     {
       
-
+        //calcuate the players speed based on delta time 
         float var = Time.deltaTime * speed;
 
+        //get movement input
         float GetX = Input.GetAxis("Horizontal");
         float GetY = Input.GetAxis("Vertical");
+
+
         Vector3 movement = new Vector3(GetX*speed+ 0.0005f,GetY*speed, 0);
-        Vector3 moveDestination = transform.position + movement;
+        //move the players based on there speed
         GetComponent<NavMeshAgent>().velocity = movement;
 
         if (canPickUp && Input.GetKeyDown(KeyCode.E))
         {
-            hasKey = true;
+            if(name == "Key")
+            {
+                hasKey = true;
+            }
+            if(name == "BulletPickUp")
+            {
+                ammo++;
+            }
             canPickUp = false;
-            Destroy(key);
+            Destroy(pickupItem);
         }
 
         
