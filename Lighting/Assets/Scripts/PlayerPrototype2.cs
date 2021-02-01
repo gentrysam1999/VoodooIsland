@@ -1,10 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Player : MonoBehaviour
+public class PlayerPrototype2 : MonoBehaviour
 {
-
-
     public float speed;
 
     public float low_intensity = 0.75f;
