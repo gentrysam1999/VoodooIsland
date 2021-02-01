@@ -397,7 +397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammo: 0
-  speed: 10
+  speed: 30
 --- !u!195 &2574867693578214425
 NavMeshAgent:
   m_ObjectHideFlags: 0
