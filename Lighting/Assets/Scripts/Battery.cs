@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Battery : MonoBehaviour
 {
-    bool touchingPlayer = false;
     GameObject InteractKey;
     GameObject Btery;
 
@@ -41,11 +40,6 @@ public class Battery : MonoBehaviour
             // If collided with the left wall, set
             // the left wall flag to true
             InteractKey.SetActive(false);
-        }
-
-        void Update()
-        {
-
         }
     }
 }
