@@ -64,15 +64,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.tag == "Battery" && Input.GetKey(KeyCode.E))
-        {
-            int timeLeft = 30;
-            flashlight.intensity = 5;
-        }
-    }
-
     // When no longer colliding with an object...
     void OnTriggerExit2D(Collider2D other)
     {
