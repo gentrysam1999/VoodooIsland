@@ -26,12 +26,12 @@ public class Shooting : MonoBehaviour
 
         Player p = gameObject.GetComponentInParent<Player>();
 
-        //if (p.ammo > 0)
-        //{
+        if (p.ammo > 0)
+        {
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(-(firePoint.up) * bulletForce, ForceMode2D.Impulse);
             p.ammo--;
-        //}
+        }
     }
 }
