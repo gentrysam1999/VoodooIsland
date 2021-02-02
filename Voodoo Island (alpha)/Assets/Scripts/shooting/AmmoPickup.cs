@@ -7,5 +7,5 @@ public class AmmoPickup : MonoBehaviour
     // Start is called before the first frame update
 
     public int value = 6;
-    public bool finite = false;
+    public bool finite = true;
 }
