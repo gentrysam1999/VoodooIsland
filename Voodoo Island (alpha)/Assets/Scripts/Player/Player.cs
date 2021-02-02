@@ -93,13 +93,19 @@ public class Player : MonoBehaviour
             if(name == "Key")
             {
                 hasKey = true;
+                Destroy(pickupItem);
             }
             if(name == "BulletPickUp")
             {
-                ammo++;
+                //ammo += pickupItem.GetComponent<AmmoPickup>().value;
+               // if (pickupItem.GetComponent<AmmoPickup>().finite)
+               // {
+                    Destroy(pickupItem);
+               // }
+                
             }
             canPickUp = false;
-            Destroy(pickupItem);
+            
         }
 
         
