@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Butler.unity
+    path: Assets/Scenes/group3/Butler.unity
     guid: 76a1a48a48b9a48f999f2eaf4da22257
   m_configObjects: {}
