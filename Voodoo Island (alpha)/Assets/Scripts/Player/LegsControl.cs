@@ -85,30 +85,15 @@ public class LegsControl : MonoBehaviour
     {
         float userInputX = Input.GetAxis("Horizontal");
         float userInputY = Input.GetAxis("Vertical");
+        //Debug.Log(userInputY);
 
 
         if (idle){
             animRenderer.sprite = idleSprite;
         }
         else{
-            if (animRunningSide && userInputX != 0f)
-            {
-                float timeSinceAnimStart = Time.timeSinceLevelLoad - timeAtAnimStart;
-                int frameIndex = (int)(timeSinceAnimStart * framesPerSecond);
-
-                if (frameIndex < sideAnimSprites.Length)
-                {
-                    // Let the renderer know which sprite to
-                    // use next      
-                    animRenderer.sprite = sideAnimSprites[frameIndex];
-                }
-                else
-                {
-                    animRenderer.sprite = sideAnimSprites[0];
-                    animRunningSide = false;
-                }
-            }
-            else if (animRunningForward && userInputY != 0f)
+            
+            if (animRunningForward && userInputY != 0f && userInputX ==0)
             {
                 // Animation is running, so we need to 
                 // figure out what frame to use at this point
@@ -136,9 +121,25 @@ public class LegsControl : MonoBehaviour
                     animRenderer.sprite = forwardAnimSprites[0];
                     animRunningForward = false;
                 }
-            }
-            else
+            } 
+            else if (animRunningSide && userInputX != 0f)
             {
+                float timeSinceAnimStart = Time.timeSinceLevelLoad - timeAtAnimStart;
+                int frameIndex = (int)(timeSinceAnimStart * framesPerSecond);
+
+                if (frameIndex < sideAnimSprites.Length)
+                {
+                    // Let the renderer know which sprite to
+                    // use next      
+                    animRenderer.sprite = sideAnimSprites[frameIndex];
+                }
+                else
+                {
+                    animRenderer.sprite = sideAnimSprites[0];
+                    animRunningSide = false;
+                }
+            }
+            else{
                 animRunningForward = false;
                 animRunningSide = false;
             }
