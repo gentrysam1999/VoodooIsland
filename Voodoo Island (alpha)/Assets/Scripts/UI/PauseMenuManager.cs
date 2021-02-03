@@ -6,7 +6,6 @@ using UnityEngine.Audio;
 
 public class PauseMenuManager : MonoBehaviour
 {
-
     // References to text objects on the panel
     public Text resumeText = null;
 
@@ -96,6 +95,11 @@ public class PauseMenuManager : MonoBehaviour
         }
     }
 
+    public void SetVolume(float sliderValue)
+    {
+        mixer.SetFloat("MainMixer", Mathf.Log10(sliderValue) * 20);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -119,11 +123,11 @@ public class PauseMenuManager : MonoBehaviour
             ExecuteCommand(currentSelection.text);
         } else if (Input.GetKeyDown(KeyCode.D))
         {
-            Volume.value = Volume.value + 0.1f;
+            SetVolume(Volume.value = Volume.value + 0.1f);
         }
         else if (Input.GetKeyDown(KeyCode.A))
         {
-            Volume.value = Volume.value - 0.1F;
+            SetVolume(Volume.value = Volume.value - 0.1F);
 
         }
         // Make sure that the option index indicator is within the range
