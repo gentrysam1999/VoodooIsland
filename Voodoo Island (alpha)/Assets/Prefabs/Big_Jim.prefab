@@ -56,7 +56,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165099909097669812}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.14, z: -1}
+  m_LocalPosition: {x: 0, y: -1.2, z: -1}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 1739131449584644213}
@@ -135,14 +135,14 @@ MonoBehaviour:
   - {fileID: -765037195283476686, guid: 5482a811086e14db3925acd334439a9b, type: 3}
   - {fileID: -7200445398779879713, guid: 5482a811086e14db3925acd334439a9b, type: 3}
   sideAnimSprites:
-  - {fileID: 4123493504849159535, guid: 95d9eed67424b43389680da2bb9c0afc, type: 3}
-  - {fileID: -3035124402332038866, guid: 95d9eed67424b43389680da2bb9c0afc, type: 3}
-  - {fileID: -5979749067551161126, guid: 95d9eed67424b43389680da2bb9c0afc, type: 3}
-  - {fileID: 5509702476737041321, guid: 95d9eed67424b43389680da2bb9c0afc, type: 3}
-  - {fileID: -898533935905382237, guid: 95d9eed67424b43389680da2bb9c0afc, type: 3}
-  - {fileID: -8827850501233029936, guid: 95d9eed67424b43389680da2bb9c0afc, type: 3}
-  - {fileID: -153274821444177371, guid: 95d9eed67424b43389680da2bb9c0afc, type: 3}
-  - {fileID: -9077110037992796085, guid: 95d9eed67424b43389680da2bb9c0afc, type: 3}
+  - {fileID: 4123493504849159535, guid: 73787579faa8048e98c983ef2bb2399c, type: 3}
+  - {fileID: -3035124402332038866, guid: 73787579faa8048e98c983ef2bb2399c, type: 3}
+  - {fileID: -5979749067551161126, guid: 73787579faa8048e98c983ef2bb2399c, type: 3}
+  - {fileID: 5509702476737041321, guid: 73787579faa8048e98c983ef2bb2399c, type: 3}
+  - {fileID: -898533935905382237, guid: 73787579faa8048e98c983ef2bb2399c, type: 3}
+  - {fileID: -8827850501233029936, guid: 73787579faa8048e98c983ef2bb2399c, type: 3}
+  - {fileID: -153274821444177371, guid: 73787579faa8048e98c983ef2bb2399c, type: 3}
+  - {fileID: -9077110037992796085, guid: 73787579faa8048e98c983ef2bb2399c, type: 3}
   idleSprite: {fileID: 6295906038782514842, guid: 5482a811086e14db3925acd334439a9b,
     type: 3}
   framesPerSecond: 30
@@ -598,9 +598,10 @@ MonoBehaviour:
   firePoint: {fileID: 579796557189474766}
   bulletPrefab: {fileID: 6596009037242770398, guid: 8e65d0dbc073f406f9bf00139621b692,
     type: 3}
-  fireCooldownTimeLeft: 0
+  fireCooldownTime: 0
   bulletForce: 20
   autoShoot: 0
+  target: {fileID: 0}
 --- !u!1 &1739131450247707760
 GameObject:
   m_ObjectHideFlags: 0
