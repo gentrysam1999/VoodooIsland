@@ -101,13 +101,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 16
-  m_Sprite: {fileID: -9178309047082644820, guid: 9be79dd8636b945c48f81c7cc772bd4b,
+  m_Sprite: {fileID: 6295906038782514842, guid: 5482a811086e14db3925acd334439a9b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.19, y: 0.11}
+  m_Size: {x: 0.19, y: 0.13}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -125,7 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdf226a56a7574edfbabea9e6a8aa940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animSprites: []
+  forwardAnimSprites: []
+  sideAnimSprites: []
   idleSprite: {fileID: -9178309047082644820, guid: 9be79dd8636b945c48f81c7cc772bd4b,
     type: 3}
   framesPerSecond: 20
@@ -199,7 +200,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 19
-  m_Sprite: {fileID: 8324349880129217731, guid: 9be79dd8636b945c48f81c7cc772bd4b,
+  m_Sprite: {fileID: -2215733400093081885, guid: 73787579faa8048e98c983ef2bb2399c,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -314,13 +315,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 17
-  m_Sprite: {fileID: 4882323927545666409, guid: 9be79dd8636b945c48f81c7cc772bd4b,
+  m_Sprite: {fileID: 4347142141719749729, guid: 5482a811086e14db3925acd334439a9b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.19, y: 0.14}
+  m_Size: {x: 0.15, y: 0.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -528,7 +529,7 @@ SpriteRenderer:
   m_Size: {x: 0.19, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &483225306278947071
@@ -546,6 +547,12 @@ MonoBehaviour:
   speed: 15
   aimDown: 1
   aimRight: 1
+  head: []
+  hat: []
+  body: []
+  headRend: {fileID: 0}
+  hatRend: {fileID: 0}
+  bodyRend: {fileID: 0}
 --- !u!114 &579796558077584174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,9 +568,10 @@ MonoBehaviour:
   firePoint: {fileID: 579796557189474766}
   bulletPrefab: {fileID: 6596009037242770398, guid: 8e65d0dbc073f406f9bf00139621b692,
     type: 3}
-  fireCooldownTimeLeft: 0
+  fireCooldownTime: 0
   bulletForce: 100
   autoShoot: 0
+  target: {fileID: 0}
 --- !u!1 &1739131450247707760
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,13 +642,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 20
-  m_Sprite: {fileID: 8716960478959478984, guid: 9be79dd8636b945c48f81c7cc772bd4b,
+  m_Sprite: {fileID: 7433342868001192007, guid: 73787579faa8048e98c983ef2bb2399c,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.15, y: 0.08}
+  m_Size: {x: 0.15, y: 0.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
