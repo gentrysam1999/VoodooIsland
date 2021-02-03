@@ -51,7 +51,7 @@ public class CameraControl : MonoBehaviour
         camView.y = moveCamOnAxis(mousePointY, player.position.y);
 
         //move the camera
-        transform.position = new Vector3(camView.x, camView.y, -10);
+        transform.position = new Vector3(camView.x, camView.y, -20);
     }
 
 

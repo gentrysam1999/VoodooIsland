@@ -2,10 +2,10 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class PauseMenuManager : MonoBehaviour
 {
-
     // References to text objects on the panel
     public Text resumeText = null;
 
@@ -17,6 +17,9 @@ public class PauseMenuManager : MonoBehaviour
     // Indicates whether the game in paused mode
     bool pauseGame;
 
+    public Slider Volume;
+    public AudioMixer mixer;
+
     // Use this for initialization
     void Start()
     {
@@ -26,6 +29,7 @@ public class PauseMenuManager : MonoBehaviour
         // and second reference to quitText
         optionArray = new Text[1];
         optionArray[0] = resumeText;
+        Volume.value = 1;
     }
 
     // Show the pause menu in pause mode (the
@@ -91,6 +95,11 @@ public class PauseMenuManager : MonoBehaviour
         }
     }
 
+    public void SetVolume(float sliderValue)
+    {
+        mixer.SetFloat("MainMixer", Mathf.Log10(sliderValue) * 20);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -112,8 +121,15 @@ public class PauseMenuManager : MonoBehaviour
             // If uses presses Enter or "Jump" key (Space), execute
             // the command corresponding to the current option
             ExecuteCommand(currentSelection.text);
+        } else if (Input.GetKeyDown(KeyCode.D))
+        {
+            SetVolume(Volume.value = Volume.value + 0.1f);
         }
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            SetVolume(Volume.value = Volume.value - 0.1F);
 
+        }
         // Make sure that the option index indicator is within the range
         // of the number of options
         if (optionIdx < 0)

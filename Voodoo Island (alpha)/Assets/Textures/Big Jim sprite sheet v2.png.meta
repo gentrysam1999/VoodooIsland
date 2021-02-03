@@ -1,31 +1,37 @@
 fileFormatVersion: 2
-guid: 9be79dd8636b945c48f81c7cc772bd4b
+guid: 5482a811086e14db3925acd334439a9b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3753429455555358362
-    second: Arms
+      213: -3450450145562761106
+    second: arms
   - first:
-      213: 8716960478959478984
-    second: Hat
+      213: -586509626991689838
+    second: hat
   - first:
-      213: 8324349880129217731
-    second: Head
+      213: -3686033095350656108
+    second: head
   - first:
-      213: 4882323927545666409
-    second: Body
+      213: 6295906038782514842
+    second: idle legs
   - first:
-      213: -9178309047082644820
-    second: Idle legs
+      213: 4347142141719749729
+    second: body
   - first:
-      213: 6614752134198535216
+      213: 8525649247818895708
     second: legs1
   - first:
-      213: 545837795308280791
+      213: 7872937692240730386
     second: legs2
   - first:
-      213: 1105373509303626811
+      213: -7200445398779879713
     second: legs3
+  - first:
+      213: -765037195283476686
+    second: legs4
+  - first:
+      213: -3711967057565884764
+    second: legs5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -88,7 +94,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,7 +106,55 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 2
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,7 +166,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,32 +177,32 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arms
+      name: arms
       rect:
         serializedVersion: 2
-        x: 32
-        y: 78
+        x: 28
+        y: 84
         width: 19
         height: 16
-      alignment: 9
-      pivot: {x: 0.49704942, y: 0.997231}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9e6ddb043cd61430800000000000000
-      internalID: 3753429455555358362
+      spriteID: e686986bfd98d10d0800000000000000
+      internalID: -3450450145562761106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hat
+      name: hat
       rect:
         serializedVersion: 2
-        x: 79
-        y: 87
+        x: 89
+        y: 91
         width: 15
         height: 8
       alignment: 0
@@ -158,18 +212,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c8af750f5dd8f870800000000000000
-      internalID: 8716960478959478984
+      spriteID: 29f30d90a9c4cd7f0800000000000000
+      internalID: -586509626991689838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Head
+      name: head
       rect:
         serializedVersion: 2
-        x: 30
-        y: 55
+        x: 59
+        y: 64
         width: 15
         height: 12
       alignment: 0
@@ -179,18 +233,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c4ea279c18068370800000000000000
-      internalID: 8324349880129217731
+      spriteID: 4936a41ed6498dcc0800000000000000
+      internalID: -3686033095350656108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Body
+      name: idle legs
       rect:
         serializedVersion: 2
-        x: 83
-        y: 51
+        x: 22
+        y: 45
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a965ed46f2d8f5750800000000000000
+      internalID: 6295906038782514842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: body
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 50
         width: 19
         height: 14
       alignment: 0
@@ -200,29 +275,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96bdfb39ebf71c340800000000000000
-      internalID: 4882323927545666409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle legs
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 28
-        width: 19
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: caa82e9ec8810a080800000000000000
-      internalID: -9178309047082644820
+      spriteID: 1642659eeb6245c30800000000000000
+      internalID: 4347142141719749729
       vertices: []
       indices: 
       edges: []
@@ -231,7 +285,7 @@ TextureImporter:
       name: legs1
       rect:
         serializedVersion: 2
-        x: 22
+        x: 7
         y: 9
         width: 13
         height: 13
@@ -242,8 +296,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 034292405025ccb50800000000000000
-      internalID: 6614752134198535216
+      spriteID: c5152dfe1d0315670800000000000000
+      internalID: 8525649247818895708
       vertices: []
       indices: 
       edges: []
@@ -252,7 +306,7 @@ TextureImporter:
       name: legs2
       rect:
         serializedVersion: 2
-        x: 53
+        x: 32
         y: 9
         width: 13
         height: 13
@@ -263,8 +317,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7db15563594339700800000000000000
-      internalID: 545837795308280791
+      spriteID: 219dac45e1b424d60800000000000000
+      internalID: 7872937692240730386
       vertices: []
       indices: 
       edges: []
@@ -273,10 +327,10 @@ TextureImporter:
       name: legs3
       rect:
         serializedVersion: 2
-        x: 86
-        y: 11
+        x: 57
+        y: 9
         width: 13
-        height: 11
+        height: 13
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,8 +338,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3c6b26a953175f00800000000000000
-      internalID: 1105373509303626811
+      spriteID: fde11253f01e21c90800000000000000
+      internalID: -7200445398779879713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legs4
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 9
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23fca2769ba0265f0800000000000000
+      internalID: -765037195283476686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: legs5
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 9
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae55d3c0a17c7cc0800000000000000
+      internalID: -3711967057565884764
       vertices: []
       indices: 
       edges: []

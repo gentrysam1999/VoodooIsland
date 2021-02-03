@@ -9,14 +9,24 @@ public class ArmControl : MonoBehaviour
 
     public bool aimDown = true;
     public bool aimRight = true;
-    private SpriteRenderer mySpriteRenderer;
+    private SpriteRenderer armsRend;
+
+    public Sprite[] head;
+    public Sprite[] hat;
+    public Sprite[] body;
+
+    public SpriteRenderer headRend;
+    public SpriteRenderer hatRend;
+    public SpriteRenderer bodyRend;
+
 
     public
 
     // Start is called before the first frame update
     void Start()
     {
-        mySpriteRenderer = GetComponent<SpriteRenderer>();
+        armsRend = GetComponent<SpriteRenderer>();
+
     }
 
     // Update is called once per frame
@@ -35,33 +45,54 @@ public class ArmControl : MonoBehaviour
         if (angle < 180  && angle > 0)
         {
             aimRight = true;
-
-            if(mySpriteRenderer != null)
-            {
-                 // flip the sprite
-                 mySpriteRenderer.flipX = false;
-            }
+            armsRend.flipX = false;
+            
         }else
         {
             aimRight = false;
+            armsRend.flipX = true;
             
-            if(mySpriteRenderer != null)
-            {
-                 // flip the sprite
-                 mySpriteRenderer.flipX = true;
-            }
         }
 
         //check U&D direction of aim
-        if (angle > 0)
+        if (angle > -90 && angle < 90)
         {
-            aimDown = false;
+            aimDown = true;
+            //headRend.sprite = head[0];
         }
         else
         {
-            aimDown = true;
+            aimDown = false;
+            //headRend.sprite = head[2];
         }
 
+        if (angle > -45 && angle < 45){
+            //face forward
+            headRend.sprite = head[0];
+            bodyRend.sprite = body[0];
+            hatRend.sprite = hat[0];
+        }
+        else if (angle > 45 && angle < 135){
+            //face right
+            headRend.flipX = false;
+            hatRend.flipX = false;
+            headRend.sprite = head[1];
+            bodyRend.sprite = body[0];
+            hatRend.sprite = hat[1];
+        } else if(angle > 135 && angle < 225){
+            //face up
+            headRend.sprite = head[2];
+            bodyRend.sprite = body[1];
+            hatRend.sprite = hat[2];
+        }else{
+            //face left
+            headRend.flipX = true;
+            hatRend.flipX = true;
+            headRend.sprite = head[1];
+            bodyRend.sprite = body[0];
+            hatRend.sprite = hat[1];
+        } 
+        
 
     }
 }

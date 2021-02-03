@@ -6,8 +6,11 @@ using UnityEngine.AI;
 public class Player : MonoBehaviour
 {
 
+    // Reference to animator component
+    Animator anim;
+
     //set the starting ammo
-    public int ammo = 0;
+    public int ammo = 6;
 
     //set the players speed. 
     public float speed = 10;
@@ -48,9 +51,6 @@ public class Player : MonoBehaviour
       
     }
 
-
-
-
     void OnTriggerExit2D(Collider2D other)
     {
         //if the player is no longer on a key they can't pick it up
@@ -78,6 +78,9 @@ public class Player : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+
+        // Initialise the reference to the Animator component
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frames
@@ -90,6 +93,25 @@ public class Player : MonoBehaviour
         //get movement input
         float GetX = Input.GetAxis("Horizontal");
         float GetY = Input.GetAxis("Vertical");
+
+        //Animation code
+        
+        if(GetX < 0)
+        {
+            anim.SetTrigger("Left");   
+        }
+        else if (GetX > 0)
+        {
+            anim.SetTrigger("Right");
+        }
+        else if(GetY != 0)
+        {
+            anim.SetTrigger("Forward");
+        }
+        else
+        {
+            anim.SetTrigger("Idle");
+        }
 
 
         Vector3 movement = new Vector3(GetX*speed+ 0.0005f,GetY*speed, 0);
