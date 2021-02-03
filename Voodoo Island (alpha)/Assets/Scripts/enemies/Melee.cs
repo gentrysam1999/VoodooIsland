@@ -26,6 +26,9 @@ public class Melee : MonoBehaviour
     void OnCollisionExit2D(Collision2D other)
     {
         if (other.gameObject.tag == "Player")
+        {
+            inRange = true;
+        }
 
     }
 }
