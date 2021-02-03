@@ -5,11 +5,8 @@ using UnityEngine.AI;
 
 public class Player : MonoBehaviour
 {
-
-    public int health = 5;
-
     //set the starting ammo
-    public int ammo = 0;
+    public int ammo = 6;
 
     //set the players speed. 
     public float speed = 10;
@@ -47,22 +44,8 @@ public class Player : MonoBehaviour
             }
 
         }
-
-        //check if the player has been shot
-        if(other.tag == "WitchAttack")
-        {
-            Destroy(other.gameObject);
-            health--;
-            if(health == 0)
-            {
-                Destroy(gameObject);
-            }
-        }
       
     }
-
-
-
 
     void OnTriggerExit2D(Collider2D other)
     {
