@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 
-
 public class HudManager : MonoBehaviour
 {
     // the GameObject textbox
@@ -15,6 +14,12 @@ public class HudManager : MonoBehaviour
 
     public static Text ammoText;
     public static int ammoCount;
+
+    public Slider hudHealth = null;
+
+    public GameObject p;
+
+    private Player pl;
 
     // References to UI elements on the canvas
     public GameObject Health = null;
@@ -38,6 +43,8 @@ public class HudManager : MonoBehaviour
 
         inventoryGrid = GameObject.Find("inventorygrid");
 
+        pl = p.GetComponent<Player>();
+
         textbox = GameObject.Find("Textbox");
         textbox.SetActive(false);
 
@@ -45,7 +52,7 @@ public class HudManager : MonoBehaviour
 
         inventoryGrid.SetActive(true);
 
-        // GameObject[] objArray = GameObject.FindGameObjectsWithTag("gameoverTrigger");
+        //  GameObject[] objArray = GameObject.FindGameObjectsWithTag("gameoverTrigger");
         //  gameoverInfoProvider = objArray[0].GetComponent<Remover>();
 
         // Set the starting health value for display
@@ -55,26 +62,6 @@ public class HudManager : MonoBehaviour
         // component of the pause menu panel game object
         pauseMenu = pauseMenuPanel.GetComponent<PauseMenuManager>();
         pauseMenu.Hide();
-
-    }
-
-    public void AmmoUp()
-    {
-        Player p = gameObject.GetComponentInParent<Player>();
-
-        ammoCount = Int32.Parse(ammoText.text) + 1;
-        ammoText.text = ammoCount.ToString();
-    }
-
-    public void AmmoDown()
-    {
-        Player p = gameObject.GetComponentInParent<Player>();
-
-        if (p.ammo > 0)
-        {
-            ammoCount = p.ammo--;
-            ammoText.text = ammoCount.ToString();
-        }
     }
 
     // Update is called once per frame
@@ -87,22 +74,26 @@ public class HudManager : MonoBehaviour
             Health.SetActive(false);
             Time.timeScale = 0;
         }
+
         else if (Note.reading == false)
+
         {
             textbox.SetActive(false);
             inventoryGrid.SetActive(true);
             Health.SetActive(true);
             Time.timeScale = 1f;
         }
+
         if (Input.GetKey(KeyCode.Escape) && Note.reading == false)
+
         {
             // If user presses ESC, show the pause menu in pause mode
             pauseMenu.ShowPause();
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            AmmoUp();
-        }
+        ammoText.text = pl.ammo.ToString();
+
+        // health = Mathf.MoveTowards(health, pl.health, 20 * Time.deltaTime);
+        hudHealth.value = health;
     }
 }
