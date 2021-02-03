@@ -24,7 +24,10 @@ public class Player : MonoBehaviour
     private NavMeshAgent agent;
 
     //pickUpName
-    private string name;
+    private string colliderTagName;
+
+    private AmmoPickup ammoPickup;
+
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -33,7 +36,12 @@ public class Player : MonoBehaviour
         {
             pickupItem = other.gameObject;
             canPickUp = true;
-            name = other.tag;
+            colliderTagName = other.tag;
+
+            if(other.tag == "BulletPickUp")
+            {
+                ammoPickup = other.gameObject.GetComponent<AmmoPickup>();
+            }
 
         }
       
@@ -86,16 +94,23 @@ public class Player : MonoBehaviour
 
         if (canPickUp && Input.GetKeyDown(KeyCode.E))
         {
-            if(name == "Key")
+            if(colliderTagName == "Key")
             {
                 hasKey = true;
+                Destroy(pickupItem);
             }
-            if(name == "BulletPickUp")
+            if(colliderTagName == "BulletPickUp")
+            
             {
-                ammo++;
+                ammo += ammoPickup.value;
+                if (ammoPickup.finite)
+                {
+                    Destroy(pickupItem);
+                }
+                
             }
             canPickUp = false;
-            Destroy(pickupItem);
+            
         }
 
         
