@@ -613,7 +613,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sign about Trespassers
+  m_Text: Header
 --- !u!1 &6024200805611141348
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,8 +649,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -350.11, y: 0}
-  m_SizeDelta: {x: -700.22296, y: 0}
+  m_AnchoredPosition: {x: -350.10974, y: 0}
+  m_SizeDelta: {x: -700.2224, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6024200805611141351
 CanvasRenderer:
