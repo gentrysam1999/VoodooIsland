@@ -6,6 +6,8 @@ using UnityEngine.AI;
 public class Player : MonoBehaviour
 {
 
+    public int health = 5;
+
     //set the starting ammo
     public int ammo = 0;
 
@@ -44,6 +46,17 @@ public class Player : MonoBehaviour
                 ammoPickup = other.gameObject.GetComponent<AmmoPickup>();
             }
 
+        }
+
+        //check if the player has been shot
+        if(other.tag == "WitchAttack")
+        {
+            Destroy(other.gameObject);
+            health--;
+            if(health == 0)
+            {
+                Destroy(gameObject);
+            }
         }
       
     }

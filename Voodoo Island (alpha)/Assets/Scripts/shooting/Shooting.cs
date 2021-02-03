@@ -8,9 +8,13 @@ public class Shooting : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
-    public float fireCooldownTimeLeft;
+    public float fireCooldownTime;
+    
     public float bulletForce = 20f;
     public bool autoShoot;
+    public Transform target;
+
+    private float fireCoolDownTimeLeft =0;
 
 
     
@@ -18,23 +22,42 @@ public class Shooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1")&& fireCooldownTimeLeft <=0&&!autoShoot){
+
+        if (fireCoolDownTimeLeft > 0)
+        {
+            fireCoolDownTimeLeft -= Time.fixedDeltaTime;
+        }
+        if (Input.GetButtonDown("Fire1")&& fireCoolDownTimeLeft  <= 0&&!autoShoot){
             Player p = gameObject.GetComponentInParent<Player>();
             if (p.ammo > 0)
             {
                 p.ammo--;
-                Shoot();
+                playerShoot();
             }
         }
-        else if(autoShoot && fireCooldownTimeLeft <= 0)
+        else if(autoShoot && fireCoolDownTimeLeft <= 0)
         {
-            Shoot();
+            enemyShoot();
         }
     }
 
-    void Shoot(){
+    void playerShoot(){
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        shoot(bullet);
+
+
+    }
+
+    void enemyShoot()
+    {
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        shoot(bullet);
+    }
+
+    void shoot(GameObject bullet)
+    {
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(-(firePoint.up) * bulletForce, ForceMode2D.Impulse);
+        fireCoolDownTimeLeft = fireCooldownTime;
     }
 }
