@@ -3,6 +3,8 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+using System.Collections.Generic;
+
 
 public class HudManager : MonoBehaviour
 {
@@ -13,6 +15,8 @@ public class HudManager : MonoBehaviour
 
     public static Text ammoText;
     public static int ammoCount;
+
+    public GameObject Player;
 
     // References to UI elements on the canvas
     public GameObject Health = null;
@@ -58,20 +62,19 @@ public class HudManager : MonoBehaviour
 
     public static void AmmoUp()
     {
+        // Player p = GameObject.Find<"Player">.GetComponent<"ammo">();
         ammoCount = Int32.Parse(ammoText.text);
-        ammoCount += 6;
         ammoText.text = ammoCount.ToString();
     }
 
     public static void AmmoDown()
     {
+        // Player p = gameObject.GetComponentInParent<Player>();
         if (ammoCount > 0)
         {
             ammoCount = Int32.Parse(ammoText.text);
-            ammoCount = ammoCount - 1;
             ammoText.text = ammoCount.ToString();
         }
-
     }
 
     // Update is called once per frame
@@ -95,6 +98,11 @@ public class HudManager : MonoBehaviour
         {
             // If user presses ESC, show the pause menu in pause mode
             pauseMenu.ShowPause();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            AmmoDown();
         }
     }
 }
