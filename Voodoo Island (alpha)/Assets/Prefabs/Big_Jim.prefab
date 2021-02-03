@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 579796557189474766}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GunTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,8 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4423956960448094489}
   - component: {fileID: 5092548366210657729}
-  - component: {fileID: 5257839006041900977}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,23 +112,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5257839006041900977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165099909097669812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdf226a56a7574edfbabea9e6a8aa940, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forwardAnimSprites: []
-  sideAnimSprites: []
-  idleSprite: {fileID: -9178309047082644820, guid: 9be79dd8636b945c48f81c7cc772bd4b,
-    type: 3}
-  framesPerSecond: 20
 --- !u!1 &1739131448904810614
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1739131448904810609}
   - component: {fileID: 1739131448904810608}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1739131449231953387}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1739131449555468350}
   - component: {fileID: 1739131449555468345}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,9 +323,10 @@ GameObject:
   - component: {fileID: 1739131450222237547}
   - component: {fileID: 2574867693578214425}
   - component: {fileID: 9116259707235082624}
-  m_Layer: 0
+  - component: {fileID: 4804486126259332695}
+  m_Layer: 8
   m_Name: Big_Jim
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -408,7 +391,7 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739131449584644219}
   m_Enabled: 1
-  m_AgentTypeID: 0
+  m_AgentTypeID: -1372625422
   m_Radius: 0.5
   m_Speed: 1
   m_Acceleration: 1
@@ -448,6 +431,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0695636, y: 3.9575062}
   m_EdgeRadius: 0
+--- !u!95 &4804486126259332695
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739131449584644219}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e4337527da054907a92946b8941e047, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1739131449940486101
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,7 +462,7 @@ GameObject:
   - component: {fileID: 1739131449940486103}
   - component: {fileID: 483225306278947071}
   - component: {fileID: 579796558077584174}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Arms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -591,7 +593,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1739131450247707763}
   - component: {fileID: 1739131450247707762}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -673,7 +675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3394554461001487377}
   - component: {fileID: 5866817707050930203}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: shoulders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
