@@ -49340,6 +49340,16 @@ PrefabInstance:
       propertyPath: m_AutoTraverseOffMeshLink
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2817733886836466049, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257839006041900977, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5257839006041900977, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
         type: 3}
       propertyPath: animSprites.Array.size
@@ -49369,6 +49379,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1105373509303626811, guid: 9be79dd8636b945c48f81c7cc772bd4b,
         type: 3}
+    - target: {fileID: 5257839006041900977, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: forwardAnimSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 9116259707235082624, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
         type: 3}
       propertyPath: m_Enabled
