@@ -5,7 +5,8 @@ using UnityEngine;
 public class LegsControl : MonoBehaviour
 {
     // An array with the sprites used for animation
-    public Sprite[] animSprites;
+    public Sprite[] forwardAnimSprites;
+    public Sprite[] sideAnimSprites;
 
     public Sprite idleSprite;
 
@@ -21,7 +22,8 @@ public class LegsControl : MonoBehaviour
     private float timeAtAnimStart;
     
     // Indicates whether animation is running or not
-    private bool animRunning = false;
+    private bool animRunningForward = false;
+    private bool animRunningSide = false;
 
     private bool idle = true;
 
@@ -29,20 +31,39 @@ public class LegsControl : MonoBehaviour
     void Start()
     {
         // Get a reference to game object renderer and
-        // cast it to a Sprite Rendere
+        // cast it to a Sprite Renderer
         animRenderer = GetComponent<Renderer>() as SpriteRenderer;
     }
 
     void FixedUpdate () {
-        if(!animRunning) {
+        if(!animRunningForward && !animRunningSide) {
             // The animation is triggered by user input
             float userInputX = Input.GetAxis("Horizontal");
             float userInputY = Input.GetAxis("Vertical");
-            if(userInputX != 0f || userInputY != 0f) {
-                // User pressed the move left or right button
+            if (userInputX != 0f) {
+                //User pressed move left or move right button
+
+                if (userInputX < 0f)
+                {
+                    animRenderer.flipX = true;
+                }
+                else
+                {
+                    animRenderer.flipX = false;
+                }
+                //Animation will start playing
+                animRunningSide = true;
+
+                // Record time at animation start
+                timeAtAnimStart = Time.timeSinceLevelLoad;
+
+                //player is moving
+                idle = false;
+            }else if (userInputY != 0f) {
+                // User pressed the move up or down button
                 
                 // Animation will start playing
-                animRunning = true;
+                animRunningForward = true;
                 
                 // Record time at animation start
                 timeAtAnimStart = Time.timeSinceLevelLoad;
@@ -52,7 +73,9 @@ public class LegsControl : MonoBehaviour
             }else{
                 //player is stopped
                 idle = true;
-                animRunning = false;
+                animRunningForward = false;
+                animRunningSide = false;
+                
             }
         }
     }
@@ -60,33 +83,65 @@ public class LegsControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(idle){
+        float userInputX = Input.GetAxis("Horizontal");
+        float userInputY = Input.GetAxis("Vertical");
+        //Debug.Log(userInputY);
+
+
+        if (idle){
             animRenderer.sprite = idleSprite;
-        }else{
-            if(animRunning) {
+        }
+        else{
+            
+            if (animRunningForward && userInputY != 0f && userInputX ==0)
+            {
                 // Animation is running, so we need to 
                 // figure out what frame to use at this point
                 // in time
-                
+
                 // Compute number of seconds since animation started playing
                 float timeSinceAnimStart = Time.timeSinceLevelLoad - timeAtAnimStart;
-                
+
                 // Compute the index of the next frame    
-                int frameIndex = (int) (timeSinceAnimStart * framesPerSecond);
-                
-                if(frameIndex < animSprites.Length) {
+                int frameIndex = (int)(timeSinceAnimStart * framesPerSecond);
+
+                if (frameIndex < forwardAnimSprites.Length)
+                {
                     // Let the renderer know which sprite to
                     // use next      
-                    animRenderer.sprite = animSprites[ frameIndex ];
+                    animRenderer.sprite = forwardAnimSprites[frameIndex];
 
 
-                } else {
+                }
+                else
+                {
                     // Animation finished, set the render
                     // with the idle sprite and stop the 
                     // animation
-                    animRenderer.sprite = animSprites[0];
-                    animRunning = false;
+                    animRenderer.sprite = forwardAnimSprites[0];
+                    animRunningForward = false;
                 }
+            } 
+            else if (animRunningSide && userInputX != 0f)
+            {
+                float timeSinceAnimStart = Time.timeSinceLevelLoad - timeAtAnimStart;
+                int frameIndex = (int)(timeSinceAnimStart * framesPerSecond);
+
+                if (frameIndex < sideAnimSprites.Length)
+                {
+                    // Let the renderer know which sprite to
+                    // use next      
+                    animRenderer.sprite = sideAnimSprites[frameIndex];
+                }
+                else
+                {
+                    animRenderer.sprite = sideAnimSprites[0];
+                    animRunningSide = false;
+                }
+            }
+            else{
+                animRunningForward = false;
+                animRunningSide = false;
             }
         }
     }
