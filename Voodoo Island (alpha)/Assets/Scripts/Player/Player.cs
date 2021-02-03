@@ -5,9 +5,8 @@ using UnityEngine.AI;
 
 public class Player : MonoBehaviour
 {
-
     //set the starting ammo
-    public int ammo = 0;
+    public int ammo = 6;
 
     //set the players speed. 
     public float speed = 10;
@@ -39,9 +38,6 @@ public class Player : MonoBehaviour
         }
       
     }
-
-
-
 
     void OnTriggerExit2D(Collider2D other)
     {
