@@ -49235,6 +49235,28 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1739131448904810608, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3686033095350656108, guid: 5482a811086e14db3925acd334439a9b,
+        type: 3}
+    - target: {fileID: 1739131448904810608, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739131449555468345, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4347142141719749729, guid: 5482a811086e14db3925acd334439a9b,
+        type: 3}
+    - target: {fileID: 1739131449555468345, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1739131449584644213, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
         type: 3}
       propertyPath: m_RootOrder
@@ -49305,10 +49327,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_Jim (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1739131449940486103, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3450450145562761106, guid: 5482a811086e14db3925acd334439a9b,
+        type: 3}
+    - target: {fileID: 1739131449940486103, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1739131450222237547, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
         type: 3}
       propertyPath: ammo
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739131450247707762, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -586509626991689838, guid: 5482a811086e14db3925acd334439a9b,
+        type: 3}
+    - target: {fileID: 1739131450247707762, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2574867693578214425, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
         type: 3}
@@ -49344,6 +49388,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092548366210657729, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5092548366210657729, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6295906038782514842, guid: 5482a811086e14db3925acd334439a9b,
+        type: 3}
+    - target: {fileID: 5092548366210657729, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5257839006041900977, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
         type: 3}
@@ -82424,6 +82484,25 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 669980525}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1556541803
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556541802}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e4337527da054907a92946b8941e047, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1556541806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1739131449584644213, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
