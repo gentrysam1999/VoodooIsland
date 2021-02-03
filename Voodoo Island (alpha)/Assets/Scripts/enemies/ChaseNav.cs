@@ -21,8 +21,13 @@ public class ChaseNav : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination(target.transform.position);
-        Navigate.DebugDrawPath(agent.path.corners);
+        EnemySight enemySight = GetComponent<EnemySight>();
+        if (enemySight.isActive())
+        {
+            agent.SetDestination(target.transform.position);
+            Navigate.DebugDrawPath(agent.path.corners);
+        }
+        
         //Debug.Log(agent.velocity.ToString());
     }
     void OnTriggerEnter2D(Collider2D other)
