@@ -10,6 +10,8 @@ public class Witch : MonoBehaviour
 
     public GameObject locations;
 
+    public Transform player;
+
     //The witch travel too her children
     private Transform[] places;
 
@@ -29,6 +31,8 @@ public class Witch : MonoBehaviour
 
         target = places[lastLocation];
 
+
+        
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -39,6 +43,7 @@ public class Witch : MonoBehaviour
     {
         agent.SetDestination(target.transform.position);
         Navigate.DebugDrawPath(agent.path.corners);
+        Debug.Log(target.transform.position);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -46,6 +51,10 @@ public class Witch : MonoBehaviour
         if (other.tag == "Bullet")
         {
             health --;
+            if(health <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
         if (other.tag == "WitchTarget")
         {

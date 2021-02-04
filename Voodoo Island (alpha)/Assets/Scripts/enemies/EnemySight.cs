@@ -26,7 +26,8 @@ public class EnemySight : MonoBehaviour
         float alpha = 0f;
 
         //Specify the layer mast for ray casting - ray casting will only interact with layer 8
-        int layerMask = 1 << 8;
+        int playerLayer = 1 << 8;
+        int wallLayer = 1 << 9;
 
         //check 
         bool hasHit = false;
@@ -49,25 +50,22 @@ public class EnemySight : MonoBehaviour
             ray.y *= transform.lossyScale.y;
 
             // Cast the ray 
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, ray, ray.magnitude, layerMask);
+            RaycastHit2D playerhit = Physics2D.Raycast(transform.position, ray, ray.magnitude, playerLayer);
+            RaycastHit2D wallHit = Physics2D.Raycast(transform.position, ray, ray.magnitude, wallLayer);
 
 
-            float distanceToWall =  99999999f;
+            
 
 
             // Check if ray has hit something, if yes, check how far from the ray's origin point
             // and adjust the distance of where the mesh point is going to be located.
 
             
-            if (hit.collider != null)
+            if (playerhit.collider != null)
             {
-                //if(hit.collider.gameObject.tag == "Wall")
-               // {
-                    //distanceToWall = hit.distance;
-                //}
-                if(hit.collider.gameObject.tag == "Player")
+    
+                if(playerhit.distance < wallHit.distance)
                 {
-                    //Debug.Log("hit2");
                     hasHit = true;
                 }
           

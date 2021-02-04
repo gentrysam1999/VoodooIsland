@@ -12,7 +12,6 @@ public class Shooting : MonoBehaviour
     
     public float bulletForce = 20f;
     public bool autoShoot;
-    public Transform target;
 
     private float fireCoolDownTimeLeft =0;
 
