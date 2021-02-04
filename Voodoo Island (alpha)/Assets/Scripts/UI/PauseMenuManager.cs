@@ -116,12 +116,13 @@ public class PauseMenuManager : MonoBehaviour
             // When user presses up arrow, go to previous option
             optionIdx--;
         }
-        else if (Input.GetKey(KeyCode.Return) || (Input.GetAxis("Jump") != 0f))
+        else if (Input.GetKey(KeyCode.Return))
         {
-            // If uses presses Enter or "Jump" key (Space), execute
+            // If uses presses Enter, execute
             // the command corresponding to the current option
             ExecuteCommand(currentSelection.text);
-        } else if (Input.GetKeyDown(KeyCode.X))
+        }
+        else if (Input.GetKeyDown(KeyCode.X))
         {
             SetVolume(Volume.value = Volume.value + 0.1f);
         }
