@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     // Reference to animator component
     Animator anim;
 
+    public int health = 5;
+
     //set the starting ammo
     public int ammo = 6;
 
@@ -27,11 +29,18 @@ public class Player : MonoBehaviour
     //a referance to the navmeshagent compoent to controll the players movement.
     private NavMeshAgent agent;
 
+
+
     //pickUpName
     private string colliderTagName;
 
     private AmmoPickup ammoPickup;
 
+
+    public void takeDamage(int amount)
+    {
+        health -= amount;
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -48,6 +57,15 @@ public class Player : MonoBehaviour
             }
 
         }
+        else if(other.tag  == "WitchAttack"){
+            Destroy(other.gameObject);
+            takeDamage(1);
+        }
+        else if(other.tag == "MeleeEnemy")
+        {
+            Melee m = other.gameObject.GetComponent<Melee>();
+            m.inRange = true;
+        }
       
     }
 
@@ -57,6 +75,11 @@ public class Player : MonoBehaviour
         if(other.tag == "Key" || other.tag == "BulletPickUp")
         {
             canPickUp = false;
+        }
+        else if(other.tag== "MeleeEnemy")
+        {
+            Melee m = other.gameObject.GetComponent<Melee>();
+            m.inRange = false;
         }
     }
 
@@ -86,6 +109,10 @@ public class Player : MonoBehaviour
     // Update is called once per frames
     void Update()
     {
+        if(health <= 0)
+        {
+            Destroy(gameObject);
+        }
       
         //calcuate the players speed based on delta time 
         float var = Time.deltaTime * speed;
@@ -95,7 +122,6 @@ public class Player : MonoBehaviour
         float GetY = Input.GetAxis("Vertical");
 
         //Animation code
-        
         if(GetX < 0)
         {
             anim.SetTrigger("Left");   

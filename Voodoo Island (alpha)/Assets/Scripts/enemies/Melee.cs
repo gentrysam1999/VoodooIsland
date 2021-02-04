@@ -1,34 +1,51 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+
 
 public class Melee : MonoBehaviour
 {
 
     public int damage = 1;
-    private bool inRange = false;
+    public float fireCooldownTime = 10;
+    private float speed;
+
+    public bool inRange = false;
+    private float fireCoolDownTimeLeft = 0;
+    private NavMeshAgent agent;
+    private Player player;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        agent = GetComponent<NavMeshAgent>();
+        speed = agent.speed;
+
+        ChaseNav c = GetComponent<ChaseNav>();
+        player = c.target.GetComponent<Player>();
     }
 
-    // Update is called once per frame
-    void OnCollisionEnter2D(Collision2D other)
+    void Update()
     {
-        //if the player runs into a door and has a key remove the door
-        if (other.gameObject.tag == "Player")
+        if(fireCooldownTime <= 0)
         {
-            inRange = true;
+            if (inRange)
+            {
+                player.takeDamage(1);
+                fireCoolDownTimeLeft = fireCooldownTime;
+                agent.speed = 0;
+            }
+            else
+            {
+                agent.speed = speed;
+            }
         }
+        if (fireCoolDownTimeLeft > 0)
+        {
+            fireCoolDownTimeLeft -= Time.fixedDeltaTime;
+        }   
+
     }
 
-    void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            inRange = true;
-        }
-
-    }
 }

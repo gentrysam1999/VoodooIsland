@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5952103525655962430}
   - component: {fileID: 4885514698314891333}
   - component: {fileID: -7413516147392683475}
+  - component: {fileID: 835326199336413336}
   m_Layer: 0
   m_Name: SwampThing
   m_TagString: Untagged
@@ -167,3 +168,18 @@ NavMeshAgent:
   m_BaseOffset: 0.32
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &835326199336413336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8814799452281987741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54b46605e80dd4f4daa31e4dff26c033, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  fireCooldownTime: 10
+  playerObject: {fileID: 0}

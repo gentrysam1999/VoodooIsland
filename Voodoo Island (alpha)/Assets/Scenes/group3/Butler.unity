@@ -132,12 +132,17 @@ PrefabInstance:
         type: 3}
       propertyPath: p
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2139536363}
     - target: {fileID: 1540758238672261178, guid: 3039e259ffbac45308bc48b3c2c80ec8,
         type: 3}
       propertyPath: hudHealth
       value: 
       objectReference: {fileID: 1369650894}
+    - target: {fileID: 3548806498198402066, guid: 3039e259ffbac45308bc48b3c2c80ec8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6024200805407487513, guid: 3039e259ffbac45308bc48b3c2c80ec8,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -83976,6 +83981,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Witch (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8315074956665261995, guid: 90f952778ad6443218842f39d6c779db,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90f952778ad6443218842f39d6c779db, type: 3}
 --- !u!1 &1986757171
@@ -84057,6 +84067,11 @@ PrefabInstance:
       propertyPath: m_Acceleration
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 5952103525655962430, guid: eb46ab1eabdcc422584351274bfe0aa5,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8814799452281987738, guid: eb46ab1eabdcc422584351274bfe0aa5,
         type: 3}
       propertyPath: target
@@ -84066,6 +84081,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SwampThing
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814799452281987741, guid: eb46ab1eabdcc422584351274bfe0aa5,
+        type: 3}
+      propertyPath: m_TagString
+      value: MeleeEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 8814799452281987750, guid: eb46ab1eabdcc422584351274bfe0aa5,
         type: 3}
@@ -84143,6 +84163,12 @@ PrefabInstance:
 --- !u!1 &2139536363 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1739131449584644219, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+    type: 3}
+  m_PrefabInstance: {fileID: 666250238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2139536368 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1739131449584644213, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
     type: 3}
   m_PrefabInstance: {fileID: 666250238}
   m_PrefabAsset: {fileID: 0}
@@ -84261,7 +84287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc14f796edb9d4c41a80a35458b1bb01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 2139536368}
   camMoveValue: 1.5
 --- !u!1001 &208664892651767698
 PrefabInstance:
