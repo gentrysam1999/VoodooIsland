@@ -12,18 +12,19 @@ public class HudManager : MonoBehaviour
     // the text element found in textbox
     public static Text note;
 
+    // the text box that contains how much ammo you have left
     public static Text ammoText;
-    public static int ammoCount;
 
+    // the slider that represents the amount of health you have
     public Slider hudHealth;
 
+    //The panel that contains the health bar. We need this to hide the slider
     public GameObject hPanel;
 
+    //The GameObject that represents the player so we can access ammo and health values for HUD
     public GameObject p;
-
+    // The Player object used alongside p
     private Player pl;
-
-    // References to UI elements on the canvas
 
     // Health value currently displayed
     float health;
@@ -42,8 +43,6 @@ public class HudManager : MonoBehaviour
 
         ammoText = GameObject.Find("ammonum").GetComponent<Text>();
 
-        inventoryGrid = GameObject.Find("inventorygrid");
-
         hPanel = GameObject.Find("hPanel");
 
         pl = p.GetComponent<Player>();
@@ -53,10 +52,11 @@ public class HudManager : MonoBehaviour
 
         inventoryGrid.SetActive(true);
 
+        hudHealth.value = pl.health;
+
         //  GameObject[] objArray = GameObject.FindGameObjectsWithTag("gameoverTrigger");
         //  gameoverInfoProvider = objArray[0].GetComponent<Remover>();
 
-        // Set the starting health value for display
         // health = healthInfoProvider.health;
 
         // Initialise the reference to the script object, which is a
@@ -77,7 +77,6 @@ public class HudManager : MonoBehaviour
         }
 
         else if (Note.reading == false)
-
         {
             textbox.SetActive(false);
             inventoryGrid.SetActive(true);
@@ -86,19 +85,13 @@ public class HudManager : MonoBehaviour
         }
 
         if (Input.GetKey(KeyCode.Escape) && Note.reading == false)
-
         {
             // If user presses ESC, show the pause menu in pause mode
             pauseMenu.ShowPause();
         }
 
         ammoText.text = pl.ammo.ToString();
+        hudHealth.value = pl.health;
 
-        if (Input.GetKey(KeyCode.Mouse0))
-        {
-            health = Mathf.MoveTowards(health, 100, 20 * Time.deltaTime);
-            hudHealth.value = health;
-            health--;
         }
     }
-}

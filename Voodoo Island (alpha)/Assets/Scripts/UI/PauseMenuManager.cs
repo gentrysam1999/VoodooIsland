@@ -121,14 +121,13 @@ public class PauseMenuManager : MonoBehaviour
             // If uses presses Enter or "Jump" key (Space), execute
             // the command corresponding to the current option
             ExecuteCommand(currentSelection.text);
-        } else if (Input.GetKeyDown(KeyCode.D))
+        } else if (Input.GetKeyDown(KeyCode.X))
         {
             SetVolume(Volume.value = Volume.value + 0.1f);
         }
-        else if (Input.GetKeyDown(KeyCode.A))
+        else if (Input.GetKeyDown(KeyCode.Z))
         {
             SetVolume(Volume.value = Volume.value - 0.1F);
-
         }
         // Make sure that the option index indicator is within the range
         // of the number of options
