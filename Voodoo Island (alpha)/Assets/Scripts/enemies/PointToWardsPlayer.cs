@@ -5,11 +5,12 @@ using UnityEngine;
 public class PointToWardsPlayer : MonoBehaviour
 {
 
-    public Transform target;
+    private Transform target;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Witch w = gameObject.transform.parent.parent.GetComponentInParent<Witch>();
+        target = w.player;
     }
 
     // Update is called once per frames

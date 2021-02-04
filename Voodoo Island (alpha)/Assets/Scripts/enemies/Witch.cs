@@ -10,6 +10,8 @@ public class Witch : MonoBehaviour
 
     public GameObject locations;
 
+    public Transform player;
+
     //The witch travel too her children
     private Transform[] places;
 
@@ -46,6 +48,10 @@ public class Witch : MonoBehaviour
         if (other.tag == "Bullet")
         {
             health --;
+            if(health <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
         if (other.tag == "WitchTarget")
         {
