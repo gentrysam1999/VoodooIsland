@@ -67,7 +67,7 @@ public class EnemySight : MonoBehaviour
                 //}
                 if(hit.collider.gameObject.tag == "Player")
                 {
-                    Debug.Log("hit2");
+                    //Debug.Log("hit2");
                     hasHit = true;
                 }
           

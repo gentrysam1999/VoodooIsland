@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
         else if(other.tag == "MeleeEnemy")
         {
             Melee m = other.gameObject.GetComponent<Melee>();
-            m.inRange = true;
+            m.isInRange();
         }
       
     }
@@ -79,7 +79,8 @@ public class Player : MonoBehaviour
         else if(other.tag== "MeleeEnemy")
         {
             Melee m = other.gameObject.GetComponent<Melee>();
-            m.inRange = false;
+            takeDamage(1);
+            m.leftRange();
         }
     }
 
@@ -109,60 +110,63 @@ public class Player : MonoBehaviour
     // Update is called once per frames
     void Update()
     {
-        if(health <= 0)
+        if (Time.timeScale != 0)
         {
-            Destroy(gameObject);
-        }
-      
-        //calcuate the players speed based on delta time 
-        float var = Time.deltaTime * speed;
-
-        //get movement input
-        float GetX = Input.GetAxis("Horizontal");
-        float GetY = Input.GetAxis("Vertical");
-
-        //Animation code
-        if(GetX < 0)
-        {
-            anim.SetTrigger("Left");   
-        }
-        else if (GetX > 0)
-        {
-            anim.SetTrigger("Right");
-        }
-        else if(GetY != 0)
-        {
-            anim.SetTrigger("Forward");
-        }
-        else
-        {
-            anim.SetTrigger("Idle");
-        }
-
-
-        Vector3 movement = new Vector3(GetX*speed+ 0.0005f,GetY*speed, 0);
-        //move the players based on there speed
-        GetComponent<NavMeshAgent>().velocity = movement;
-
-        if (canPickUp && Input.GetKeyDown(KeyCode.E))
-        {
-            if(colliderTagName == "Key")
+            if (health <= 0)
             {
-                hasKey = true;
-                Destroy(pickupItem);
+                Destroy(gameObject);
             }
-            if(colliderTagName == "BulletPickUp")
-            
+
+            //calcuate the players speed based on delta time 
+            float var = Time.deltaTime * speed;
+
+            //get movement input
+            float GetX = Input.GetAxis("Horizontal");
+            float GetY = Input.GetAxis("Vertical");
+
+            //Animation code
+            if (GetX < 0)
             {
-                ammo += ammoPickup.value;
-                if (ammoPickup.finite)
+                anim.SetTrigger("Left");
+            }
+            else if (GetX > 0)
+            {
+                anim.SetTrigger("Right");
+            }
+            else if (GetY != 0)
+            {
+                anim.SetTrigger("Forward");
+            }
+            else
+            {
+                anim.SetTrigger("Idle");
+            }
+
+
+            Vector3 movement = new Vector3(GetX * speed + 0.001f, GetY * speed, 0);
+            //move the players based on there speed
+            GetComponent<NavMeshAgent>().velocity = movement;
+
+            if (canPickUp && Input.GetKeyDown(KeyCode.E))
+            {
+                if (colliderTagName == "Key")
                 {
+                    hasKey = true;
                     Destroy(pickupItem);
                 }
-                
+                if (colliderTagName == "BulletPickUp")
+
+                {
+                    ammo += ammoPickup.value;
+                    if (ammoPickup.finite)
+                    {
+                        Destroy(pickupItem);
+                    }
+
+                }
+                canPickUp = false;
+
             }
-            canPickUp = false;
-            
         }
 
         
