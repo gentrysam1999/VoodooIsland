@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     // Reference to animator component
     Animator anim;
 
-    public int health = 100;
+    public int health = 5;
 
     //set the starting ammo
     public int ammo = 6;
@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     //a referance to the item the player is standing on
     private UnityEngine.Object pickupItem;
 
-    //a referance to the navmeshagent compoent to controll the players movement.
+    //a referance to the navmeshagent compoent to control the players movement.
     private NavMeshAgent agent;
 
 
@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //Check if the player is on a key and allow the player to pick up a key
-        if (other.tag == "Key" || other.tag == "BulletPickUp")
+        if (other.tag == "Key" || other.tag == "BulletPickUp" || other.tag == "HealthPickUp")
         {
             pickupItem = other.gameObject;
             canPickUp = true;
@@ -72,7 +72,7 @@ public class Player : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         //if the player is no longer on a key they can't pick it up
-        if(other.tag == "Key" || other.tag == "BulletPickUp")
+        if(other.tag == "Key" || other.tag == "BulletPickUp" || other.tag == "HealthPickUp")
         {
             canPickUp = false;
         }
@@ -164,8 +164,12 @@ public class Player : MonoBehaviour
                     }
 
                 }
+                if (colliderTagName == "HealthPickUp")
+                {
+                    health++;
+                    Destroy(pickupItem);
+                }
                 canPickUp = false;
-
             }
         }
 
