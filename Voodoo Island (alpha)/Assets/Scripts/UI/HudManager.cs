@@ -15,14 +15,15 @@ public class HudManager : MonoBehaviour
     public static Text ammoText;
     public static int ammoCount;
 
-    public Slider hudHealth = null;
+    public Slider hudHealth;
+
+    public GameObject hPanel;
 
     public GameObject p;
 
     private Player pl;
 
     // References to UI elements on the canvas
-    public GameObject Health = null;
 
     // Health value currently displayed
     float health;
@@ -43,12 +44,12 @@ public class HudManager : MonoBehaviour
 
         inventoryGrid = GameObject.Find("inventorygrid");
 
+        hPanel = GameObject.Find("hPanel");
+
         pl = p.GetComponent<Player>();
 
         textbox = GameObject.Find("Textbox");
         textbox.SetActive(false);
-
-        Health = GameObject.Find("Health");
 
         inventoryGrid.SetActive(true);
 
@@ -71,7 +72,7 @@ public class HudManager : MonoBehaviour
         {
             inventoryGrid.SetActive(false);
             textbox.SetActive(true);
-            Health.SetActive(false);
+            hPanel.SetActive(false);
             Time.timeScale = 0;
         }
 
@@ -80,7 +81,7 @@ public class HudManager : MonoBehaviour
         {
             textbox.SetActive(false);
             inventoryGrid.SetActive(true);
-            Health.SetActive(true);
+            hPanel.SetActive(true);
             Time.timeScale = 1f;
         }
 
@@ -93,7 +94,11 @@ public class HudManager : MonoBehaviour
 
         ammoText.text = pl.ammo.ToString();
 
-        // health = Mathf.MoveTowards(health, pl.health, 20 * Time.deltaTime);
-        hudHealth.value = health;
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            health = Mathf.MoveTowards(health, 100, 20 * Time.deltaTime);
+            hudHealth.value = health;
+            health--;
+        }
     }
 }
