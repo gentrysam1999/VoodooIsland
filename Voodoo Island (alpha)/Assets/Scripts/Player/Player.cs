@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     // Reference to animator component
     Animator anim;
 
-    public int health = 5;
+    public int health = 100;
 
     //set the starting ammo
     public int ammo = 6;
