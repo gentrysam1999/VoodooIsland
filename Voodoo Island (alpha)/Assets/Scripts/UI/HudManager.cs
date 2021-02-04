@@ -52,6 +52,8 @@ public class HudManager : MonoBehaviour
 
         inventoryGrid.SetActive(true);
 
+        hudHealth.value = pl.health;
+
         //  GameObject[] objArray = GameObject.FindGameObjectsWithTag("gameoverTrigger");
         //  gameoverInfoProvider = objArray[0].GetComponent<Remover>();
 
@@ -89,9 +91,7 @@ public class HudManager : MonoBehaviour
         }
 
         ammoText.text = pl.ammo.ToString();
-
-        Debug.Log(pl.health);
-        hudHealth.value = 0.5f;
+        hudHealth.value = pl.health;
 
         }
     }
