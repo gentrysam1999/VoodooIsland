@@ -31,6 +31,8 @@ public class Witch : MonoBehaviour
 
         target = places[lastLocation];
 
+
+        
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -41,6 +43,7 @@ public class Witch : MonoBehaviour
     {
         agent.SetDestination(target.transform.position);
         Navigate.DebugDrawPath(agent.path.corners);
+        Debug.Log(target.transform.position);
     }
 
     void OnTriggerEnter2D(Collider2D other)
