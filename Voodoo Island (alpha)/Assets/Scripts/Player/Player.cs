@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     // Reference to animator component
     Animator anim;
 
+    public int health = 100;
+
     //set the starting ammo
     public int ammo = 6;
 
@@ -27,11 +29,18 @@ public class Player : MonoBehaviour
     //a referance to the navmeshagent compoent to controll the players movement.
     private NavMeshAgent agent;
 
+
+
     //pickUpName
     private string colliderTagName;
 
     private AmmoPickup ammoPickup;
 
+
+    public void takeDamage(int amount)
+    {
+        health -= amount;
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -48,6 +57,15 @@ public class Player : MonoBehaviour
             }
 
         }
+        else if(other.tag  == "WitchAttack"){
+            Destroy(other.gameObject);
+            takeDamage(1);
+        }
+        else if(other.tag == "MeleeEnemy")
+        {
+            Melee m = other.gameObject.GetComponent<Melee>();
+            m.isInRange();
+        }
       
     }
 
@@ -57,6 +75,12 @@ public class Player : MonoBehaviour
         if(other.tag == "Key" || other.tag == "BulletPickUp")
         {
             canPickUp = false;
+        }
+        else if(other.tag== "MeleeEnemy")
+        {
+            Melee m = other.gameObject.GetComponent<Melee>();
+            takeDamage(1);
+            m.leftRange();
         }
     }
 
@@ -86,57 +110,63 @@ public class Player : MonoBehaviour
     // Update is called once per frames
     void Update()
     {
-      
-        //calcuate the players speed based on delta time 
-        float var = Time.deltaTime * speed;
-
-        //get movement input
-        float GetX = Input.GetAxis("Horizontal");
-        float GetY = Input.GetAxis("Vertical");
-
-        //Animation code
-        
-        if(GetX < 0)
+        if (Time.timeScale != 0)
         {
-            anim.SetTrigger("Left");   
-        }
-        else if (GetX > 0)
-        {
-            anim.SetTrigger("Right");
-        }
-        else if(GetY != 0)
-        {
-            anim.SetTrigger("Forward");
-        }
-        else
-        {
-            anim.SetTrigger("Idle");
-        }
-
-
-        Vector3 movement = new Vector3(GetX*speed+ 0.0005f,GetY*speed, 0);
-        //move the players based on there speed
-        GetComponent<NavMeshAgent>().velocity = movement;
-
-        if (canPickUp && Input.GetKeyDown(KeyCode.E))
-        {
-            if(colliderTagName == "Key")
+            if (health <= 0)
             {
-                hasKey = true;
-                Destroy(pickupItem);
+                Destroy(gameObject);
             }
-            if(colliderTagName == "BulletPickUp")
-            
+
+            //calcuate the players speed based on delta time 
+            float var = Time.deltaTime * speed;
+
+            //get movement input
+            float GetX = Input.GetAxis("Horizontal");
+            float GetY = Input.GetAxis("Vertical");
+
+            //Animation code
+            if (GetX < 0)
             {
-                ammo += ammoPickup.value;
-                if (ammoPickup.finite)
+                anim.SetTrigger("Left");
+            }
+            else if (GetX > 0)
+            {
+                anim.SetTrigger("Right");
+            }
+            else if (GetY != 0)
+            {
+                anim.SetTrigger("Forward");
+            }
+            else
+            {
+                anim.SetTrigger("Idle");
+            }
+
+
+            Vector3 movement = new Vector3(GetX * speed + 0.001f, GetY * speed, 0);
+            //move the players based on there speed
+            GetComponent<NavMeshAgent>().velocity = movement;
+
+            if (canPickUp && Input.GetKeyDown(KeyCode.E))
+            {
+                if (colliderTagName == "Key")
                 {
+                    hasKey = true;
                     Destroy(pickupItem);
                 }
-                
+                if (colliderTagName == "BulletPickUp")
+
+                {
+                    ammo += ammoPickup.value;
+                    if (ammoPickup.finite)
+                    {
+                        Destroy(pickupItem);
+                    }
+
+                }
+                canPickUp = false;
+
             }
-            canPickUp = false;
-            
         }
 
         

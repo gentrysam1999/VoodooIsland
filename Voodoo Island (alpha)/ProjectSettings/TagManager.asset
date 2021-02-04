@@ -12,6 +12,7 @@ TagManager:
   - WitchTarget
   - WitchAttack
   - PlayerHealth
+  - MeleeEnemy
   layers:
   - Default
   - TransparentFX

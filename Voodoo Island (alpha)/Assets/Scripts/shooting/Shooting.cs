@@ -29,32 +29,23 @@ public class Shooting : MonoBehaviour
             if (p.ammo > 0)
             {
                 p.ammo--;
-                playerShoot();
+                shoot();
             }
         }
         else if(autoShoot && fireCoolDownTimeLeft <= 0)
         {
-            enemyShoot();
+            shoot();
         }
     }
 
-    void playerShoot(){
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        shoot(bullet);
-
-
-    }
-
-    void enemyShoot()
+    void shoot()
     {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        shoot(bullet);
-    }
-
-    void shoot(GameObject bullet)
-    {
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(-(firePoint.up) * bulletForce, ForceMode2D.Impulse);
-        fireCoolDownTimeLeft = fireCooldownTime;
+        if (Time.timeScale != 0)
+        {
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.AddForce(-(firePoint.up) * bulletForce, ForceMode2D.Impulse);
+            fireCoolDownTimeLeft = fireCooldownTime;
+        }
     }
 }
