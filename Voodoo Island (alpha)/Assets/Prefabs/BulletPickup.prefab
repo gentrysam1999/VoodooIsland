@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 8549088858300077992}
   - component: {fileID: 97413397567534206}
   - component: {fileID: 5056063579346558927}
+  - component: {fileID: 432329250857669937}
   m_Layer: 0
   m_Name: BulletPickup
   m_TagString: BulletPickUp
@@ -207,3 +208,22 @@ MonoBehaviour:
   InteractKey: {fileID: 318657250067917465}
   value: 6
   finite: 0
+--- !u!95 &432329250857669937
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136115351483739572}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
