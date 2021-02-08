@@ -35,6 +35,7 @@ public class ChaseNav : MonoBehaviour
         //Bullet b = other.GetComponent<Bullet>();
         if (other.tag == "Bullet")
         {
+            Destroy(other.gameObject);  
             Destroy(gameObject);
         }
     }
