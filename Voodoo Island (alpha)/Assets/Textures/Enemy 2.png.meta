@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: f5d0d79768bf047e8bd1988f3b19cb06
+guid: ad9499c92e45643faa2ec6669433ab5f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1734978218851488640
-    second: Energy Blue
+      213: 7806976050856398930
+    second: Mouth enemy 1
   - first:
-      213: 790469107916611694
-    second: Energy Green
+      213: -5620556579119131400
+    second: Eye enemy
   - first:
-      213: -3111146272380820006
-    second: Energy Green
+      213: -7887481178748576459
+    second: Mouth enemy 2
   - first:
-      213: 4547458703554525524
-    second: Energy Ball 2
+      213: 7279241670917311338
+    second: Mouth enemy 3
   - first:
-      213: -4448595551966861523
-    second: Energy Bal
+      213: -5807109298010737745
+    second: Mouth enemy 4
   - first:
-      213: -2334528246823524335
-    second: Energy Blue
+      213: -5807099663321354742
+    second: Mouth enemy 5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -102,6 +102,54 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -117,13 +165,34 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Energy Blue
+      name: Mouth enemy 1
       rect:
         serializedVersion: 2
-        x: 7
-        y: 46
-        width: 5
-        height: 11
+        x: 1
+        y: 55
+        width: 25
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2501749ea53f75c60800000000000000
+      internalID: 7806976050856398930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Eye enemy
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 55
+        width: 25
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,113 +200,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08c2154908e1ce7e0800000000000000
-      internalID: -1734978218851488640
+      spriteID: 8f49e9df195cff1b0800000000000000
+      internalID: -5620556579119131400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Energy Green
+      name: Mouth enemy 2
       rect:
         serializedVersion: 2
-        x: 15
-        y: 46
-        width: 5
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e602a4f277f48fa00800000000000000
-      internalID: 790469107916611694
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pistol
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 46
-        width: 5
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad5e576e2fcf2d4d0800000000000000
-      internalID: -3111146272380820006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Energy Ball 2
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 17
-        width: 12
+        x: 1
+        y: 42
+        width: 25
         height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4593020f891db1f30800000000000000
-      internalID: 4547458703554525524
+      spriteID: 53d9c1858a90a8290800000000000000
+      internalID: -7887481178748576459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Energy Bal
+      name: Mouth enemy 3
       rect:
         serializedVersion: 2
-        x: 34
-        y: 8
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 25
+        width: 25
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d27e1a74ae96342c0800000000000000
-      internalID: -4448595551966861523
+      spriteID: a6b4f3d8bbf050560800000000000000
+      internalID: 7279241670917311338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet
+      name: Mouth enemy 4
       rect:
         serializedVersion: 2
-        x: 45
-        y: 36
-        width: 3
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 32
+        y: 42
+        width: 25
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 118e7f9ade61a9fd0800000000000000
-      internalID: -2334528246823524335
+      spriteID: fa3b3306cd0096fa0800000000000000
+      internalID: -5807109298010737745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouth enemy 5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 25
+        width: 25
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ea070af99096fa0800000000000000
+      internalID: -5807099663321354742
       vertices: []
       indices: 
       edges: []

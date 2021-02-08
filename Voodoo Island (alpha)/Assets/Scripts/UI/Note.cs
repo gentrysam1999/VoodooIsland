@@ -34,10 +34,10 @@ public class Note : MonoBehaviour
                 reading = true;
                 InteractKey.SetActive(false);
                 headShot.sprite = img;
-                if (objname == "Thought")
+                if (objname == "Testnote")
                 {
-                    textObject.text = "Wow, it's working...";
-                    header.text = "Thoughts";
+                    textObject.text = "There's something wrong with this place...";
+                    header.text = "Testnote";
                 }
                 else if (objname == "Battery")
                 {
