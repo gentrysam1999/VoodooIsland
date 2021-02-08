@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  fireCooldownTime: 5
+  fireCooldownTime: 150
 --- !u!61 &1078553445
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -253,5 +253,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b71dcc69733c4470ea3ac40758b60f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 2
-  numPoints: 128
+  radius: 3
+  numPoints: 256
