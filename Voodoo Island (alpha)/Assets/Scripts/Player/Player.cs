@@ -143,7 +143,7 @@ public class Player : MonoBehaviour
             }
 
 
-            Vector3 movement = new Vector3(GetX * speed + 0.001f, GetY * speed, 0);
+            Vector3 movement = new Vector3(GetX * speed + 0.005f, GetY * speed, 0);
             //move the players based on there speed
             GetComponent<NavMeshAgent>().velocity = movement;
 
