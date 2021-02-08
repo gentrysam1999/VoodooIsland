@@ -9,6 +9,8 @@ public class ChaseNav : MonoBehaviour
     public GameObject target;
     private NavMeshAgent agent;
     private bool stop;
+    Animator anim;
+    private bool mouth;
 
 
     void Start()
@@ -27,8 +29,22 @@ public class ChaseNav : MonoBehaviour
             agent.SetDestination(target.transform.position);
             Navigate.DebugDrawPath(agent.path.corners);
         }
-        
-        //Debug.Log(agent.velocity.ToString());
+        if (agent.velocity.x < 0)
+        {
+            anim.SetTrigger("mouth_Left");
+        }
+        else if (agent.velocity.x > 0)
+        {
+            anim.SetTrigger("mouth_Right");
+        }
+       
+        }
+        else
+        {
+            anim.SetTrigger("Mouth Idle");
+        }
+
+        Debug.Log(agent.velocity.ToString());
     }
     void OnTriggerEnter2D(Collider2D other)
     {
