@@ -14,6 +14,12 @@ TextureImporter:
   - first:
       213: 7279241670917311338
     second: Mouth enemy 3
+  - first:
+      213: -5807109298010737745
+    second: Mouth enemy 4
+  - first:
+      213: -5807099663321354742
+    second: Mouth enemy 5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -162,12 +168,12 @@ TextureImporter:
       name: Mouth enemy 1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 55
-        width: 24
+        width: 25
         height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -183,9 +189,9 @@ TextureImporter:
       name: Eye enemy
       rect:
         serializedVersion: 2
-        x: 34
-        y: 51
-        width: 24
+        x: 32
+        y: 55
+        width: 25
         height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -204,12 +210,12 @@ TextureImporter:
       name: Mouth enemy 2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 42
-        width: 24
+        width: 25
         height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -227,10 +233,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 25
-        width: 24
+        width: 25
         height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -238,6 +244,48 @@ TextureImporter:
       bones: []
       spriteID: a6b4f3d8bbf050560800000000000000
       internalID: 7279241670917311338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouth enemy 4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 42
+        width: 25
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3b3306cd0096fa0800000000000000
+      internalID: -5807109298010737745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mouth enemy 5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 25
+        width: 25
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ea070af99096fa0800000000000000
+      internalID: -5807099663321354742
       vertices: []
       indices: 
       edges: []
