@@ -39,10 +39,10 @@ public class Note : MonoBehaviour
                     textObject.text = "There's something wrong with this place...";
                     header.text = "Testnote";
                 }
-                else if (objname == "Battery")
+                else if (objname == "ParentLetter")
                 {
-                    textObject.text = "Trespassers will be prosecuted to the full extent of the law. \n[I don't remember this being here ten years ago.]";
-                    header.text = "NO TRESSPASSERS sign";
+                    textObject.text = "Dear Jeff, dearest son, \nAwful things are happening here, things I cannot explain. But I fear that your sister can explain...";
+                    header.text = "Letter from Parents";
                 }
             }
         }
