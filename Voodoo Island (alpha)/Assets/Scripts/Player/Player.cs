@@ -9,6 +9,9 @@ public class Player : MonoBehaviour
     // Reference to animator component
     Animator anim;
 
+
+    public int ammoMax = 24;
+
     public int health = 5;
 
     //set the starting ammo
@@ -157,10 +160,15 @@ public class Player : MonoBehaviour
                 if (colliderTagName == "BulletPickUp")
 
                 {
+                    
                     ammo += ammoPickup.value;
                     if (ammoPickup.finite)
                     {
                         Destroy(pickupItem);
+                    }
+                    if(ammo > ammoMax)
+                    {
+                        ammo = ammoMax;
                     }
 
                 }
