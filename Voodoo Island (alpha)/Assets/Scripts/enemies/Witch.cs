@@ -41,15 +41,19 @@ public class Witch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination(target.transform.position);
-        Navigate.DebugDrawPath(agent.path.corners);
-        Debug.Log(target.transform.position);
+        EnemySight enemySight = GetComponent<EnemySight>();
+        if (enemySight.isActive())
+        {
+            agent.SetDestination(target.transform.position);
+            Navigate.DebugDrawPath(agent.path.corners);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Bullet")
         {
+            Destroy(other.gameObject);
             health --;
             if(health <= 0)
             {

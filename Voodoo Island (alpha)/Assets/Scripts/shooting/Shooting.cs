@@ -33,7 +33,12 @@ public class Shooting : MonoBehaviour
         }
         else if(autoShoot && fireCoolDownTimeLeft <= 0)
         {
-            shoot();
+            EnemySight enemySight = GetComponent<EnemySight>();
+            if (enemySight.isActive())
+            {
+                shoot();
+            }
+                
         }
     }
 
