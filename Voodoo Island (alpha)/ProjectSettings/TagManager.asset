@@ -13,6 +13,7 @@ TagManager:
   - WitchAttack
   - PlayerHealth
   - MeleeEnemy
+  - HealthPickUp
   layers:
   - Default
   - TransparentFX
