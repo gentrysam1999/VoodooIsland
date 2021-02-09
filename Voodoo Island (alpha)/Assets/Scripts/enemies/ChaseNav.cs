@@ -12,6 +12,8 @@ public class ChaseNav : MonoBehaviour
     Animator anim;
     public bool mouth = false;
     private Melee melee;
+    private ParticleSystem particle;
+    
 
 
     void Start()
@@ -21,6 +23,8 @@ public class ChaseNav : MonoBehaviour
         agent.updateUpAxis = false;
         anim = GetComponent<Animator>();
         melee = GetComponentInChildren<Melee>();
+        particle = GetComponentInChildren<ParticleSystem>();
+
     }
 
     // Update is called once per frame
@@ -67,6 +71,9 @@ public class ChaseNav : MonoBehaviour
         //Bullet b = other.GetComponent<Bullet>();
         if (other.tag == "Bullet")
         {
+            particle.Play();
+            ParticleSystem.EmissionModule em = GetComponent<ParticleSystem>().emission;
+            em.enabled = true;
             Destroy(other.gameObject);  
             Destroy(gameObject);
         }
