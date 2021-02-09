@@ -381,6 +381,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5daface33496488daa798219c1853e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammoMax: 24
+  health: 5
   ammo: 0
   speed: 30
 --- !u!195 &2574867693578214425
@@ -391,7 +393,7 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739131449584644219}
   m_Enabled: 1
-  m_AgentTypeID: -1372625422
+  m_AgentTypeID: 1479372276
   m_Radius: 0.5
   m_Speed: 1
   m_Acceleration: 1
@@ -582,7 +584,6 @@ MonoBehaviour:
   fireCooldownTime: 0
   bulletForce: 100
   autoShoot: 0
-  target: {fileID: 0}
 --- !u!1 &1739131450247707760
 GameObject:
   m_ObjectHideFlags: 0
