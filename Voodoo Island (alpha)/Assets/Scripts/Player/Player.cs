@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //Check if the player is on a key and allow the player to pick up a key
-        if (other.tag == "Key" || other.tag == "BulletPickUp" || other.tag == "HealthPickUp")
+        if (other.tag == "Key" /*|| other.tag == "BulletPickUp"*/ || other.tag == "HealthPickUp")
         {
             pickupItem = other.gameObject;
             canPickUp = true;
@@ -98,6 +98,23 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        //Check if the player is on a key and allow the player to pick up a key
+        if ( other.tag == "BulletPickUp")
+        {
+            pickupItem = other.gameObject;
+            canPickUp = true;
+            colliderTagName = other.tag;
+
+            if (other.tag == "BulletPickUp")
+            {
+                ammoPickup = other.gameObject.GetComponent<AmmoPickup>();
+            }
+
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -116,7 +133,6 @@ public class Player : MonoBehaviour
         Vector3 pos = transform.position;
         pos.z = 0;
         transform.position = pos;
-
         if (Time.timeScale != 0)
         {
             if (health <= 0)

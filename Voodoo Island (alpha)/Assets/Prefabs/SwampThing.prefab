@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1078553446}
   - component: {fileID: 1078553445}
   m_Layer: 0
-  m_Name: MeleeAttackObject
+  m_Name: GameObject
   m_TagString: MeleeEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   fireCooldownTime: 150
-  inRange: 0
 --- !u!61 &1078553445
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60,7 +59,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.023843259, y: 0.0074744523}
+  m_Offset: {x: 0.022953998, y: 0.004818201}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -71,7 +70,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.24780828, y: 0.35525113}
+  m_Size: {x: 0.27281216, y: 0.36747253}
   m_EdgeRadius: 0
 --- !u!1 &8814799452281987741
 GameObject:
@@ -128,7 +127,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 898aca08222304b0dba19c4d61ab06c4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -173,7 +172,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  mouth: 0
 --- !u!61 &5952103525655962430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -187,7 +185,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.026047528, y: 0.00846535}
+  m_Offset: {x: 0.021453932, y: 0.0051080287}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -198,7 +196,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.24928695, y: 0.36780328}
+  m_Size: {x: 0.23748323, y: 0.35190433}
   m_EdgeRadius: 0
 --- !u!50 &4885514698314891333
 Rigidbody2D:
@@ -229,7 +227,7 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8814799452281987741}
   m_Enabled: 1
-  m_AgentTypeID: -1372625422
+  m_AgentTypeID: 1479372276
   m_Radius: 0.32
   m_Speed: 20
   m_Acceleration: 12

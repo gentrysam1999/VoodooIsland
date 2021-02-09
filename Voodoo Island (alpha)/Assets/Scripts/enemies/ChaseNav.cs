@@ -26,6 +26,9 @@ public class ChaseNav : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 pos = transform.position;
+        pos.z = 0;
+        transform.position = pos;
         EnemySight enemySight = GetComponent<EnemySight>();
         if (enemySight.isActive())
         {

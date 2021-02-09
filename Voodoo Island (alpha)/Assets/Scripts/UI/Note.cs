@@ -36,13 +36,18 @@ public class Note : MonoBehaviour
                 headShot.sprite = img;
                 if (objname == "Testnote")
                 {
-                    textObject.text = "There's something wrong with this place...";
+                    textObject.text = "There's something wrong with this place... it feels... unfinished somehow...";
                     header.text = "Testnote";
                 }
-                else if (objname == "Battery")
+                else if (objname == "ParentLetter")
                 {
-                    textObject.text = "Trespassers will be prosecuted to the full extent of the law. \n[I don't remember this being here ten years ago.]";
-                    header.text = "NO TRESSPASSERS sign";
+                    textObject.text = "Dear Jeff, dearest son, \nAwful things are happening here, things I cannot explain. But I fear that your sister can explain...";
+                    header.text = "Letter from Parents";
+                }
+                else if (objname == "EmployeeLetter")
+                {
+                    textObject.text = "There is no cause for alarm. We will ensure that the ferry comes for everyone. Please stay calm, the situation is entirely under control.";
+                    header.text = "Letter to Lumber Mill Employees";
                 }
             }
         }

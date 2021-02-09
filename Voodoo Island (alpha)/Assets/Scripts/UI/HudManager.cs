@@ -12,6 +12,11 @@ public class HudManager : MonoBehaviour
     // the text element found in textbox
     public static Text note;
 
+    public GameObject Gameover;
+
+    public Button Continue;
+    public Button Exit;
+
     // the text box that contains how much ammo you have left
     public static Text ammoText;
 
@@ -50,6 +55,12 @@ public class HudManager : MonoBehaviour
         textbox = GameObject.Find("Textbox");
         textbox.SetActive(false);
 
+        Gameover = GameObject.Find("GameOver");
+        Button btn = Continue.GetComponent<Button>();
+        Button btn2 = Exit.GetComponent<Button>();
+
+        Gameover.SetActive(false);
+
         inventoryGrid.SetActive(true);
 
         hudHealth.value = pl.health;
@@ -63,6 +74,16 @@ public class HudManager : MonoBehaviour
         // component of the pause menu panel game object
         pauseMenu = pauseMenuPanel.GetComponent<PauseMenuManager>();
         pauseMenu.Hide();
+    }
+
+    void ExitGame()
+    {
+        Application.Quit();
+    }
+
+    void ContinueGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     // Update is called once per frame
@@ -90,8 +111,16 @@ public class HudManager : MonoBehaviour
             pauseMenu.ShowPause();
         }
 
-        ammoText.text = pl.ammo.ToString();
+        ammoText.text = pl.ammo.ToString() + "/24";
         hudHealth.value = pl.health;
+
+        if (pl.health <= 0)
+        {
+            Gameover.SetActive(true);
+
+            Continue.onClick.AddListener(ContinueGame);
+            Exit.onClick.AddListener(ExitGame);
+        }
 
         }
     }
