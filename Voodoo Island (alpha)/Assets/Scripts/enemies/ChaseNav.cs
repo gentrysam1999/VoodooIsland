@@ -10,7 +10,8 @@ public class ChaseNav : MonoBehaviour
     private NavMeshAgent agent;
     private bool stop;
     Animator anim;
-    private bool mouth;
+    public bool mouth = false;
+    private Melee melee;
 
 
     void Start()
@@ -18,6 +19,8 @@ public class ChaseNav : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+        anim = GetComponent<Animator>();
+        melee = GetComponentInChildren<Melee>();
     }
 
     // Update is called once per frame
@@ -29,23 +32,33 @@ public class ChaseNav : MonoBehaviour
             agent.SetDestination(target.transform.position);
             Navigate.DebugDrawPath(agent.path.corners);
         }
-        if (agent.velocity.x < 0)
+        if (mouth)
         {
-            anim.SetTrigger("mouth_Left");
-        }
-        else if (agent.velocity.x > 0)
-        {
-            anim.SetTrigger("mouth_Right");
-        }
-       
-        }
-        else
-        {
-            anim.SetTrigger("Mouth Idle");
-        }
+            //Debug.Log(agent.velocity.x);
 
-        Debug.Log(agent.velocity.ToString());
+            if (melee.inRange)
+            {
+                anim.SetTrigger("mouth eat");
+            }
+
+            else if (agent.velocity.x < 0)
+            {
+                anim.SetTrigger("mouth left");
+            }
+            else if (agent.velocity.x > 0)
+            {
+                anim.SetTrigger("mouth right");
+            }
+
+            else
+            {
+                anim.SetTrigger("mouth idle");
+            }
+        }
     }
+
+        
+    
     void OnTriggerEnter2D(Collider2D other)
     {
         //Bullet b = other.GetComponent<Bullet>();

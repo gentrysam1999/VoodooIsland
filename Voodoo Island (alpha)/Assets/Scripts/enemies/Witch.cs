@@ -40,10 +40,11 @@ public class Witch : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    { 
         EnemySight enemySight = GetComponent<EnemySight>();
         if (enemySight.isActive())
         {
+            //target.transfrom.position.z = 0;
             agent.SetDestination(target.transform.position);
             Navigate.DebugDrawPath(agent.path.corners);
         }

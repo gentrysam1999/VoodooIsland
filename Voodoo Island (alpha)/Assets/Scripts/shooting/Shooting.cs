@@ -17,11 +17,14 @@ public class Shooting : MonoBehaviour
 
     public float reloadTime = 0;
     public int clipSize = 0;
-    private int bulletsInClip;
+    private int bulletsInClip = 0;
 
-    private bool reloading = true;
+    public bool reloading = false;
     private float reloadTimeLeft = 0;
     // Update is called once per frame
+
+
+  
     void Update()
     {
         
@@ -29,27 +32,33 @@ public class Shooting : MonoBehaviour
         {
             fireCoolDownTimeLeft -= Time.fixedDeltaTime;
         }
+        
         if (reloading)
         {
+            
             reloadTimeLeft -= Time.fixedDeltaTime;
-            if(reloadTimeLeft <= 0)
+            Debug.Log(reloadTimeLeft);
+            if (reloadTimeLeft <= 0)
             {
                 Player p = gameObject.GetComponentInParent<Player>();
                 if(p.ammo > clipSize)
                 {
-                    bulletsInClip = clipSize;   
+                    bulletsInClip += clipSize;
+                    Debug.Log(reloadTimeLeft);
                 }
                 else
                 {
-                    bulletsInClip = p.ammo;
+                    bulletsInClip += p.ammo;
                 }
                 p.ammo -= bulletsInClip;
                 reloading = false;
-                reloadTimeLeft = reloadTime;
+                
             }
         }
         if (Input.GetButtonDown("Fire1")&& fireCoolDownTimeLeft  <= 0&&!autoShoot){
+            Debug.Log(reloadTimeLeft);
             if (reloadTimeLeft <= 0)
+
             {
 
                 if (bulletsInClip > 0)
@@ -60,6 +69,7 @@ public class Shooting : MonoBehaviour
                 else
                 {
                     reloading = true;
+                    reloadTimeLeft = reloadTime;
                 }
             }
 

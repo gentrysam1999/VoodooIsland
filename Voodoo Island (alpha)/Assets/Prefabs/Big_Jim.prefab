@@ -381,6 +381,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5daface33496488daa798219c1853e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammoMax: 24
+  health: 5
   ammo: 0
   speed: 30
 --- !u!195 &2574867693578214425
@@ -579,10 +581,12 @@ MonoBehaviour:
   firePoint: {fileID: 579796557189474766}
   bulletPrefab: {fileID: 6596009037242770398, guid: 8e65d0dbc073f406f9bf00139621b692,
     type: 3}
-  fireCooldownTime: 0
+  fireCooldownTime: 0.5
   bulletForce: 100
   autoShoot: 0
-  target: {fileID: 0}
+  reloadTime: 2
+  clipSize: 6
+  reloading: 1
 --- !u!1 &1739131450247707760
 GameObject:
   m_ObjectHideFlags: 0
