@@ -111,7 +111,13 @@ public class HudManager : MonoBehaviour
             pauseMenu.ShowPause();
         }
         Shooting s = pl.GetComponentInChildren<Shooting>();
-        ammoText.text = s.bulletsInClip.ToString() + "/" + pl.ammo.ToString()  ;
+        if (s.reloading)
+        {
+            ammoText.text = "load\n-ing";
+        }
+        else {
+            ammoText.text = s.bulletsInClip.ToString() + "/" + pl.ammo.ToString();
+        }
         hudHealth.value = pl.health;
 
         if (pl.health <= 0)
