@@ -110,8 +110,8 @@ public class HudManager : MonoBehaviour
             // If user presses ESC, show the pause menu in pause mode
             pauseMenu.ShowPause();
         }
-
-        ammoText.text = pl.ammo.ToString() + "/24";
+        Shooting s = pl.GetComponentInChildren<Shooting>();
+        ammoText.text = s.bulletsInClip.ToString() + "/" + pl.ammo.ToString()  ;
         hudHealth.value = pl.health;
 
         if (pl.health <= 0)

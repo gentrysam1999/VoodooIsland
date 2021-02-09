@@ -17,7 +17,7 @@ public class Shooting : MonoBehaviour
 
     public float reloadTime = 0;
     public int clipSize = 0;
-    private int bulletsInClip = 0;
+    public int bulletsInClip = 0;
 
     public bool reloading = false;
     private float reloadTimeLeft = 0;
@@ -27,7 +27,7 @@ public class Shooting : MonoBehaviour
   
     void Update()
     {
-        
+        Player p = gameObject.GetComponentInParent<Player>();
         if (fireCoolDownTimeLeft > 0)
         {
             fireCoolDownTimeLeft -= Time.fixedDeltaTime;
@@ -40,23 +40,35 @@ public class Shooting : MonoBehaviour
             Debug.Log(reloadTimeLeft);
             if (reloadTimeLeft <= 0)
             {
-                Player p = gameObject.GetComponentInParent<Player>();
-                if(p.ammo > clipSize)
+                int rb = 0;
+                if (p.ammo > clipSize)
                 {
-                    bulletsInClip += clipSize;
-                    Debug.Log(reloadTimeLeft);
+                    rb = 6;
                 }
                 else
                 {
-                    bulletsInClip += p.ammo;
+                    rb = p.ammo;
+                    
                 }
-                p.ammo -= bulletsInClip;
+                rb -= bulletsInClip ;
+                bulletsInClip += rb;
+                p.ammo -= rb;
                 reloading = false;
                 
             }
         }
-        if (Input.GetButtonDown("Fire1")&& fireCoolDownTimeLeft  <= 0&&!autoShoot){
-            Debug.Log(reloadTimeLeft);
+        if ((Input.GetKeyDown(KeyCode.R) || bulletsInClip == 0) && reloading == false)
+        {
+            if(bulletsInClip != clipSize){
+                reloading = true;
+                reloadTimeLeft = reloadTime;
+            }
+        }
+
+
+
+        if (Input.GetButtonDown("Fire1")&& fireCoolDownTimeLeft  <= 0&&!autoShoot&&!reloading){
+            //Debug.Log(reloadTimeLeft);
             if (reloadTimeLeft <= 0)
 
             {
@@ -66,11 +78,7 @@ public class Shooting : MonoBehaviour
                     bulletsInClip--;
                     shoot();
                 }
-                else
-                {
-                    reloading = true;
-                    reloadTimeLeft = reloadTime;
-                }
+               
             }
 
             

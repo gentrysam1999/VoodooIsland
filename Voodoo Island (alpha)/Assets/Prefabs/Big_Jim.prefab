@@ -404,7 +404,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2
+  m_Height: 2.3
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -585,6 +585,9 @@ MonoBehaviour:
   fireCooldownTime: 0
   bulletForce: 100
   autoShoot: 0
+  reloadTime: 2
+  clipSize: 6
+  reloading: 0
 --- !u!1 &1739131450247707760
 GameObject:
   m_ObjectHideFlags: 0

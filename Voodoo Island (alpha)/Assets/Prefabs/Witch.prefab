@@ -658,6 +658,10 @@ MonoBehaviour:
   fireCooldownTime: 1
   bulletForce: 20
   autoShoot: 1
+  reloadTime: 0
+  clipSize: 0
+  bulletsInClip: 0
+  reloading: 0
 --- !u!114 &-7597863876692105860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -670,8 +674,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b71dcc69733c4470ea3ac40758b60f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 25
-  numPoints: 256
+  radius: 75
+  numPoints: 128
 --- !u!1 &8519730482254826731
 GameObject:
   m_ObjectHideFlags: 0
