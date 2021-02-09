@@ -90,7 +90,7 @@ public class HudManager : MonoBehaviour
             pauseMenu.ShowPause();
         }
 
-        ammoText.text = pl.ammo.ToString();
+        ammoText.text = pl.ammo.ToString() + "/24";
         hudHealth.value = pl.health;
 
         }
