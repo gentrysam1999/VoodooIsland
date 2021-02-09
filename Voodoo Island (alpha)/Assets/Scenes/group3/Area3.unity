@@ -638,7 +638,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &196836376
 Transform:
   m_ObjectHideFlags: 0
@@ -666,7 +666,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 10
-  m_Range: 20
+  m_Range: 30
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -44942,16 +44942,32 @@ PrefabInstance:
       propertyPath: m_Acceleration
       value: 35
       objectReference: {fileID: 0}
+    - target: {fileID: 1869919684, guid: 90f952778ad6443218842f39d6c779db, type: 3}
+      propertyPath: m_Size.x
+      value: 1.8765211
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869919684, guid: 90f952778ad6443218842f39d6c779db, type: 3}
+      propertyPath: m_Size.y
+      value: 4.295847
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869919684, guid: 90f952778ad6443218842f39d6c779db, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0000026226044
+      objectReference: {fileID: 0}
+    - target: {fileID: 1869919684, guid: 90f952778ad6443218842f39d6c779db, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.59707904
+      objectReference: {fileID: 0}
     - target: {fileID: 4223906119332673201, guid: 90f952778ad6443218842f39d6c779db,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 2100000, guid: 898aca08222304b0dba19c4d61ab06c4, type: 2}
     - target: {fileID: 4829845148113975953, guid: 90f952778ad6443218842f39d6c779db,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 2100000, guid: 898aca08222304b0dba19c4d61ab06c4, type: 2}
     - target: {fileID: 5293976529790354853, guid: 90f952778ad6443218842f39d6c779db,
         type: 3}
       propertyPath: m_RootOrder
@@ -45030,7 +45046,7 @@ PrefabInstance:
     - target: {fileID: 8315074956665261995, guid: 90f952778ad6443218842f39d6c779db,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90f952778ad6443218842f39d6c779db, type: 3}
@@ -45283,7 +45299,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 2100000, guid: 898aca08222304b0dba19c4d61ab06c4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fff2e3e399444de9bf47825fdb4293f, type: 3}
 --- !u!1 &1620241109
@@ -45455,7 +45471,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -45670,7 +45686,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.0031446815, y: 0.0031446815, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -55371,6 +55387,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 423840105205622391, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1739131449584644213, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
         type: 3}
       propertyPath: m_RootOrder
@@ -55389,12 +55410,12 @@ PrefabInstance:
     - target: {fileID: 1739131449584644213, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -235.9
+      value: -217.7
       objectReference: {fileID: 0}
     - target: {fileID: 1739131449584644213, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -97.5
+      value: -98.4
       objectReference: {fileID: 0}
     - target: {fileID: 1739131449584644213, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
         type: 3}
@@ -55444,7 +55465,7 @@ PrefabInstance:
     - target: {fileID: 1739131450222237547, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
         type: 3}
       propertyPath: speed
-      value: 60
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 2574867693578214425, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
         type: 3}
@@ -55455,6 +55476,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AutoTraverseOffMeshLink
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7073322179238246407, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.5801887
+      objectReference: {fileID: 0}
+    - target: {fileID: 7073322179238246407, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7073322179238246407, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.8670163
+      objectReference: {fileID: 0}
+    - target: {fileID: 7073322179238246407, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23c0f6d76f76a4825bb65275dfe7ce01, type: 3}
@@ -55530,7 +55571,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.0031446815, y: 0.0031446815, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
