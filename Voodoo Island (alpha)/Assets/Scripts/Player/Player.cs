@@ -130,6 +130,9 @@ public class Player : MonoBehaviour
     // Update is called once per frames
     void Update()
     {
+        Vector3 pos = transform.position;
+        pos.z = 0;
+        transform.position = pos;
         if (Time.timeScale != 0)
         {
             if (health <= 0)
