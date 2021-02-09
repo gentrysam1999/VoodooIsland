@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1276560732224568061}
   - component: {fileID: 1276560732224568062}
   - component: {fileID: 1276560732224568058}
-  - component: {fileID: 1276560732224568057}
+  - component: {fileID: 985902736}
   m_Layer: 0
   m_Name: SideDoor
   m_TagString: Untagged
@@ -29,9 +29,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276560732224568048}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -110.2, y: -85.07, z: -3}
-  m_LocalScale: {x: 45.02022, y: 40.96413, z: 1}
+  m_LocalScale: {x: 43.0217, y: 46.96143, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,13 +75,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -8064736477851923831, guid: e9206288a1f795a48bac949df5d75b05,
+  m_Sprite: {fileID: -7972576404697737973, guid: 14ec9af601cc1d44281dca0e86588453,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.11, y: 0.38}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -100,18 +100,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.11419632, y: -0.0021682754}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.11, y: 0.38}
-    newSize: {x: 0.11, y: 0.38}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.11, y: 0.38}
+  m_Size: {x: 0.090009466, y: 0.31929082}
   m_EdgeRadius: 0
 --- !u!95 &1276560732224568061
 Animator:
@@ -158,9 +158,9 @@ NavMeshObstacle:
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.12, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!50 &1276560732224568057
+--- !u!50 &985902736
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
