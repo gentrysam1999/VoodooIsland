@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4055589330981570386}
   - component: {fileID: 1469043825}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: attacker
   m_TagString: MeleeEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  fireCooldownTime: 200
+  fireCooldownTime: 10
+  inRange: 0
 --- !u!61 &1469043825
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -271,6 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  mouth: 1
 --- !u!195 &495380653408570543
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -306,4 +308,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 32
-  numPoints: 256
+  numPoints: 128

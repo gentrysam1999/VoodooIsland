@@ -11,7 +11,7 @@ public class Melee : MonoBehaviour
     public float fireCooldownTime = 10;
     private float speed;
 
-    public bool inRange = false;
+    private bool inRange = false;
     private float fireCoolDownTimeLeft = 0;
     private NavMeshAgent agent;
     private Player player;
@@ -59,6 +59,10 @@ public class Melee : MonoBehaviour
     public void leftRange()
     {
         inRange = false;
+    }
+    public bool currentRange()
+    {
+        return inRange;
     }
     
 

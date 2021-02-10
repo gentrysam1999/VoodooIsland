@@ -74,12 +74,12 @@ public class Witch : MonoBehaviour
         if (other.tag == "WitchTarget")
         {
             //choose a new random target location for the witch to go too
-            int newLocation = Random.Range(0, places.Length);
+            int newLocation = Random.Range(1, places.Length);
 
             // check it is not the current location
             while (newLocation == lastLocation)
             {
-                newLocation = Random.Range(0, places.Length);
+                newLocation = Random.Range(1, places.Length);
             }
             
 
