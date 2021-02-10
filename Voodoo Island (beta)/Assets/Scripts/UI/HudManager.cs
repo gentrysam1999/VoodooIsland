@@ -21,6 +21,13 @@ public class HudManager : MonoBehaviour
     //The panel that contains the health bar. We need this to hide the slider
     public GameObject hPanel;
 
+    public GameObject GameOver;
+    public Button ContinueButton;
+    public Button QuitButton;
+
+    private Button btnC;
+    private Button btnQ;
+
     //The GameObject that represents the player so we can access ammo and health values for HUD
     public GameObject p;
     // The Player object used alongside p
@@ -52,17 +59,28 @@ public class HudManager : MonoBehaviour
 
         inventoryGrid.SetActive(true);
 
+        GameOver = GameObject.Find("GameOver");
+        GameOver.SetActive(false);
+
+        Button btnC = ContinueButton.GetComponent<Button>();
+        Button btnQ = ContinueButton.GetComponent<Button>();
+
         hudHealth.value = pl.health;
-
-        //  GameObject[] objArray = GameObject.FindGameObjectsWithTag("gameoverTrigger");
-        //  gameoverInfoProvider = objArray[0].GetComponent<Remover>();
-
-        // health = healthInfoProvider.health;
 
         // Initialise the reference to the script object, which is a
         // component of the pause menu panel game object
         pauseMenu = pauseMenuPanel.GetComponent<PauseMenuManager>();
         pauseMenu.Hide();
+    }
+
+    void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    void ContinueGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     // Update is called once per frame
@@ -93,5 +111,15 @@ public class HudManager : MonoBehaviour
         ammoText.text = pl.ammo.ToString() + "/24";
         hudHealth.value = pl.health;
 
+        if (pl.health <= 0)
+        {
+            GameOver.SetActive(true);
+            hPanel.SetActive(false);
+            inventoryGrid.SetActive(false);
+            pauseMenuPanel.SetActive(false);
+
+            btnC.onClick.AddListener(ContinueGame);
+            btnQ.onClick.AddListener(QuitGame);
+        }
         }
     }

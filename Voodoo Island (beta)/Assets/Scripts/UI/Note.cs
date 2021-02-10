@@ -48,18 +48,26 @@ public class Note : MonoBehaviour
                 {
                     textObject.text = "There is no cause for alarm. We will ensure that the ferry comes for everyone. Please stay calm, the situation is entirely under control.";
                     header.text = "Letter to Lumber Mill Employees";
-                } else if (objname == "StrangeMessage")
+                }
+                else if (objname == "StrangeMessage")
                 {
                     textObject.text = "The needle of man threads in and out of other's lives. You should not have returned to mine.\n[What a nutjob.]";
                     header.text = "Strange Message";
-                } else if (objname == "ButlerMap")
+                }
+                else if (objname == "ButlerMap")
                 {
                     textObject.text = "[someone has scribbled all over a map of the complex, rendering it basically useless. \nIt appears to be the butler's escape plan - but you don't think anyone made it off the island.]";
                     header.text = "George's Escape Plan";
-                } else if(objname == "DraftPlans")
+                }
+                else if(objname == "DraftPlans")
                 {
                     textObject.text = "This looks like a lot of plans. Plans to… to start selling off parts of the island to other logging companies? Dad? Mum? Why would you do this?";
                     header.text = "Draft Plans";
+                }
+                else if (objname == "WitchRambling")
+                {
+                    textObject.text = "[This is mostly in a language you don't understand. But there appears to be a patchy bit in English...] \nWhen the three needles are placed within the doll … no longer ... ?";
+                    header.text = "Scribblings of the Witch";
                 }
             }
         }
