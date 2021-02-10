@@ -32,6 +32,8 @@ public class Player : MonoBehaviour
     //a referance to the navmeshagent compoent to control the players movement.
     private NavMeshAgent agent;
 
+    // the sound of the gunshot whenever the player fires
+    public AudioSource gunShot;
 
 
     //pickUpName
@@ -82,7 +84,6 @@ public class Player : MonoBehaviour
         else if(other.tag== "MeleeEnemy")
         {
             Melee m = other.gameObject.GetComponent<Melee>();
-            takeDamage(1);
             m.leftRange();
         }
     }

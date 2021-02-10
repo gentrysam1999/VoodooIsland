@@ -24,7 +24,7 @@ public class ChaseNav : MonoBehaviour
         anim = GetComponent<Animator>();
         melee = GetComponentInChildren<Melee>();
         particle = GetComponentInChildren<ParticleSystem>();
-        particle.Pause();
+        //particle.Pause();
 
     }
 
@@ -73,7 +73,7 @@ public class ChaseNav : MonoBehaviour
         if (other.tag == "Bullet")
         {
             particle.Play();
-            ParticleSystem.EmissionModule em = GetComponent<ParticleSystem>().emission;
+            ParticleSystem.EmissionModule em = particle.emission;
             em.enabled = true;
             Destroy(other.gameObject);  
             Destroy(gameObject);

@@ -27,70 +27,76 @@ public class Shooting : MonoBehaviour
   
     void Update()
     {
-        Player p = gameObject.GetComponentInParent<Player>();
         if (fireCoolDownTimeLeft > 0)
         {
             fireCoolDownTimeLeft -= Time.fixedDeltaTime;
         }
-        
-        if (reloading)
+        if (!autoShoot)
         {
-            
-            reloadTimeLeft -= Time.fixedDeltaTime;
-            Debug.Log(reloadTimeLeft);
-            if (reloadTimeLeft <= 0)
-            {
-                int rb = 0;
-                if (p.ammo > clipSize)
-                {
-                    rb = 6;
-                }
-                else
-                {
-                    rb = p.ammo;
-                    
-                }
-                rb -= bulletsInClip ;
-                bulletsInClip += rb;
-                p.ammo -= rb;
-                reloading = false;
-                
-            }
-        }
-        if ((Input.GetKeyDown(KeyCode.R) || bulletsInClip == 0) && reloading == false)
-        {
-            if(bulletsInClip != clipSize){
-                reloading = true;
-                reloadTimeLeft = reloadTime;
-            }
-        }
-
-
-
-        if (Input.GetButtonDown("Fire1")&& fireCoolDownTimeLeft  <= 0&&!autoShoot&&!reloading){
-            //Debug.Log(reloadTimeLeft);
-            if (reloadTimeLeft <= 0)
-
-            {
-
-                if (bulletsInClip > 0)
-                {
-                    bulletsInClip--;
-                    shoot();
-                }
-               
-            }
 
             
+            Player p = gameObject.GetComponentInParent<Player>();
+            if (reloading)
+            {
+
+                reloadTimeLeft -= Time.fixedDeltaTime;
+                //Debug.Log(reloadTimeLeft);
+                if (reloadTimeLeft <= 0)
+                {
+                    int rb = 0;
+                    if (p.ammo > clipSize)
+                    {
+                        rb = 6;
+                    }
+                    else
+                    {
+                        rb = p.ammo;
+
+                    }
+                    rb -= bulletsInClip;
+                    bulletsInClip += rb;
+                    p.ammo -= rb;
+                    reloading = false;
+
+                }
+            }
+            if ((Input.GetKeyDown(KeyCode.R) || bulletsInClip == 0) && reloading == false && p.ammo > 0)
+            {
+                if (bulletsInClip != clipSize)
+                {
+                    reloading = true;
+                    reloadTimeLeft = reloadTime;
+                }
+            }
+
+
+
+            if (Input.GetButtonDown("Fire1") && fireCoolDownTimeLeft <= 0 && !autoShoot && !reloading)
+            {
+                //Debug.Log(reloadTimeLeft);
+                if (reloadTimeLeft <= 0)
+
+                {
+
+                    if (bulletsInClip > 0)
+                    {
+                        bulletsInClip--;
+                        shoot();
+                    }
+
+                }
+
+
+            }
         }
-        else if(autoShoot && fireCoolDownTimeLeft <= 0)
+        else if (autoShoot && fireCoolDownTimeLeft <= 0)
         {
             EnemySight enemySight = GetComponent<EnemySight>();
             if (enemySight.isActive())
             {
                 shoot();
             }
-                
+
         }
     }
 
