@@ -12,19 +12,21 @@ public class Note : MonoBehaviour
     public Text header;
     public Image headShot;
     public Sprite img;
+    public static bool evilStatue;
 
     // Start is called before the first frame update
     void Start()
     {
         InteractKey = GameObject.Find("InteractKey");
         InteractKey.SetActive(false);
-        objname = gameObject.name;
+        evilStatue = false;
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
         // Check the tag of the object the player
         // has collided with
+        objname = gameObject.name;
         if (other.tag == "Player")
         {
             InteractKey.SetActive(true); // false to hide, true to show
@@ -59,7 +61,7 @@ public class Note : MonoBehaviour
                     textObject.text = "[someone has scribbled all over a map of the complex, rendering it basically useless. \nIt appears to be the butler's escape plan - but you don't think anyone made it off the island.]";
                     header.text = "George's Escape Plan";
                 }
-                else if(objname == "DraftPlans")
+                else if (objname == "DraftPlans")
                 {
                     textObject.text = "This looks like a lot of plans. Plans to… to start selling off parts of the island to other logging companies? Dad? Mum? Why would you do this?";
                     header.text = "Draft Plans";
@@ -68,6 +70,32 @@ public class Note : MonoBehaviour
                 {
                     textObject.text = "[This is mostly in a language you don't understand. But there appears to be a patchy bit in English...] \nWhen the three needles are placed within the doll … no longer ... ?";
                     header.text = "Scribblings of the Witch";
+                }
+                else if (objname == "LockedDoor1")
+                {
+                    textObject.text = "Damn it. The door's jammed. … Feels like something's holding it shut from the other side.";
+                    header.text = "Locked Door";
+                }
+                else if (objname == "LockedDoor2")
+                {
+                    textObject.text = "Damn it. The room ahead is blocked. Looks like the roof caved in…";
+                    header.text = "Locked Door";
+                }
+                else if (objname == "RegularStatueNote")
+                {
+                    textObject.text = "THIS SITE IS DEDICATED TO MARIA FARTHING, FOR HER DEDICATION TO NATURE AND PRESERVATION OF THE ISLAND WE CALL HOME.";
+                    header.text = "Inscription at foot of the statue";
+                    evilStatue = true;
+                }
+                else if (objname == "StatueNote")
+                {
+                    textObject.text = "COLLECT THE THREE NEEDLES. SURVIVE. KILL THE WITCH. \n...[The Witch?]";
+                    header.text = "Ragged carving at foot of statue";
+                }
+                else if (objname == "NoteAboutWitch")
+                {
+                    textObject.text = "I've equipped a few of the workmen with guns. I'm sorry dear. I'm going with them too. Keep the doors locked unless you know for certain it is us. The Witch will be around here somewhere. She can't hide forever.";
+                    header.text = "Note about 'Witch'";
                 }
             }
         }
