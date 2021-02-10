@@ -32,6 +32,8 @@ public class Player : MonoBehaviour
     //a referance to the navmeshagent compoent to control the players movement.
     private NavMeshAgent agent;
 
+    // the sound of the gunshot whenever the player fires
+    public AudioSource gunShot;
 
 
     //pickUpName

@@ -32,6 +32,7 @@ public class Shooting : MonoBehaviour
             if (p.ammo > 0)
             {
                 p.ammo--;
+                p.gunShot.Play();
                 shoot();
             }
         }
