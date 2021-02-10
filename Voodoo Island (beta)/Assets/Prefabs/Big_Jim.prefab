@@ -585,6 +585,10 @@ MonoBehaviour:
   fireCooldownTime: 0
   bulletForce: 100
   autoShoot: 0
+  reloadTime: 2
+  clipSize: 6
+  bulletsInClip: 0
+  reloading: 0
 --- !u!1 &1739131450247707760
 GameObject:
   m_ObjectHideFlags: 0

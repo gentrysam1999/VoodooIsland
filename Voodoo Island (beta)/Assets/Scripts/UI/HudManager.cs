@@ -90,8 +90,15 @@ public class HudManager : MonoBehaviour
             pauseMenu.ShowPause();
         }
 
-        ammoText.text = pl.ammo.ToString() + "/24";
-        hudHealth.value = pl.health;
-
+        Shooting s = pl.GetComponentInChildren<Shooting>();
+        if (s.reloading)
+        {
+            ammoText.text = "load\n-ing";
         }
+        else
+        {
+            ammoText.text = s.bulletsInClip.ToString() + "/" + pl.ammo.ToString();
+        }
+
+    }
     }

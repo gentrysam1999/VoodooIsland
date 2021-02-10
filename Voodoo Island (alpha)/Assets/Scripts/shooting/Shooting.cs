@@ -40,7 +40,7 @@ public class Shooting : MonoBehaviour
             {
 
                 reloadTimeLeft -= Time.fixedDeltaTime;
-                Debug.Log(reloadTimeLeft);
+                //Debug.Log(reloadTimeLeft);
                 if (reloadTimeLeft <= 0)
                 {
                     int rb = 0;
