@@ -4,17 +4,21 @@ using UnityEngine;
 
 
 
-public class Shooting : MonoBehaviour
+public class Shooting : MonoBehaviour 
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
     public float fireCooldownTime;
+    public ParticleSystem particles;
     
     public float bulletForce = 20f;
     public bool autoShoot;
 
     private float fireCoolDownTimeLeft =0;
 
+    void Start(){
+        particles.Pause();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -36,6 +40,8 @@ public class Shooting : MonoBehaviour
             EnemySight enemySight = GetComponent<EnemySight>();
             if (enemySight.isActive())
             {
+                
+
                 shoot();
             }
                 
@@ -46,6 +52,13 @@ public class Shooting : MonoBehaviour
     {
         if (Time.timeScale != 0)
         {
+            if (particles!=null){
+                particles.Play();
+                ParticleSystem.EmissionModule em = particles.emission;
+                em.enabled = true;
+            }
+            
+
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(-(firePoint.up) * bulletForce, ForceMode2D.Impulse);
