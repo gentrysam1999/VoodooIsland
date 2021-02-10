@@ -24,7 +24,7 @@ public class ChaseNav : MonoBehaviour
         anim = GetComponent<Animator>();
         melee = GetComponentInChildren<Melee>();
         particle = GetComponentInChildren<ParticleSystem>();
-        particle.Pause();
+        //particle.Pause();
 
     }
 

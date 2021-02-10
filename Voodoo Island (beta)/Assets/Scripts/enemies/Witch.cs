@@ -39,8 +39,7 @@ public class Witch : MonoBehaviour
         agent.updateRotation = false;
         agent.updateUpAxis = false;
 
-        particle = GetComponentInChildren<ParticleSystem>();
-        particle.Pause();
+        
     }
 
     // Update is called once per frame
@@ -61,9 +60,14 @@ public class Witch : MonoBehaviour
     {
         if (other.tag == "Bullet")
         {
+
+            //Particle system
+            particle = GetComponentInChildren<ParticleSystem>();
             particle.Play();
             ParticleSystem.EmissionModule em = GetComponentInChildren<ParticleSystem>().emission;
             em.enabled = true;
+
+
             Destroy(other.gameObject);
             health --;
             if(health <= 0)
