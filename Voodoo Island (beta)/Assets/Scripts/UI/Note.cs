@@ -101,6 +101,15 @@ public class Note : MonoBehaviour
                     textObject.text = "I've equipped a few of the workmen with guns. I'm sorry dear. I'm going with them too. Keep the doors locked unless you know for certain it is us. The Witch will be around here somewhere. She can't hide forever.";
                     header.text = "Note about 'Witch'";
                 }
+                else if (objname == "ShoppingList")
+                {
+                    textObject.text = "Dear George, I hate to be a bother, but we're short on fresh vegetables. When you place your next order, would you please be able to get some … [the letter is otherwise illegible]";
+                    header.text = "Shopping Order";
+                } else if (objname == "HystericalLetter")
+                {
+                    textObject.text = "The words 'I WON'T LET IT HAPPEN' are scrawled in messy handwriting down the page.\nWhoever wrote this must surely be insane.";
+                    header.text = "Strange Note";
+                }
             }
         }
     }
