@@ -155,7 +155,7 @@ Transform:
   - {fileID: 6500935239608282028}
   - {fileID: 4567690839322841725}
   m_Father: {fileID: 5293976529790354853}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4012599389961815632
 GameObject:
@@ -187,7 +187,7 @@ Transform:
   - {fileID: 8654368301742507147}
   - {fileID: 2006412048436959673}
   m_Father: {fileID: 5293976529790354853}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4632337886965113500
 GameObject:
@@ -542,12 +542,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6698080386955741018}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 5293976529790354853}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &2316941015949383197
 ParticleSystem:
@@ -1066,7 +1066,7 @@ ParticleSystem:
     startRotation:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3.1415925
+      scalar: 0
       minScalar: 3.1415925
       maxCurve:
         serializedVersion: 2
@@ -5285,7 +5285,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 898aca08222304b0dba19c4d61ab06c4, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -5306,8 +5306,8 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_RenderMode: 1
+  m_SortingOrder: 10
+  m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
@@ -5363,10 +5363,10 @@ Transform:
   m_LocalPosition: {x: -25.249788, y: 29.613005, z: -76.93333}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
+  - {fileID: 9094505549777191526}
   - {fileID: 5375347324403949810}
   - {fileID: 5446960054991157278}
   - {fileID: 6675701808270879277}
-  - {fileID: 9094505549777191526}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5603,5 +5603,5 @@ Transform:
   - {fileID: 256730983027408741}
   - {fileID: 3142688918814598898}
   m_Father: {fileID: 5293976529790354853}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

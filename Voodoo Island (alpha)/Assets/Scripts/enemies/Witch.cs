@@ -22,7 +22,9 @@ public class Witch : MonoBehaviour
 
     private int lastLocation = 1;
 
-    
+    private ParticleSystem particle;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,8 @@ public class Witch : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+
+        particle = GetComponentInChildren<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -56,6 +60,9 @@ public class Witch : MonoBehaviour
     {
         if (other.tag == "Bullet")
         {
+            particle.Play();
+            ParticleSystem.EmissionModule em = GetComponent<ParticleSystem>().emission;
+            em.enabled = true;
             Destroy(other.gameObject);
             health --;
             if(health <= 0)
