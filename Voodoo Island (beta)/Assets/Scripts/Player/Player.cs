@@ -84,7 +84,6 @@ public class Player : MonoBehaviour
         else if(other.tag== "MeleeEnemy")
         {
             Melee m = other.gameObject.GetComponent<Melee>();
-            takeDamage(1);
             m.leftRange();
         }
     }

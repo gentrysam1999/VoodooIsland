@@ -12,7 +12,7 @@ public class Shooting : MonoBehaviour
     
     public float bulletForce = 20f;
     public bool autoShoot;
-
+    public ParticleSystem particles;
     private float fireCoolDownTimeLeft =0;
 
     public float reloadTime = 0;
@@ -23,8 +23,13 @@ public class Shooting : MonoBehaviour
     private float reloadTimeLeft = 0;
     // Update is called once per frame
 
+    void Start()
+    {
+        particles.Pause();
+    }
 
-  
+
+
     void Update()
     {
         if (fireCoolDownTimeLeft > 0)
@@ -104,6 +109,12 @@ public class Shooting : MonoBehaviour
     {
         if (Time.timeScale != 0)
         {
+            if (particles != null)
+            {
+                particles.Play();
+                ParticleSystem.EmissionModule em = particles.emission;
+                em.enabled = true;
+            }
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(-(firePoint.up) * bulletForce, ForceMode2D.Impulse);
