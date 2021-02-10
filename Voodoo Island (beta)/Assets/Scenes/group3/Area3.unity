@@ -45493,6 +45493,11 @@ PrefabInstance:
       propertyPath: fireCooldownTime
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 110247992843645785, guid: 90f952778ad6443218842f39d6c779db,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 4223906119332673201, guid: 90f952778ad6443218842f39d6c779db,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

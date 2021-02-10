@@ -62,7 +62,7 @@ public class Witch : MonoBehaviour
         if (other.tag == "Bullet")
         {
             particle.Play();
-            ParticleSystem.EmissionModule em = GetComponent<ParticleSystem>().emission;
+            ParticleSystem.EmissionModule em = GetComponentInChildren<ParticleSystem>().emission;
             em.enabled = true;
             Destroy(other.gameObject);
             health --;
