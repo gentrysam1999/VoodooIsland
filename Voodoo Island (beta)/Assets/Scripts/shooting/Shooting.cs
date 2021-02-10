@@ -87,6 +87,7 @@ public class Shooting : MonoBehaviour
                     {
                         bulletsInClip--;
                         shoot();
+                        p.gunShot.Play();
                     }
 
                 }
