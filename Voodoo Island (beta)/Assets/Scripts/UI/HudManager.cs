@@ -65,9 +65,6 @@ public class HudManager : MonoBehaviour
         Button btnC = ContinueButton.GetComponent<Button>();
         Button btnQ = ContinueButton.GetComponent<Button>();
 
-        btnC.onClick.AddListener(ContinueGame);
-        btnQ.onClick.AddListener(QuitGame);
-
         hudHealth.value = pl.health;
 
         // Initialise the reference to the script object, which is a
