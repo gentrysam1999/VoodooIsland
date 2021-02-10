@@ -40,6 +40,7 @@ public class Witch : MonoBehaviour
         agent.updateUpAxis = false;
 
         particle = GetComponentInChildren<ParticleSystem>();
+        particle.Pause();
     }
 
     // Update is called once per frame
