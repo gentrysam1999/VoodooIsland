@@ -11,7 +11,7 @@ public class Melee : MonoBehaviour
     public float fireCooldownTime = 10;
     private float speed;
 
-    private bool inRange = false;
+    public bool inRange = false;
     private float fireCoolDownTimeLeft = 0;
     private NavMeshAgent agent;
     private Player player;
@@ -24,29 +24,31 @@ public class Melee : MonoBehaviour
 
         ChaseNav c = GetComponentInParent<ChaseNav>();
         player = c.target.GetComponent<Player>();
+        
+
     }
 
     void Update()
     {
+
         if (fireCoolDownTimeLeft > 0)
         {
             fireCoolDownTimeLeft -= Time.fixedDeltaTime;
         }
         if (fireCoolDownTimeLeft <= 0)
         {
-            Debug.Log(inRange);
+            agent.speed = speed;
+            //Debug.Log(inRange);
             if (inRange)
             {
-                player.takeDamage(1);
+                
+                player.takeDamage(damage);
                 fireCoolDownTimeLeft = fireCooldownTime;
                 agent.speed = 0;
             }
-            else
-            {
-                agent.speed = speed;
-            }
+            
         }
-         
+
 
     }
 

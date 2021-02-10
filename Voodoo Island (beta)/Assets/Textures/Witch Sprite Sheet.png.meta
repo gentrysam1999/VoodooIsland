@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 005995c67b8e0447fb04f0bb0e03ee1c
+guid: a154d13d9c7e78942a91c387da010177
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -49,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -81,7 +81,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -93,7 +93,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -105,7 +105,7 @@ TextureImporter:
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -122,7 +122,7 @@ TextureImporter:
         serializedVersion: 2
         x: 20
         y: 98
-        width: 27
+        width: 26
         height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -227,7 +227,7 @@ TextureImporter:
         serializedVersion: 2
         x: 50
         y: 67
-        width: 19
+        width: 18
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
