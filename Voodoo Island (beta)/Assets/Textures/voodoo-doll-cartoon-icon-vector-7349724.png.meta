@@ -1,0 +1,452 @@
+fileFormatVersion: 2
+guid: c65c7015f2821744693bdc262de9afe9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1270405631002171129
+    second: voodoo-doll-cartoon-icon-vector-7349724_0
+  - first:
+      213: -2209596885236415202
+    second: voodoo-doll-cartoon-icon-vector-7349724_1
+  - first:
+      213: 7325436837799575365
+    second: voodoo-doll-cartoon-icon-vector-7349724_2
+  - first:
+      213: -6098566171072561148
+    second: voodoo-doll-cartoon-icon-vector-7349724_3
+  - first:
+      213: -9139959076696930790
+    second: voodoo-doll-cartoon-icon-vector-7349724_4
+  - first:
+      213: -3842921672863700340
+    second: voodoo-doll-cartoon-icon-vector-7349724_5
+  - first:
+      213: -1964935742219627238
+    second: voodoo-doll-cartoon-icon-vector-7349724_6
+  - first:
+      213: 6211998669247872252
+    second: voodoo-doll-cartoon-icon-vector-7349724_7
+  - first:
+      213: -5894579343121317994
+    second: voodoo-doll-cartoon-icon-vector-7349724_8
+  - first:
+      213: 4272942990251475346
+    second: voodoo-doll-cartoon-icon-vector-7349724_9
+  - first:
+      213: -2486106704147917872
+    second: voodoo-doll-cartoon-icon-vector-7349724_10
+  - first:
+      213: -6295274986403709473
+    second: voodoo-doll-cartoon-icon-vector-7349724_11
+  - first:
+      213: 2125063533414255483
+    second: voodoo-doll-cartoon-icon-vector-7349724_12
+  - first:
+      213: 8167096449828126577
+    second: voodoo-doll-cartoon-icon-vector-7349724_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: voodoo-doll-cartoon-icon-vector-7349724_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 292
+        width: 120
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f65a84c03361a110800000000000000
+      internalID: 1270405631002171129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voodoo-doll-cartoon-icon-vector-7349724_1
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 36
+        width: 304
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e158caef65fe551e0800000000000000
+      internalID: -2209596885236415202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voodoo-doll-cartoon-icon-vector-7349724_2
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 36
+        width: 300
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54fba9dfdfd29a560800000000000000
+      internalID: 7325436837799575365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voodoo-doll-cartoon-icon-vector-7349724_3
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 464
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4008106016a8d5ba0800000000000000
+      internalID: -6098566171072561148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voodoo-doll-cartoon-icon-vector-7349724_4
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 36
+        width: 303
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a164fd335a7582180800000000000000
+      internalID: -9139959076696930790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voodoo-doll-cartoon-icon-vector-7349724_5
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 464
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a2f4569133baac0800000000000000
+      internalID: -3842921672863700340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voodoo-doll-cartoon-icon-vector-7349724_6
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 36
+        width: 304
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15d7866a552bb4e0800000000000000
+      internalID: -1964935742219627238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voodoo-doll-cartoon-icon-vector-7349724_7
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 348
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcf7b980e3753650800000000000000
+      internalID: 6211998669247872252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voodoo-doll-cartoon-icon-vector-7349724_8
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 140
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ff5e8715f323ea0800000000000000
+      internalID: -5894579343121317994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voodoo-doll-cartoon-icon-vector-7349724_9
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 140
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2914f67b20b8c4b30800000000000000
+      internalID: 4272942990251475346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voodoo-doll-cartoon-icon-vector-7349724_10
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 76
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3db81ef139f7dd0800000000000000
+      internalID: -2486106704147917872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voodoo-doll-cartoon-icon-vector-7349724_11
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 68
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd3100f0c0b2a8a0800000000000000
+      internalID: -6295274986403709473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voodoo-doll-cartoon-icon-vector-7349724_12
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 36
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b0b4a460ebd7d10800000000000000
+      internalID: 2125063533414255483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voodoo-doll-cartoon-icon-vector-7349724_13
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 36
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ffb5233fa575170800000000000000
+      internalID: 8167096449828126577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
