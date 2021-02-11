@@ -35,6 +35,7 @@ public class ChaseNav : MonoBehaviour
         pos.z = 0;
         transform.position = pos;
         EnemySight enemySight = GetComponent<EnemySight>();
+        
         if (enemySight.isActive())
         {
             agent.SetDestination(target.transform.position);

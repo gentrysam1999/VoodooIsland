@@ -53,14 +53,10 @@ public class EnemySight : MonoBehaviour
             RaycastHit2D playerhit = Physics2D.Raycast(transform.position, ray, ray.magnitude, playerLayer);
             RaycastHit2D wallHit = Physics2D.Raycast(transform.position, ray, ray.magnitude, wallLayer);
 
-
-            
-
-
             // Check if ray has hit something, if yes, check how far from the ray's origin point
             // and adjust the distance of where the mesh point is going to be located.
 
-            
+          
             if (playerhit.collider != null)
             {
     
@@ -87,7 +83,7 @@ public class EnemySight : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        Gizmos.color = Color.green;
+        Gizmos.color = Color.red;
 
         // Compute the angle between two triangles in the cricle
         float delta = 2f * Mathf.PI / (float)(numPoints - 1);

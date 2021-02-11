@@ -29,17 +29,18 @@ public class Witch : MonoBehaviour
     void Start()
     {
         
-        places = locations.GetComponentsInChildren<Transform>();
-
-        target = places[lastLocation];
+        
 
 
         
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+        places = locations.GetComponentsInChildren<Transform>();
 
-        
+        target = places[lastLocation];
+
+
     }
 
     // Update is called once per frame
@@ -83,7 +84,7 @@ public class Witch : MonoBehaviour
             // check it is not the current location
             while (newLocation == lastLocation)
             {
-                newLocation = Random.Range(1, places.Length);
+                newLocation = Random.Range(0, places.Length);
             }
             
 
