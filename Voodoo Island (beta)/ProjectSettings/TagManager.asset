@@ -14,6 +14,9 @@ TagManager:
   - PlayerHealth
   - MeleeEnemy
   - HealthPickUp
+  - Hall1
+  - Living
+  - Jetty
   layers:
   - Default
   - TransparentFX
