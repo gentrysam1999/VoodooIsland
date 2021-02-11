@@ -12,10 +12,10 @@ public class Player : MonoBehaviour
 
     public int ammoMax = 24;
 
-    public int health = 5;
+    public int health;
 
     //set the starting ammo
-    public int ammo = 6;
+    public int ammo;
 
     //set the players speed. 
     public float speed = 10;
@@ -119,6 +119,11 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+        ammo = GlobalControl.Instance.Ammo;
+        health = GlobalControl.Instance.HP;
+        
+
         //do not allow the agent compoent to rotate the player
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
@@ -199,7 +204,16 @@ public class Player : MonoBehaviour
             }
         }
 
+
+
         
         
+    }
+
+
+    public void SavePlayer()
+    {
+        GlobalControl.Instance.Ammo = ammo;
+        GlobalControl.Instance.HP = health;
     }
 }
