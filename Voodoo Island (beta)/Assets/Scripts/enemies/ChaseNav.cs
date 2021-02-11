@@ -13,7 +13,7 @@ public class ChaseNav : MonoBehaviour
     public bool mouth = false;
     private Melee melee;
     private ParticleSystem particle;
-    
+    public int health = 3;
 
 
     void Start()
@@ -35,6 +35,7 @@ public class ChaseNav : MonoBehaviour
         pos.z = 0;
         transform.position = pos;
         EnemySight enemySight = GetComponent<EnemySight>();
+        
         if (enemySight.isActive())
         {
             agent.SetDestination(target.transform.position);
@@ -44,7 +45,7 @@ public class ChaseNav : MonoBehaviour
         {
             //Debug.Log(agent.velocity.x);
 
-            if (melee.inRange)
+            if (melee.currentRange())
             {
                 anim.SetTrigger("mouth eat");
             }
@@ -75,8 +76,12 @@ public class ChaseNav : MonoBehaviour
             particle.Play();
             ParticleSystem.EmissionModule em = particle.emission;
             em.enabled = true;
-            Destroy(other.gameObject);  
-            Destroy(gameObject);
+            health--;
+            Destroy(other.gameObject);
+            if (health <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 

@@ -86,6 +86,16 @@ public class Note : MonoBehaviour
                     textObject.text = "Damn it. The room ahead is blocked. Looks like the roof caved in…";
                     header.text = "Locked Door";
                 }
+                else if (objname == "LockedDoor3")
+                {
+                    textObject.text = "This door is completely jammed. No matter how hard I try, I can't open it.";
+                    header.text = "Locked Door";
+                }
+                else if (objname == "Toilet")
+                {
+                    textObject.text = "This place... I can't believe what's become of it. George would hate the state the place is in...";
+                    header.text = "Toilet";
+                }
                 else if (objname == "RegularStatueNote")
                 {
                     textObject.text = "THIS SITE IS DEDICATED TO MARIA FARTHING, FOR HER DEDICATION TO NATURE AND PRESERVATION OF THE ISLAND WE CALL HOME.";
