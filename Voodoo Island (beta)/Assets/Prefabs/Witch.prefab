@@ -5379,7 +5379,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -5615,8 +5615,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
-      minScalar: 1
+      scalar: 1
+      minScalar: 0.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -10296,9 +10296,13 @@ MonoBehaviour:
   bulletPrefab: {fileID: 8601745858695736818, guid: 4313cf3ee95fb4866be870a0277354d4,
     type: 3}
   fireCooldownTime: 1
-  particles: {fileID: 4873791904422228898}
   bulletForce: 20
   autoShoot: 1
+  particles: {fileID: 4873791904422228898}
+  reloadTime: 0
+  clipSize: 0
+  bulletsInClip: 0
+  reloading: 0
 --- !u!114 &-7597863876692105860
 MonoBehaviour:
   m_ObjectHideFlags: 0
