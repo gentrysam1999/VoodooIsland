@@ -40,7 +40,8 @@ public class Note : MonoBehaviour
                 {
                     textObject.text = "There's something wrong with this place... it feels... unfinished somehow...";
                     header.text = "Testnote";
-                } else if (objname == "NoExit")
+                }
+                else if (objname == "NoExit")
                 {
                     textObject.text = "I'd have to be crazy to leave now. My family needs me.";
                     header.text = "Thoughts";
