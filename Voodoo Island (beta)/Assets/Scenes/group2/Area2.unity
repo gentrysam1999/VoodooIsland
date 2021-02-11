@@ -581,6 +581,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6172121295733646830, guid: 4c6c4c31b9c754ca7a49981f8ca0d2b3,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.866088
+      objectReference: {fileID: 0}
+    - target: {fileID: 6172121295733646830, guid: 4c6c4c31b9c754ca7a49981f8ca0d2b3,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.06695601
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c6c4c31b9c754ca7a49981f8ca0d2b3, type: 3}
 --- !u!114 &288583684 stripped
@@ -2194,6 +2204,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SideDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 1276560732224568062, guid: 424cf6a173ba4604db3614c5c340e87e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1276560732224568063, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}
       propertyPath: m_RootOrder
@@ -2249,7 +2264,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1276560732224568062, guid: 424cf6a173ba4604db3614c5c340e87e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 424cf6a173ba4604db3614c5c340e87e, type: 3}
 --- !u!4 &1175587375 stripped
 Transform:
