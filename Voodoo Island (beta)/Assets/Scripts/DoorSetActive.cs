@@ -11,6 +11,20 @@ public class DoorSetActive : MonoBehaviour, IDoor
 
     private NavMeshObstacle navmeshobstacle;
 
+    IEnumerator OpenDelay()
+    {
+        //yield on a new YieldInstruction that waits for 3 seconds.
+        yield return new WaitForSeconds(1);
+        navmeshobstacle.enabled = false;
+    }
+
+    IEnumerator CloseDelay()
+    {
+        //yield on a new YieldInstruction that waits for 3 seconds.
+        yield return new WaitForSeconds(1);
+        navmeshobstacle.enabled = true;
+    }
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -24,15 +38,18 @@ public class DoorSetActive : MonoBehaviour, IDoor
     //if the door is toggled to open the door animator will activate.
     public void OpenDoor()
     {
-        navmeshobstacle.enabled = false;
+        
         animator.SetBool("Open", true);
+        StartCoroutine(OpenDelay());
+        //navmeshobstacle.enabled = false;
     }
 
     //if the door is toggled to close the animator will go back to idle.
     public void CloseDoor()
     {
-        navmeshobstacle.enabled = true;
         animator.SetBool("Open", false);
+        StartCoroutine(CloseDelay());
+        //navmeshobstacle.enabled = true;
     }
 
     public void ToggleDoor()

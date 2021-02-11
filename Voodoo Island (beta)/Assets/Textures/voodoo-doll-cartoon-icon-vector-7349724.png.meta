@@ -1,43 +1,49 @@
 fileFormatVersion: 2
-guid: 14ec9af601cc1d44281dca0e86588453
+guid: c65c7015f2821744693bdc262de9afe9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3813957895643319183
-    second: doors_0
+      213: 1270405631002171129
+    second: voodoo-doll-cartoon-icon-vector-7349724_0
   - first:
-      213: -5869873724788712370
-    second: doors_1
+      213: -2209596885236415202
+    second: voodoo-doll-cartoon-icon-vector-7349724_1
   - first:
-      213: -7037842594108204779
-    second: doors_2
+      213: 7325436837799575365
+    second: voodoo-doll-cartoon-icon-vector-7349724_2
   - first:
-      213: -7794273071397281860
-    second: doors_3
+      213: -6098566171072561148
+    second: voodoo-doll-cartoon-icon-vector-7349724_3
   - first:
-      213: -3625015000923761378
-    second: doors_4
+      213: -9139959076696930790
+    second: voodoo-doll-cartoon-icon-vector-7349724_4
   - first:
-      213: -1156514691743307414
-    second: doors_5
+      213: -3842921672863700340
+    second: voodoo-doll-cartoon-icon-vector-7349724_5
   - first:
-      213: 3997338004448197912
-    second: doors_6
+      213: -1964935742219627238
+    second: voodoo-doll-cartoon-icon-vector-7349724_6
   - first:
-      213: 8272023497553938944
-    second: doors_7
+      213: 6211998669247872252
+    second: voodoo-doll-cartoon-icon-vector-7349724_7
   - first:
-      213: 2982644332970639994
-    second: doors_8
+      213: -5894579343121317994
+    second: voodoo-doll-cartoon-icon-vector-7349724_8
   - first:
-      213: -7972576404697737973
-    second: doors_9
+      213: 4272942990251475346
+    second: voodoo-doll-cartoon-icon-vector-7349724_9
   - first:
-      213: 5466900881963460571
-    second: doors_10
+      213: -2486106704147917872
+    second: voodoo-doll-cartoon-icon-vector-7349724_10
   - first:
-      213: 6750987736431425758
-    second: doors_11
+      213: -6295274986403709473
+    second: voodoo-doll-cartoon-icon-vector-7349724_11
+  - first:
+      213: 2125063533414255483
+    second: voodoo-doll-cartoon-icon-vector-7349724_12
+  - first:
+      213: 8167096449828126577
+    second: voodoo-doll-cartoon-icon-vector-7349724_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -67,7 +73,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -99,7 +105,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -111,7 +117,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -123,7 +129,7 @@ TextureImporter:
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -135,253 +141,295 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: doors_0
+      name: voodoo-doll-cartoon-icon-vector-7349724_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 272
-        width: 32
-        height: 64
+        x: 9
+        y: 292
+        width: 120
+        height: 208
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17432e94089121bc0800000000000000
-      internalID: -3813957895643319183
+      spriteID: 9f65a84c03361a110800000000000000
+      internalID: 1270405631002171129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doors_1
+      name: voodoo-doll-cartoon-icon-vector-7349724_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 176
-        width: 32
-        height: 64
+        x: 272
+        y: 36
+        width: 304
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4cd19d72f40a8ea0800000000000000
-      internalID: -5869873724788712370
+      spriteID: e158caef65fe551e0800000000000000
+      internalID: -2209596885236415202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doors_2
+      name: voodoo-doll-cartoon-icon-vector-7349724_2
       rect:
         serializedVersion: 2
-        x: 17
-        y: 80
-        width: 32
-        height: 64
+        x: 660
+        y: 36
+        width: 300
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5191111e27f845e90800000000000000
-      internalID: -7037842594108204779
+      spriteID: 54fba9dfdfd29a560800000000000000
+      internalID: 7325436837799575365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doors_3
+      name: voodoo-doll-cartoon-icon-vector-7349724_3
       rect:
         serializedVersion: 2
-        x: 111
-        y: 114
-        width: 32
-        height: 32
+        x: 911
+        y: 464
+        width: 11
+        height: 5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbfd8f8ffed25d390800000000000000
-      internalID: -7794273071397281860
+      spriteID: 4008106016a8d5ba0800000000000000
+      internalID: -6098566171072561148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doors_4
+      name: voodoo-doll-cartoon-icon-vector-7349724_4
       rect:
         serializedVersion: 2
-        x: 111
-        y: 86
-        width: 32
-        height: 32
+        x: 1073
+        y: 36
+        width: 303
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e151a74101c51bdc0800000000000000
-      internalID: -3625015000923761378
+      spriteID: a164fd335a7582180800000000000000
+      internalID: -9139959076696930790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doors_5
+      name: voodoo-doll-cartoon-icon-vector-7349724_5
       rect:
         serializedVersion: 2
-        x: 18
-        y: 16
-        width: 32
-        height: 64
+        x: 1327
+        y: 464
+        width: 11
+        height: 5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a69ae1de30c33ffe0800000000000000
-      internalID: -1156514691743307414
+      spriteID: c8a2f4569133baac0800000000000000
+      internalID: -3842921672863700340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doors_6
+      name: voodoo-doll-cartoon-icon-vector-7349724_6
       rect:
         serializedVersion: 2
-        x: 313
-        y: 31
-        width: 32
-        height: 32
+        x: 1440
+        y: 36
+        width: 304
+        height: 434
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81dbd4a7cb5697730800000000000000
-      internalID: 3997338004448197912
+      spriteID: a15d7866a552bb4e0800000000000000
+      internalID: -1964935742219627238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doors_7
+      name: voodoo-doll-cartoon-icon-vector-7349724_7
       rect:
         serializedVersion: 2
-        x: 191
-        y: 31
-        width: 32
-        height: 32
+        x: 572
+        y: 348
+        width: 4
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00a03614b812cc270800000000000000
-      internalID: 8272023497553938944
+      spriteID: cfcf7b980e3753650800000000000000
+      internalID: 6211998669247872252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doors_8
+      name: voodoo-doll-cartoon-icon-vector-7349724_8
       rect:
         serializedVersion: 2
-        x: 227
-        y: 31
-        width: 32
-        height: 32
+        x: 661
+        y: 140
+        width: 4
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a720c06d73b746920800000000000000
-      internalID: 2982644332970639994
+      spriteID: 69ff5e8715f323ea0800000000000000
+      internalID: -5894579343121317994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doors_9
+      name: voodoo-doll-cartoon-icon-vector-7349724_9
       rect:
         serializedVersion: 2
-        x: 267
-        y: 31
-        width: 32
-        height: 32
+        x: 1077
+        y: 140
+        width: 4
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b05945d1008bb5190800000000000000
-      internalID: -7972576404697737973
+      spriteID: 2914f67b20b8c4b30800000000000000
+      internalID: 4272942990251475346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doors_10
+      name: voodoo-doll-cartoon-icon-vector-7349724_10
       rect:
         serializedVersion: 2
-        x: 111
-        y: 41
-        width: 32
-        height: 32
+        x: 656
+        y: 76
+        width: 4
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd7a3b323655edb40800000000000000
-      internalID: 5466900881963460571
+      spriteID: 0d3db81ef139f7dd0800000000000000
+      internalID: -2486106704147917872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: doors_11
+      name: voodoo-doll-cartoon-icon-vector-7349724_11
       rect:
         serializedVersion: 2
-        x: 111
-        y: 7
-        width: 32
-        height: 32
+        x: 1440
+        y: 68
+        width: 6
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed87309f39350bd50800000000000000
-      internalID: 6750987736431425758
+      spriteID: fdd3100f0c0b2a8a0800000000000000
+      internalID: -6295274986403709473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voodoo-doll-cartoon-icon-vector-7349724_12
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 36
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b0b4a460ebd7d10800000000000000
+      internalID: 2125063533414255483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: voodoo-doll-cartoon-icon-vector-7349724_13
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 36
+        width: 16
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ffb5233fa575170800000000000000
+      internalID: 8167096449828126577
       vertices: []
       indices: 
       edges: []
