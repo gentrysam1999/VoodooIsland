@@ -4621,6 +4621,11 @@ PrefabInstance:
       propertyPath: HP
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5244528095658705788, guid: 01fdfd018fa1b4807a9408b3b726a7c7,
+        type: 3}
+      propertyPath: Ammo
+      value: 24
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01fdfd018fa1b4807a9408b3b726a7c7, type: 3}
 --- !u!1 &1971083952 stripped
