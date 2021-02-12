@@ -17,6 +17,7 @@ TagManager:
   - Hall1
   - Living
   - Jetty
+  - Lock
   layers:
   - Default
   - TransparentFX

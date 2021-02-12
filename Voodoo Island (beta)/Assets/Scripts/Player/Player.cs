@@ -71,8 +71,14 @@ public class Player : MonoBehaviour
             Melee m = other.gameObject.GetComponent<Melee>();
             m.isInRange();
         }
-      
+        //if the player runs into a door and has a key remove the door
+        else if (other.tag == "Lock" && hasKey)
+        {
+            hasKey = false;
+            Destroy(other.gameObject);
+        }
     }
+
 
     void OnTriggerExit2D(Collider2D other)
     {
@@ -89,15 +95,15 @@ public class Player : MonoBehaviour
     }
 
     
-    void OnCollisionEnter2D(Collision2D other)
+    /*void OnCollisionEnter2D(Collision2D other)
     {
         //if the player runs into a door and has a key remove the door
-        if(other.gameObject.tag == "Door" && hasKey)
+        if(other.gameObject.tag == "Lock" && hasKey)
         {
             hasKey = false;
             Destroy(other.gameObject);
         }
-    }
+    }*/
 
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -180,7 +186,7 @@ public class Player : MonoBehaviour
                     hasKey = true;
                     Destroy(pickupItem);
                 }
-                if (colliderTagName == "BulletPickUp")
+                /*if (colliderTagName == "BulletPickUp")
 
                 {
                     
@@ -194,14 +200,14 @@ public class Player : MonoBehaviour
                         ammo = ammoMax;
                     }
 
-                }
+                }*/
                 if (colliderTagName == "HealthPickUp")
                 {
                     health++;
                     Destroy(pickupItem);
                 }
-                canPickUp = false;
             }
+
         }
 
 
