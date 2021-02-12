@@ -1469,6 +1469,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 8601745858695736818, guid: 4313cf3ee95fb4866be870a0277354d4,
     type: 3}
   fireCooldownTime: 4
+  player: {fileID: 0}
   bulletForce: 20
   autoShoot: 1
   particles: {fileID: 0}
@@ -3788,7 +3789,7 @@ PrefabInstance:
     - target: {fileID: 1276560732224568063, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1276560732224568063, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}
@@ -98193,7 +98194,7 @@ PrefabInstance:
     - target: {fileID: 1276560732224568063, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1276560732224568063, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}
