@@ -93,7 +93,7 @@ public class Note : MonoBehaviour
                 }
                 else if (objname == "Toilet")
                 {
-                    textObject.text = "This place... I can't believe what's become of it. George would hate the state the place is in...";
+                    textObject.text = "Ugh, you want me to stick my hand in that? No way pal, not for all the ammo in the world. My name's not James, that's for sure.";
                     header.text = "Toilet";
                 }
                 else if (objname == "RegularStatueNote")
@@ -116,7 +116,8 @@ public class Note : MonoBehaviour
                 {
                     textObject.text = "Dear George, I hate to be a bother, but we're short on fresh vegetables. When you place your next order, would you please be able to get some … [the letter is otherwise illegible]";
                     header.text = "Shopping Order";
-                } else if (objname == "HystericalLetter")
+                } 
+                else if (objname == "HystericalLetter")
                 {
                     textObject.text = "The words 'I WON'T LET IT HAPPEN' are scrawled in messy handwriting down the page.\nWhoever wrote this must surely be insane.";
                     header.text = "Strange Note";

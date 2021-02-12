@@ -9,7 +9,7 @@ public class Statue : MonoBehaviour
     public Sprite altStatue;
     private bool evilStatue;
     public GameObject statueNote;
-    public static float targetTime = 13.0f;
+    public static float targetTime = 10.0f;
 
 
     // Start is called before the first frame update
