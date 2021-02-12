@@ -48,24 +48,13 @@ public class Shooting : MonoBehaviour
                 //Debug.Log(reloadTimeLeft);
                 if (reloadTimeLeft <= 0)
                 {
-                    int rb = 0;
-                    if (p.ammo > clipSize)
-                    {
-                        rb = 6;
-                    }
-                    else
-                    {
-                        rb = p.ammo;
-
-                    }
-                    rb -= bulletsInClip;
-                    bulletsInClip += rb;
-                    p.ammo -= rb;
+                  
+                    bulletsInClip = clipSize;
                     reloading = false;
 
                 }
             }
-            if ((Input.GetKeyDown(KeyCode.R) || bulletsInClip == 0) && reloading == false && p.ammo > 0)
+            if ((Input.GetKeyDown(KeyCode.R) || bulletsInClip == 0) && reloading == false && bulletsInClip< clipSize)
             {
                 if (bulletsInClip != clipSize)
                 {
