@@ -118,7 +118,7 @@ public class HudManager : MonoBehaviour
         }
         else
         {
-            ammoText.text = s.bulletsInClip.ToString() + "/" + pl.ammo.ToString();
+            ammoText.text = s.bulletsInClip.ToString();
         }
         hudHealth.value = pl.health;
 
