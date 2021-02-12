@@ -122,6 +122,11 @@ public class Note : MonoBehaviour
                     textObject.text = "The words 'I WON'T LET IT HAPPEN' are scrawled in messy handwriting down the page.\nWhoever wrote this must surely be insane.";
                     header.text = "Strange Note";
                 }
+                else if (objname == "VoodooNote")
+                {
+                    textObject.text = "A voodoo doll is used to cripple the target. Typically, one collects three needles and places them within the doll replica of the target. This then allows the voodoo practitioner to hurt the target from a distance...";
+                    header.text = "Extract from a book";
+                }
             }
         }
     }
