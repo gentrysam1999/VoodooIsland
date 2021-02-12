@@ -10,7 +10,7 @@ public class Witch : MonoBehaviour
 
     public GameObject locations;
 
-    public Transform player;
+    //public Transform player;
 
     //The witch travel too her children
     private Transform[] places;
