@@ -361,6 +361,10 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1869919686, guid: 90f952778ad6443218842f39d6c779db, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 89303852}
+    - target: {fileID: 1869919686, guid: 90f952778ad6443218842f39d6c779db, type: 3}
       propertyPath: fireCooldownTime
       value: 2
       objectReference: {fileID: 0}
