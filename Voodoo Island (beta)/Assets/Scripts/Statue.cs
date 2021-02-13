@@ -7,7 +7,6 @@ public class Statue : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public Sprite regStatue;
     public Sprite altStatue;
-    private bool evilStatue;
     public GameObject statueNote;
     public static float targetTime = 10.0f;
 
@@ -16,7 +15,6 @@ public class Statue : MonoBehaviour
     void Start()
     {
         spriteRenderer.sprite = regStatue;
-        evilStatue = false;
         statueNote.name = "RegularStatueNote";
     }
 
@@ -26,7 +24,6 @@ public class Statue : MonoBehaviour
         targetTime -= Time.deltaTime;
         if (targetTime <= 0f && Note.evilStatue == true)
         {
-            evilStatue = true;
             spriteRenderer.sprite = altStatue;
             statueNote.name = "StatueNote";
         }
