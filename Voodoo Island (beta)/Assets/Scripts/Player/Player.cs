@@ -20,8 +20,11 @@ public class Player : MonoBehaviour
     //set the players speed. 
     public float speed = 10;
 
-    //set this too true if the player has key in there inventory
+    //set this to true if the player has key in their inventory
     private bool hasKey = false;
+
+    // set to true if the player has the voodoo doll in their inventory
+    public bool hasDoll = false;
 
     //set to true if the player is on a key 
     private bool canPickUp = false;
@@ -29,7 +32,7 @@ public class Player : MonoBehaviour
     //a referance to the item the player is standing on
     private UnityEngine.Object pickupItem;
 
-    //a referance to the navmeshagent compoent to control the players movement.
+    //a referance to the navmeshagent component to control the players movement.
     private NavMeshAgent agent;
 
     // the sound of the gunshot whenever the player fires
@@ -50,7 +53,7 @@ public class Player : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //Check if the player is on a key and allow the player to pick up a key
-        if (other.tag == "Key" /*|| other.tag == "BulletPickUp"*/ || other.tag == "HealthPickUp")
+        if (other.tag == "Key" || other.tag == "VoodooPickUp" || other.tag == "HealthPickUp")
         {
             pickupItem = other.gameObject;
             canPickUp = true;
@@ -83,7 +86,7 @@ public class Player : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         //if the player is no longer on a key they can't pick it up
-        if(other.tag == "Key" || other.tag == "BulletPickUp" || other.tag == "HealthPickUp")
+        if(other.tag == "Key" || other.tag == "VoodooPickUp" || other.tag == "HealthPickUp")
         {
             canPickUp = false;
         }
@@ -186,21 +189,13 @@ public class Player : MonoBehaviour
                     hasKey = true;
                     Destroy(pickupItem);
                 }
-                /*if (colliderTagName == "BulletPickUp")
+                if (colliderTagName == "VoodooPickUp")
 
                 {
-                    
-                    ammo += ammoPickup.value;
-                    if (ammoPickup.finite)
-                    {
-                        Destroy(pickupItem);
-                    }
-                    if(ammo > ammoMax)
-                    {
-                        ammo = ammoMax;
-                    }
+                  Destroy(pickupItem);
+                  hasDoll = true;
 
-                }*/
+                }
                 if (colliderTagName == "HealthPickUp")
                 {
                     health++;

@@ -33,6 +33,12 @@ public class HudManager : MonoBehaviour
     // The Player object used alongside p
     private Player pl;
 
+    public GameObject voodooDoll;
+    public Image voodooDollImage;
+    public Sprite oneNeedle;
+    public Sprite twoNeedle;
+    public Sprite noNeedle;
+
     // Health value currently displayed
     float health;
 
@@ -69,6 +75,8 @@ public class HudManager : MonoBehaviour
         btnQ.onClick.AddListener(QuitGame);
 
         hudHealth.value = pl.health;
+
+        voodooDoll.SetActive(false);
 
         // Initialise the reference to the script object, which is a
         // component of the pause menu panel game object
@@ -110,6 +118,23 @@ public class HudManager : MonoBehaviour
             // If user presses ESC, show the pause menu in pause mode
             pauseMenu.ShowPause();
         }
+
+        if (pl.hasDoll == true)
+        {
+            voodooDoll.SetActive(true);
+        }
+        /* if (pl.hasOneNeedle == true)
+        
+        {
+            voodooDollImage.sprite = twoNeedle;
+        } 
+        else if (pl.hasTwoNeedle == true)
+        {
+            voodooDollImage.sprite = oneNeedle;
+        } else if (pl.hasThreeNeedle == true)
+        {
+            voodooDollImage.sprite = noNeedle;
+        } */
 
         Shooting s = pl.GetComponentInChildren<Shooting>();
         if (s.reloading)

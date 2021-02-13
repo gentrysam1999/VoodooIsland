@@ -18,6 +18,7 @@ TagManager:
   - Living
   - Jetty
   - Lock
+  - VoodooPickUp
   layers:
   - Default
   - TransparentFX

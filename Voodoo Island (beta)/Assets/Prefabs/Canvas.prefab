@@ -366,7 +366,7 @@ GameObject:
   - component: {fileID: 6876269692125011075}
   - component: {fileID: 385943464661044964}
   m_Layer: 0
-  m_Name: Image
+  m_Name: voodooDollimage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -418,7 +418,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3345316919463846664, guid: 96eca70bcadb39845a3b0f828c7c2fc5,
+  m_Sprite: {fileID: -862189488844524918, guid: 96eca70bcadb39845a3b0f828c7c2fc5,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1052,6 +1052,14 @@ MonoBehaviour:
   ContinueButton: {fileID: 1785033945369499917}
   QuitButton: {fileID: 8211459619494747555}
   p: {fileID: 0}
+  voodooDoll: {fileID: 2906855303877070852}
+  voodooDollImage: {fileID: 385943464661044964}
+  oneNeedle: {fileID: 4267990509888857322, guid: 96eca70bcadb39845a3b0f828c7c2fc5,
+    type: 3}
+  twoNeedle: {fileID: 7744865412861158546, guid: 96eca70bcadb39845a3b0f828c7c2fc5,
+    type: 3}
+  noNeedle: {fileID: 3345316919463846664, guid: 96eca70bcadb39845a3b0f828c7c2fc5,
+    type: 3}
   pauseMenuPanel: {fileID: 6024200805870240047}
   inventoryGrid: {fileID: 6024200806459663171}
 --- !u!1 &6024200805469394114
