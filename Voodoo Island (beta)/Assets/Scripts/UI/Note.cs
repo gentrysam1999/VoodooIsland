@@ -124,7 +124,7 @@ public class Note : MonoBehaviour
                 }
                 else if (objname == "VoodooNote")
                 {
-                    textObject.text = "A voodoo doll is used to cripple the target. Typically, one collects three needles and places them within the doll replica of the target. This then allows the voodoo practitioner to hurt the target from a distance...";
+                    textObject.text = "A voodoo doll is used to cripple the target. Typically, three needles are placed them within the doll replica of the target. This then allows the practitioner to hurt the target remotely. Needles can only be removed with other needles...";
                     header.text = "Extract from a book";
                 }
             }
