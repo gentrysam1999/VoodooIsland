@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     public float speed = 10;
 
     //set this to true if the player has key in their inventory
-    private bool hasKey = false;
+    public bool hasKey = false;
 
     // set to true if the player has the voodoo doll in their inventory
     public bool hasDoll = false;

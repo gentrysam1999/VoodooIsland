@@ -39,6 +39,8 @@ public class HudManager : MonoBehaviour
     public Sprite twoNeedle;
     public Sprite noNeedle;
 
+    public GameObject key;
+
     // Health value currently displayed
     float health;
 
@@ -82,6 +84,7 @@ public class HudManager : MonoBehaviour
         // component of the pause menu panel game object
         pauseMenu = pauseMenuPanel.GetComponent<PauseMenuManager>();
         pauseMenu.Hide();
+        key.SetActive(false);
     }
 
     void QuitGame()
@@ -134,6 +137,14 @@ public class HudManager : MonoBehaviour
         } else if (pl.needle == 3)
         {
             voodooDollImage.sprite = noNeedle;
+        }
+
+        if (pl.hasKey == true)
+        {
+            key.SetActive(true);
+        } else
+        {
+            key.SetActive(false);
         }
 
         Shooting s = pl.GetComponentInChildren<Shooting>();
