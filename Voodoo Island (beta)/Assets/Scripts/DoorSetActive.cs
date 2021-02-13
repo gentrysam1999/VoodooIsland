@@ -7,6 +7,7 @@ using UnityEngine.AI;
 public class DoorSetActive : MonoBehaviour, IDoor
 {
     private Animator animator;
+    private AudioSource door;
     private bool isOpen = false;
 
     private NavMeshObstacle navmeshobstacle;
@@ -29,6 +30,7 @@ public class DoorSetActive : MonoBehaviour, IDoor
     {
         animator = GetComponent<Animator>();
         navmeshobstacle = GetComponent<NavMeshObstacle>();
+        door = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -40,6 +42,7 @@ public class DoorSetActive : MonoBehaviour, IDoor
     {
         
         animator.SetBool("Open", true);
+        door.Play();
         StartCoroutine(OpenDelay());
         //navmeshobstacle.enabled = false;
     }
