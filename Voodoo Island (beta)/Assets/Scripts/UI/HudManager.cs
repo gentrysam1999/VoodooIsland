@@ -123,18 +123,18 @@ public class HudManager : MonoBehaviour
         {
             voodooDoll.SetActive(true);
         }
-        /* if (pl.hasOneNeedle == true)
+        if (pl.needle == 1)
         
         {
-            voodooDollImage.sprite = twoNeedle;
-        } 
-        else if (pl.hasTwoNeedle == true)
-        {
             voodooDollImage.sprite = oneNeedle;
-        } else if (pl.hasThreeNeedle == true)
+        } 
+        else if (pl.needle == 2)
+        {
+            voodooDollImage.sprite = twoNeedle;
+        } else if (pl.needle == 3)
         {
             voodooDollImage.sprite = noNeedle;
-        } */
+        }
 
         Shooting s = pl.GetComponentInChildren<Shooting>();
         if (s.reloading)

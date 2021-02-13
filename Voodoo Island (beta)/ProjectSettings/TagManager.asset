@@ -19,6 +19,7 @@ TagManager:
   - Jetty
   - Lock
   - VoodooPickUp
+  - Needle
   layers:
   - Default
   - TransparentFX

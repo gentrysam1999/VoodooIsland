@@ -38,6 +38,7 @@ public class Player : MonoBehaviour
     // the sound of the gunshot whenever the player fires
     public AudioSource gunShot;
 
+    public int needle = 0;
 
     //pickUpName
     private string colliderTagName;
@@ -53,7 +54,7 @@ public class Player : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //Check if the player is on a key and allow the player to pick up a key
-        if (other.tag == "Key" || other.tag == "VoodooPickUp" || other.tag == "HealthPickUp")
+        if (other.tag == "Key" || other.tag == "VoodooPickUp" || other.tag == "HealthPickUp" || other.tag == "Needle")
         {
             pickupItem = other.gameObject;
             canPickUp = true;
@@ -63,7 +64,6 @@ public class Player : MonoBehaviour
             {
                 ammoPickup = other.gameObject.GetComponent<AmmoPickup>();
             }
-
         }
         else if(other.tag  == "WitchAttack"){
             Destroy(other.gameObject);
@@ -199,6 +199,11 @@ public class Player : MonoBehaviour
                 if (colliderTagName == "HealthPickUp")
                 {
                     health++;
+                    Destroy(pickupItem);
+                }
+                if(colliderTagName == "Needle")
+                {
+                    needle++;
                     Destroy(pickupItem);
                 }
             }
