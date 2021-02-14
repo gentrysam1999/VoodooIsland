@@ -125,6 +125,21 @@ public class Player : MonoBehaviour
         }
     }
 
+    // This method is used for the upgrades that are acquired to counter the debuffs from the Witch
+    void NeedleUp()
+    {
+        if (needle == 1) // first buff
+        {
+
+        } else if(needle == 2) // second buff
+        {
+
+        } else if (needle == 3) // third and final buff
+        {
+
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -205,6 +220,7 @@ public class Player : MonoBehaviour
                 {
                     needle++;
                     Destroy(pickupItem);
+                    NeedleUp();
                 }
             }
 
