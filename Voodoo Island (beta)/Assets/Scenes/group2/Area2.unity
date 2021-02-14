@@ -576,6 +576,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SideDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 1276560732224568060, guid: 424cf6a173ba4604db3614c5c340e87e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1276560732224568063, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}
       propertyPath: m_RootOrder
@@ -2397,6 +2402,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SideDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276560732224568060, guid: 424cf6a173ba4604db3614c5c340e87e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1276560732224568062, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}
@@ -13479,6 +13489,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SideDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 1276560732224568060, guid: 424cf6a173ba4604db3614c5c340e87e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1276560732224568063, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}
       propertyPath: m_RootOrder
@@ -18333,6 +18348,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SideDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276560732224568060, guid: 424cf6a173ba4604db3614c5c340e87e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1276560732224568063, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}

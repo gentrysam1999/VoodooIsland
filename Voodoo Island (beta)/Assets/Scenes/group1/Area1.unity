@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: inactivedoor
       objectReference: {fileID: 0}
+    - target: {fileID: 1276560732224568060, guid: 424cf6a173ba4604db3614c5c340e87e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1276560732224568062, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}
       propertyPath: m_Enabled
@@ -865,6 +870,11 @@ PrefabInstance:
       propertyPath: p
       value: 
       objectReference: {fileID: 1612069456}
+    - target: {fileID: 5136919663548921051, guid: 3039e259ffbac45308bc48b3c2c80ec8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -21.600098
+      objectReference: {fileID: 0}
     - target: {fileID: 6024200805407487513, guid: 3039e259ffbac45308bc48b3c2c80ec8,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -10931,6 +10941,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: inactivedoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276560732224568060, guid: 424cf6a173ba4604db3614c5c340e87e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1276560732224568063, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}
