@@ -24,6 +24,9 @@ public class Witch : MonoBehaviour
 
     private ParticleSystem particle;
 
+    public AudioSource witch;
+
+    public AudioSource Shot;
 
     // Start is called before the first frame update
     void Start()
@@ -71,6 +74,7 @@ public class Witch : MonoBehaviour
 
             Destroy(other.gameObject);
             health --;
+            witch.Play();
             if(health <= 0)
             {
                 Destroy(gameObject);

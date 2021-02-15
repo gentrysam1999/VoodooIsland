@@ -14,6 +14,9 @@ public class ChaseNav : MonoBehaviour
     private Melee melee;
     private ParticleSystem particle;
     public int health = 3;
+    public AudioSource chomp;
+    public AudioSource slime;
+    public AudioSource growl;
 
 
     void Start()
@@ -39,6 +42,7 @@ public class ChaseNav : MonoBehaviour
         if (enemySight.isActive())
         {
             agent.SetDestination(target.transform.position);
+            slime.Play();
             Navigate.DebugDrawPath(agent.path.corners);
         }
         if (mouth)
@@ -48,15 +52,19 @@ public class ChaseNav : MonoBehaviour
             if (melee.currentRange())
             {
                 anim.SetTrigger("mouth eat");
+                chomp.Play();
             }
 
             else if (agent.velocity.x < 0)
             {
                 anim.SetTrigger("mouth left");
+                chomp.Play();
+
             }
             else if (agent.velocity.x > 0)
             {
                 anim.SetTrigger("mouth right");
+                chomp.Play();
             }
 
             else
@@ -76,6 +84,7 @@ public class ChaseNav : MonoBehaviour
             particle.Play();
             ParticleSystem.EmissionModule em = particle.emission;
             em.enabled = true;
+            growl.Play();
             health--;
             Destroy(other.gameObject);
             if (health <= 0)
