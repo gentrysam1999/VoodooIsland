@@ -32,6 +32,9 @@ TextureImporter:
   - first:
       213: -3711967057565884764
     second: legs5
+  - first:
+      213: -2761633042756250921
+    second: arms 2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -382,6 +385,27 @@ TextureImporter:
       bones: []
       spriteID: 4ae55d3c0a17c7cc0800000000000000
       internalID: -3711967057565884764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arms 2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 84
+        width: 19
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2588e1165bca9d0800000000000000
+      internalID: -2761633042756250921
       vertices: []
       indices: 
       edges: []

@@ -298,7 +298,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 17
-  m_Sprite: {fileID: 4347142141719749729, guid: 5482a811086e14db3925acd334439a9b,
+  m_Sprite: {fileID: -7070142890467196234, guid: 73787579faa8048e98c983ef2bb2399c,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -872,11 +872,20 @@ MonoBehaviour:
   - {fileID: -910724861525178024, guid: 73787579faa8048e98c983ef2bb2399c, type: 3}
   - {fileID: 7433342868001192007, guid: 73787579faa8048e98c983ef2bb2399c, type: 3}
   body:
-  - {fileID: 4347142141719749729, guid: 5482a811086e14db3925acd334439a9b, type: 3}
+  - {fileID: -7070142890467196234, guid: 73787579faa8048e98c983ef2bb2399c, type: 3}
+  - {fileID: 3184811763130263265, guid: 73787579faa8048e98c983ef2bb2399c, type: 3}
   - {fileID: -6085955535112626411, guid: 73787579faa8048e98c983ef2bb2399c, type: 3}
+  - {fileID: -6077374592091390333, guid: 73787579faa8048e98c983ef2bb2399c, type: 3}
+  arm:
+  - {fileID: -3450450145562761106, guid: 5482a811086e14db3925acd334439a9b, type: 3}
+  - {fileID: -2761633042756250921, guid: 5482a811086e14db3925acd334439a9b, type: 3}
+  shoulder:
+  - {fileID: -8517789049658358954, guid: 73787579faa8048e98c983ef2bb2399c, type: 3}
+  - {fileID: 1000569352247253886, guid: 73787579faa8048e98c983ef2bb2399c, type: 3}
   headRend: {fileID: 1739131448904810608}
   hatRend: {fileID: 1739131450247707762}
   bodyRend: {fileID: 1739131449555468345}
+  shoulderRend: {fileID: 5866817707050930203}
 --- !u!114 &579796558077584174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -900,7 +909,9 @@ MonoBehaviour:
   reloadTime: 2
   clipSize: 6
   bulletsInClip: 0
+  p: {fileID: 0}
   reloading: 0
+  gunShot: {fileID: 0}
 --- !u!1 &1739131450247707760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,7 +1019,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4620807355327596375}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.3, z: 0}
+  m_LocalPosition: {x: 0, y: -0.15, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 1739131449231953387}

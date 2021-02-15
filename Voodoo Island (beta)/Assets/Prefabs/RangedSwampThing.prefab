@@ -218,7 +218,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 886578f26e9ab4c44bf85a9d4d0faf26, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4d7d4df682d2e43dca0a28e2ed05de92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1767,7 +1767,7 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 21300000, guid: 886578f26e9ab4c44bf85a9d4d0faf26, type: 3}
+    - sprite: {fileID: 21300000, guid: 4d7d4df682d2e43dca0a28e2ed05de92, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -5209,7 +5209,9 @@ MonoBehaviour:
   reloadTime: 0
   clipSize: 0
   bulletsInClip: 0
+  p: {fileID: 0}
   reloading: 0
+  gunShot: {fileID: 0}
 --- !u!114 &1257201884517231048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5233,7 +5235,9 @@ MonoBehaviour:
   reloadTime: 0
   clipSize: 0
   bulletsInClip: 0
+  p: {fileID: 0}
   reloading: 0
+  gunShot: {fileID: 0}
 --- !u!82 &504989255
 AudioSource:
   m_ObjectHideFlags: 0

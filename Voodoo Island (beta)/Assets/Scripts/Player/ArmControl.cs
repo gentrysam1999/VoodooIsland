@@ -14,10 +14,13 @@ public class ArmControl : MonoBehaviour
     public Sprite[] head;
     public Sprite[] hat;
     public Sprite[] body;
+    public Sprite[] arm;
+    public Sprite[] shoulder;
 
     public SpriteRenderer headRend;
     public SpriteRenderer hatRend;
     public SpriteRenderer bodyRend;
+    public SpriteRenderer shoulderRend;
 
 
     public
@@ -71,26 +74,34 @@ public class ArmControl : MonoBehaviour
             headRend.sprite = head[0];
             bodyRend.sprite = body[0];
             hatRend.sprite = hat[0];
+            armsRend.sprite = arm[0];
+            shoulderRend.sprite = shoulder[0];
         }
         else if (angle > 45 && angle < 135){
             //face right
             headRend.flipX = false;
             hatRend.flipX = false;
             headRend.sprite = head[1];
-            bodyRend.sprite = body[0];
+            bodyRend.sprite = body[1];
             hatRend.sprite = hat[1];
+            armsRend.sprite = arm[1];
+            shoulderRend.sprite = shoulder[1];
         } else if(angle > 135 && angle < 225){
             //face up
             headRend.sprite = head[2];
-            bodyRend.sprite = body[1];
+            bodyRend.sprite = body[2];
             hatRend.sprite = hat[2];
+            armsRend.sprite = arm[0];
+            shoulderRend.sprite = shoulder[0];
         }else{
             //face left
             headRend.flipX = true;
             hatRend.flipX = true;
             headRend.sprite = head[1];
-            bodyRend.sprite = body[0];
+            bodyRend.sprite = body[3];
             hatRend.sprite = hat[1];
+            armsRend.sprite = arm[1];
+            shoulderRend.sprite = shoulder[1];
         } 
         
 

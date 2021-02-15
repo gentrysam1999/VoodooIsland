@@ -44,6 +44,18 @@ TextureImporter:
   - first:
       213: -8517789049658358954
     second: shoulders
+  - first:
+      213: -6077374592091390333
+    second: body left
+  - first:
+      213: 3184811763130263265
+    second: body right
+  - first:
+      213: -7070142890467196234
+    second: body front
+  - first:
+      213: 1000569352247253886
+    second: shoulders 2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -469,8 +481,8 @@ TextureImporter:
         y: 56
         width: 19
         height: 3
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -478,6 +490,90 @@ TextureImporter:
       bones: []
       spriteID: 653c66f0dfbbac980800000000000000
       internalID: -8517789049658358954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: body left
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 52
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e786ff104d8aba0800000000000000
+      internalID: -6077374592091390333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: body right
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 52
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e66dd9bc69b23c20800000000000000
+      internalID: 3184811763130263265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: body front
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 35
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b20376108ec1ed90800000000000000
+      internalID: -7070142890467196234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoulders 2
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 41
+        width: 3
+        height: 6
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b17dd468cb2ed00800000000000000
+      internalID: 1000569352247253886
       vertices: []
       indices: 
       edges: []
