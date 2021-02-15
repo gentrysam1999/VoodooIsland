@@ -86,10 +86,12 @@ public class Shooting : MonoBehaviour
         }
         else if (autoShoot && fireCoolDownTimeLeft <= 0)
         {
+            Witch w = gameObject.GetComponentInParent<Witch>();
             EnemySight enemySight = GetComponent<EnemySight>();
             if (enemySight.isActive())
             {
                 shoot();
+                w.Shot.Play();
             }
 
         }

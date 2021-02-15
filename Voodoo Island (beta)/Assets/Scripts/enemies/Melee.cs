@@ -16,6 +16,7 @@ public class Melee : MonoBehaviour
     private NavMeshAgent agent;
     private Player player;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +44,7 @@ public class Melee : MonoBehaviour
             {
                 
                 player.takeDamage(damage);
-                fireCoolDownTimeLeft = fireCooldownTime;
+                fireCoolDownTimeLeft = fireCooldownTime;;
                 agent.speed = 0;
             }
             
