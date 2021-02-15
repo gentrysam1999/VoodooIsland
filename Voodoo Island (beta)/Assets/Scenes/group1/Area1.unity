@@ -11689,34 +11689,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 423840105205622391, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 579796558077584174, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
-        type: 3}
-      propertyPath: p
-      value: 
-      objectReference: {fileID: 1612069456}
-    - target: {fileID: 579796558077584174, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
-        type: 3}
-      propertyPath: gunShot
-      value: 
-      objectReference: {fileID: 1612069458}
     - target: {fileID: 1739131449584644213, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739131449584644213, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739131449584644213, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
-        type: 3}
-      propertyPath: m_LocalScale.y
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1739131449584644213, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
@@ -11774,16 +11749,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_Jim
       objectReference: {fileID: 0}
-    - target: {fileID: 1739131450222237547, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
-        type: 3}
-      propertyPath: health
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7073322179238246407, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23c0f6d76f76a4825bb65275dfe7ce01, type: 3}
 --- !u!4 &1612069455 stripped
@@ -11795,24 +11760,6 @@ Transform:
 --- !u!1 &1612069456 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1739131449584644219, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
-    type: 3}
-  m_PrefabInstance: {fileID: 1612069454}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1612069457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612069456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b5fa45ffa1f57744b2f8a5bb023cca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!82 &1612069458 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 907567730, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
     type: 3}
   m_PrefabInstance: {fileID: 1612069454}
   m_PrefabAsset: {fileID: 0}
