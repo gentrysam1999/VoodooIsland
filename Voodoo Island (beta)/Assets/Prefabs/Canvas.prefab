@@ -1044,6 +1044,7 @@ MonoBehaviour:
   textbox: {fileID: 6024200806732508001}
   hudHealth: {fileID: 6024200807167704102}
   hPanel: {fileID: 9122519291163808020}
+  healthSlider: {fileID: 6024200807167704102}
   GameOver: {fileID: 3178822646219301902}
   ContinueButton: {fileID: 1785033945369499917}
   QuitButton: {fileID: 8211459619494747555}
@@ -1057,7 +1058,6 @@ MonoBehaviour:
   noNeedle: {fileID: 3345316919463846664, guid: 96eca70bcadb39845a3b0f828c7c2fc5,
     type: 3}
   key: {fileID: 2357672391504202278}
-  keyImage: {fileID: 0}
   pauseMenuPanel: {fileID: 6024200805870240047}
   inventoryGrid: {fileID: 6024200806459663171}
 --- !u!1 &6024200805469394114

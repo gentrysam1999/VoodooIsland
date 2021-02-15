@@ -20,6 +20,7 @@ public class HudManager : MonoBehaviour
 
     //The panel that contains the health bar. We need this to hide the slider
     public GameObject hPanel;
+    public Slider healthSlider;
 
     public GameObject GameOver;
     public Button ContinueButton;
@@ -134,6 +135,7 @@ public class HudManager : MonoBehaviour
         else if (pl.needle == 2)
         {
             voodooDollImage.sprite = twoNeedle;
+            healthSlider.maxValue = 8;
         } else if (pl.needle == 3)
         {
             voodooDollImage.sprite = noNeedle;

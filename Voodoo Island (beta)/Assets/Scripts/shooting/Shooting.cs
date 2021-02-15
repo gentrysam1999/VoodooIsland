@@ -18,9 +18,12 @@ public class Shooting : MonoBehaviour
     public float reloadTime = 0;
     public int clipSize = 0;
     public int bulletsInClip = 0;
+    public GameObject p;
+    private Player pl;
 
     public bool reloading = false;
     private float reloadTimeLeft = 0;
+    public AudioSource gunShot;
     // Update is called once per frame
 
     void Start()
@@ -74,9 +77,9 @@ public class Shooting : MonoBehaviour
 
                     if (bulletsInClip > 0)
                     {
+                        gunShot.Play();
                         bulletsInClip--;
                         shoot();
-                        p.gunShot.Play();
                     }
 
                 }

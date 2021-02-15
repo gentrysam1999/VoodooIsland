@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     public int ammo;
 
     //set the players speed. 
-    public float speed = 10;
+    public float speed = 25; // was originally 30, debuffed until later
 
     //set this to true if the player has key in their inventory
     public bool hasKey = false;
@@ -137,13 +137,15 @@ public class Player : MonoBehaviour
     {
         if (needle == 1) // first buff
         {
-
-        } else if(needle == 2) // second buff
+            speed = 30;
+        } 
+        else if(needle == 2) // second buff
         {
-
-        } else if (needle == 3) // third and final buff
+            health = 7;
+        } 
+        else if (needle == 3) // third and final buff
         {
-
+            // not sure what the final buff should be
         }
     }
 
