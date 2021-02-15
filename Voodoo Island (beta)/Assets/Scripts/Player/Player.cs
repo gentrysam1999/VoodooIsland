@@ -38,6 +38,12 @@ public class Player : MonoBehaviour
     // the sound of the gunshot whenever the player fires
     public AudioSource gunShot;
 
+    //Sound of lock unlocking
+    public AudioSource Lock;
+
+    //Pick Up Sound
+    public AudioSource obtained;
+
     public int needle = 0;
 
     //pickUpName
@@ -78,6 +84,7 @@ public class Player : MonoBehaviour
         else if (other.tag == "Lock" && hasKey)
         {
             hasKey = false;
+            Lock.Play();
             Destroy(other.gameObject);
         }
     }
@@ -202,24 +209,28 @@ public class Player : MonoBehaviour
                 if (colliderTagName == "Key")
                 {
                     hasKey = true;
+                    obtained.Play();
                     Destroy(pickupItem);
                 }
                 if (colliderTagName == "VoodooPickUp")
 
                 {
                   Destroy(pickupItem);
+                  obtained.Play();
                   hasDoll = true;
 
                 }
                 if (colliderTagName == "HealthPickUp")
                 {
                     health++;
+                    obtained.Play();
                     Destroy(pickupItem);
                 }
                 if(colliderTagName == "Needle")
                 {
                     needle++;
                     Destroy(pickupItem);
+                    obtained.Play();
                     NeedleUp();
                 }
             }
