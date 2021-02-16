@@ -9,6 +9,8 @@ public class GlobalControl : MonoBehaviour
 
     public int HP = 5;
     public int Ammo = 24;
+    public int needle = 0;
+    public bool hasDoll;
 
     void Awake()
     {

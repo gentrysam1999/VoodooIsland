@@ -128,14 +128,13 @@ public class HudManager : MonoBehaviour
             voodooDoll.SetActive(true);
         }
         if (pl.needle == 1)
-        
         {
             voodooDollImage.sprite = oneNeedle;
         } 
         else if (pl.needle == 2)
         {
             voodooDollImage.sprite = twoNeedle;
-            healthSlider.maxValue = 8;
+            healthSlider.maxValue = 7;
         } else if (pl.needle == 3)
         {
             voodooDollImage.sprite = noNeedle;

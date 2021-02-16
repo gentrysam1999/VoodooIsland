@@ -45,64 +45,75 @@ public class ArmControl : MonoBehaviour
         //Debug.Log(rotation);
 
         //check L&R direction of aim
-        if (angle < 180  && angle > 0)
+        if(Time.timeScale != 0)
         {
-            aimRight = true;
-            armsRend.flipX = false;
-            
-        }else
-        {
-            aimRight = false;
-            armsRend.flipX = true;
-            
-        }
+            if (angle < 180 && angle > 0)
+            {
+                aimRight = true;
+                armsRend.flipX = false;
 
-        //check U&D direction of aim
-        if (angle > -90 && angle < 90)
-        {
-            aimDown = true;
-            //headRend.sprite = head[0];
-        }
-        else
-        {
-            aimDown = false;
-            //headRend.sprite = head[2];
-        }
+            }
+            else
+            {
+                aimRight = false;
+                armsRend.flipX = true;
 
-        if (angle > -45 && angle < 45){
-            //face forward
-            headRend.sprite = head[0];
-            bodyRend.sprite = body[0];
-            hatRend.sprite = hat[0];
-            armsRend.sprite = arm[0];
-            shoulderRend.sprite = shoulder[0];
+            }
+
+            //check U&D direction of aim
+            if (angle > -90 && angle < 90)
+            {
+                aimDown = true;
+                //headRend.sprite = head[0];
+            }
+            else
+            {
+                aimDown = false;
+                //headRend.sprite = head[2];
+            }
+
+            if (angle > -45 && angle < 45)
+            {
+                //face forward
+                headRend.sprite = head[0];
+                bodyRend.sprite = body[0];
+                hatRend.sprite = hat[0];
+                armsRend.sprite = arm[0];
+                shoulderRend.sprite = shoulder[0];
+            }
+            else if (angle > 45 && angle < 135)
+            {
+                //face right
+                headRend.flipX = false;
+                hatRend.flipX = false;
+                headRend.sprite = head[1];
+                bodyRend.sprite = body[1];
+                hatRend.sprite = hat[1];
+                armsRend.sprite = arm[1];
+                shoulderRend.sprite = shoulder[1];
+            }
+            else if (angle > 135 && angle < 225)
+            {
+                //face up
+                headRend.sprite = head[2];
+                bodyRend.sprite = body[2];
+                hatRend.sprite = hat[2];
+                armsRend.sprite = arm[0];
+                shoulderRend.sprite = shoulder[0];
+            }
+            else
+            {
+                //face left
+                headRend.flipX = true;
+                hatRend.flipX = true;
+                headRend.sprite = head[1];
+                bodyRend.sprite = body[3];
+                hatRend.sprite = hat[1];
+                armsRend.sprite = arm[1];
+                shoulderRend.sprite = shoulder[1];
+            }
         }
-        else if (angle > 45 && angle < 135){
-            //face right
-            headRend.flipX = false;
-            hatRend.flipX = false;
-            headRend.sprite = head[1];
-            bodyRend.sprite = body[1];
-            hatRend.sprite = hat[1];
-            armsRend.sprite = arm[1];
-            shoulderRend.sprite = shoulder[1];
-        } else if(angle > 135 && angle < 225){
-            //face up
-            headRend.sprite = head[2];
-            bodyRend.sprite = body[2];
-            hatRend.sprite = hat[2];
-            armsRend.sprite = arm[0];
-            shoulderRend.sprite = shoulder[0];
-        }else{
-            //face left
-            headRend.flipX = true;
-            hatRend.flipX = true;
-            headRend.sprite = head[1];
-            bodyRend.sprite = body[3];
-            hatRend.sprite = hat[1];
-            armsRend.sprite = arm[1];
-            shoulderRend.sprite = shoulder[1];
-        } 
+        
         
 
     }

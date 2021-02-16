@@ -137,7 +137,7 @@ public class Player : MonoBehaviour
     {
         if (needle == 1) // first buff
         {
-            speed = 30;
+            speed = 35;
         } 
         else if(needle == 2) // second buff
         {
@@ -155,6 +155,8 @@ public class Player : MonoBehaviour
         
         ammo = GlobalControl.Instance.Ammo;
         health = GlobalControl.Instance.HP;
+        needle = GlobalControl.Instance.needle;
+        hasDoll = GlobalControl.Instance.hasDoll;
         
 
         //do not allow the agent compoent to rotate the player
@@ -250,5 +252,7 @@ public class Player : MonoBehaviour
     {
         GlobalControl.Instance.Ammo = ammo;
         GlobalControl.Instance.HP = health;
+        GlobalControl.Instance.needle = needle;
+        GlobalControl.Instance.hasDoll = hasDoll;
     }
 }
