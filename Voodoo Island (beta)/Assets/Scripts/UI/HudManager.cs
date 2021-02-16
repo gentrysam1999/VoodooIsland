@@ -23,11 +23,6 @@ public class HudManager : MonoBehaviour
     public Slider healthSlider;
 
     public GameObject GameOver;
-    public Button ContinueButton;
-    public Button QuitButton;
-
-    private Button btnC;
-    private Button btnQ;
 
     //The GameObject that represents the player so we can access ammo and health values for HUD
     public GameObject p;
@@ -71,12 +66,6 @@ public class HudManager : MonoBehaviour
         GameOver = GameObject.Find("GameOver");
         GameOver.SetActive(false);
 
-        Button btnC = ContinueButton.GetComponent<Button>();
-        Button btnQ = ContinueButton.GetComponent<Button>();
-
-        btnC.onClick.AddListener(ContinueGame);
-        btnQ.onClick.AddListener(QuitGame);
-
         hudHealth.value = pl.health;
 
         voodooDoll.SetActive(false);
@@ -88,12 +77,12 @@ public class HudManager : MonoBehaviour
         key.SetActive(false);
     }
 
-    void QuitGame()
+    public void QuitGame()
     {
         Application.Quit();
     }
 
-    void ContinueGame()
+    public void ContinueGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
