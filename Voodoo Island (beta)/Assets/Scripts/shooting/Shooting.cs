@@ -13,10 +13,13 @@ public class Shooting : MonoBehaviour
 
     public float bulletForce = 20f;
     
-
+    protected GameObject currentBullet;
     protected float fireCoolDownTimeLeft =0;
 
-    
+    protected void Start()
+    {
+        currentBullet = bulletPrefab;
+    }
 
     
 
@@ -37,7 +40,7 @@ public class Shooting : MonoBehaviour
         if (Time.timeScale != 0)
         {
  
-            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            GameObject bullet = Instantiate(currentBullet, firePoint.position, firePoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(-(firePoint.up) * bulletForce, ForceMode2D.Impulse);
             fireCoolDownTimeLeft = fireCooldownTime;

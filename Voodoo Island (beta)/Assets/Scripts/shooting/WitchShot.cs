@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WitchShot : Shooting
 {
+
+    public GameObject bulletPrefab2;
     public ParticleSystem particles;
     public float phaseLen = 5f;
     public float fireCoolDownMod = 2;
@@ -11,11 +13,11 @@ public class WitchShot : Shooting
     private bool phase = false;
     private float phaseTimeLeft = 1;
     private Witch w;
-    void Start()
+    new void Start()
     {
+        base.Start();
         particles.Pause();
         w = gameObject.GetComponent<Witch>();
-
     }
 
     //when too shoot phase 2 functionaility
@@ -32,12 +34,14 @@ public class WitchShot : Shooting
                 phaseTimeLeft = phaseLen;
                 if (phase)
                 {
+                    currentBullet = bulletPrefab2;
                     fireCooldownTime = fireCooldownTime / fireCoolDownMod;
                 }
                 else
                 {
-                fireCooldownTime *= fireCoolDownMod;
-                }
+                    fireCooldownTime *= fireCoolDownMod;
+                    currentBullet = bulletPrefab;
+            }
             }
         p1Shoot();
         

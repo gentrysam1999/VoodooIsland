@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     public int ammo;
 
     //set the players speed. 
-    public float speed = 20; // was originally 30, debuffed until later
+    public float speed = 20; // was originally 30, debuffedd until later
 
     //set this to true if the player has key in their inventory
     public bool hasKey = false;
