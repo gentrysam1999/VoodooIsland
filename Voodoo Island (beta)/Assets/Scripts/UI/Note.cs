@@ -36,12 +36,7 @@ public class Note : MonoBehaviour
                 reading = true;
                 InteractKey.SetActive(false);
                 headShot.sprite = img;
-                if (objname == "Testnote")
-                {
-                    textObject.text = "There's something wrong with this place... it feels... unfinished somehow...";
-                    header.text = "Testnote";
-                }
-                else if (objname == "NoExit")
+                if (objname == "NoExit")
                 {
                     textObject.text = "I'd have to be crazy to leave now. My family needs me.";
                     header.text = "Thoughts";
@@ -124,7 +119,7 @@ public class Note : MonoBehaviour
                 }
                 else if (objname == "VoodooNote")
                 {
-                    textObject.text = "A voodoo doll is used to cripple the target. Typically, three needles are placed them within the doll replica of the target. This then allows the practitioner to hurt the target remotely. Needles can only be removed with other needles...";
+                    textObject.text = "A voodoo doll is used to cripple the target. Three needles are placed them within the doll replica of the target. This then allows the practitioner to hurt the target remotely. Needles can only be removed with other needles...";
                     header.text = "Extract from a book";
                 }
             }
