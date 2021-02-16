@@ -7,20 +7,28 @@ using UnityEngine.UI;
 public class Finish : MonoBehaviour
 {
     public Text statsText;
+    public int bulletsFired;
+    bool hasDoll;
+    int needle;
+
     // Start is called before the first frame update
     void Start()
     {
-        int ammo = GlobalControl.Instance.Ammo;
-        int health = GlobalControl.Instance.HP;
-        int needle = GlobalControl.Instance.needle;
-        bool hasDoll = GlobalControl.Instance.hasDoll;
-        float speed = GlobalControl.Instance.speed;
-        int bulletsFired = GlobalControl.Instance.bulletsFired;
+        needle = GlobalControl.Instance.needle;
+        hasDoll = GlobalControl.Instance.hasDoll;
+        bulletsFired = GlobalControl.Instance.bulletsFired;
 
         string stats = "YOU WIN\n\n";
-        stats += "Big Jim found his parents, trapped in the nursery. \nHaving freed them, Jim burned the mansion to the ground, laying the voodoo curse to rest... for now!\n";
-        stats += "YOU FIRED: " + bulletsFired + " BULLETS";
+        stats += "Big Jim staggered away from the Witch, and looked upon the accursed mansion he had struggled through. \nThe mansion collapsed in on itself, burying the voodoo curse ... for now!\n\n";
+        stats += "YOU FIRED: " + bulletsFired + " BULLETS\n";
         stats += "YOU PICKED UP: " + needle + " NEEDLES\n";
+        if (hasDoll == true)
+        {
+            stats += "YOU FOUND THE DOLL\n";
+        } else
+        {
+            stats += "YOU IGNORED THE DOLL\n";
+        }
 
         statsText.text = stats;
 
