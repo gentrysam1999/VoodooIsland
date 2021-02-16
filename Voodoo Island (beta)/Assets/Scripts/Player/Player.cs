@@ -9,7 +9,6 @@ public class Player : MonoBehaviour
     // Reference to animator component
     Animator anim;
 
-
     public int ammoMax = 24;
 
     public int health;
@@ -157,6 +156,7 @@ public class Player : MonoBehaviour
         health = GlobalControl.Instance.HP;
         needle = GlobalControl.Instance.needle;
         hasDoll = GlobalControl.Instance.hasDoll;
+        speed = GlobalControl.Instance.speed;
         
 
         //do not allow the agent compoent to rotate the player
@@ -254,5 +254,6 @@ public class Player : MonoBehaviour
         GlobalControl.Instance.HP = health;
         GlobalControl.Instance.needle = needle;
         GlobalControl.Instance.hasDoll = hasDoll;
+        GlobalControl.Instance.speed = speed;
     }
 }
