@@ -93,7 +93,7 @@ public class Note : MonoBehaviour
                 }
                 else if (objname == "RegularStatueNote")
                 {
-                    textObject.text = "THIS SITE IS DEDICATED TO MARIA FARTHING, FOR HER DEDICATION TO NATURE AND PRESERVATION OF THE ISLAND WE CALL HOME.";
+                    textObject.text = "This site is dedicated to Maria Farthing, for her dedication to nature and continued preservation of the island we call home.";
                     header.text = "Inscription at foot of the statue";
                     evilStatue = true;
                 }
