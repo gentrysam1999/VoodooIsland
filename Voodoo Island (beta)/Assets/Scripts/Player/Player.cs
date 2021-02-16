@@ -136,7 +136,7 @@ public class Player : MonoBehaviour
     {
         if (needle == 1) // first buff
         {
-            speed = 35;
+            speed = 40;
         } 
         else if(needle == 2) // second buff
         {
