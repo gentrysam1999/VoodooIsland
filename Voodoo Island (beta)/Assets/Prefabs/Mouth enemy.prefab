@@ -280,6 +280,7 @@ MonoBehaviour:
   chomp: {fileID: 529748025}
   slime: {fileID: 529748026}
   growl: {fileID: 3206642270762155944}
+  Dead: {fileID: 4896079519356700140, guid: 017699f15c5c641fca4bc43b2ee3bedc, type: 3}
 --- !u!195 &495380653408570543
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -888,8 +889,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1
-      minScalar: 0.5
+      scalar: 1.5
+      minScalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2142,19 +2143,19 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 8850638160501140113, guid: 78f4aa5a1712c45bc8b59f9e9c812ab7,
+    - sprite: {fileID: -2123418047199955395, guid: 56b221dd7aa1e464595e27b2df0afd68,
         type: 3}
-    - sprite: {fileID: 7680840696412860459, guid: 78f4aa5a1712c45bc8b59f9e9c812ab7,
+    - sprite: {fileID: -2328613059642174681, guid: 56b221dd7aa1e464595e27b2df0afd68,
         type: 3}
-    - sprite: {fileID: 4828909508808989405, guid: 78f4aa5a1712c45bc8b59f9e9c812ab7,
+    - sprite: {fileID: -6194754896544266099, guid: 56b221dd7aa1e464595e27b2df0afd68,
         type: 3}
-    - sprite: {fileID: -322899112542906893, guid: 78f4aa5a1712c45bc8b59f9e9c812ab7,
+    - sprite: {fileID: -4051742787940387578, guid: 56b221dd7aa1e464595e27b2df0afd68,
         type: 3}
-    - sprite: {fileID: 939907857184439296, guid: 78f4aa5a1712c45bc8b59f9e9c812ab7,
+    - sprite: {fileID: -1730588414849174982, guid: 56b221dd7aa1e464595e27b2df0afd68,
         type: 3}
-    - sprite: {fileID: 3949848534866236776, guid: 78f4aa5a1712c45bc8b59f9e9c812ab7,
+    - sprite: {fileID: -8047398895878979130, guid: 56b221dd7aa1e464595e27b2df0afd68,
         type: 3}
-    - sprite: {fileID: 3173886276178369735, guid: 78f4aa5a1712c45bc8b59f9e9c812ab7,
+    - sprite: {fileID: 626526539478488490, guid: 56b221dd7aa1e464595e27b2df0afd68,
         type: 3}
     flipU: 0
     flipV: 0
