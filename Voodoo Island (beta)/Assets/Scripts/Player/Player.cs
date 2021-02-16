@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
 
     public int health;
 
+    public int healthPickUpsUsed;
+
     //set the starting ammo
     public int ammo;
 
@@ -159,6 +161,7 @@ public class Player : MonoBehaviour
         needle = GlobalControl.Instance.needle;
         hasDoll = GlobalControl.Instance.hasDoll;
         speed = GlobalControl.Instance.speed;
+        healthPickUpsUsed = GlobalControl.Instance.healthPickUpsUsed;
         
 
         //do not allow the agent compoent to rotate the player
@@ -229,12 +232,15 @@ public class Player : MonoBehaviour
                 if (colliderTagName == "HealthPickUp")
                 {
                     health++;
+                    healthPickUpsUsed++;
                     obtained.Play();
+                    GlobalControl.Instance.healthPickUpsUsed = healthPickUpsUsed;
                     Destroy(pickupItem);
                 }
                 if(colliderTagName == "Needle")
                 {
                     needle++;
+                    GlobalControl.Instance.needle = needle;
                     Destroy(pickupItem);
                     obtained.Play();
                     NeedleUp();
@@ -274,7 +280,6 @@ public class Player : MonoBehaviour
     {
         GlobalControl.Instance.Ammo = ammo;
         GlobalControl.Instance.HP = health;
-        GlobalControl.Instance.needle = needle;
         GlobalControl.Instance.hasDoll = hasDoll;
         GlobalControl.Instance.speed = speed;
     }
