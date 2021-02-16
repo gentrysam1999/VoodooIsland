@@ -122,6 +122,11 @@ public class Note : MonoBehaviour
                     textObject.text = "A voodoo doll is used to cripple the target. Three needles are placed them within the doll replica of the target. This then allows the practitioner to hurt remotely. Needles can only be removed with other needles...";
                     header.text = "Extract from a book";
                 }
+                else if (objname == "LockedNursery")
+                {
+                    textObject.text = "The old nursery is locked up tight. To be perfectly honest, I'm not sure I'd like to see what's in there now. I can hear breathing sounds from inside.";
+                    header.text = "Locked Nursery Door";
+                }
             }
         }
     }
