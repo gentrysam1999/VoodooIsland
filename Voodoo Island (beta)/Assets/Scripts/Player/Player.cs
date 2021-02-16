@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
+
 
 public class Player : MonoBehaviour
 {
@@ -238,6 +240,7 @@ public class Player : MonoBehaviour
                     NeedleUp();
                 }
             }
+            setScene();
 
         }
 
@@ -247,6 +250,25 @@ public class Player : MonoBehaviour
         
     }
 
+    public void setScene()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            SceneManager.LoadScene("Area1");
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            SceneManager.LoadScene("Area2");
+        }
+        else if(Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            SceneManager.LoadScene("Area3");
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            SceneManager.LoadScene("Area4");
+        }
+    }
 
     public void SavePlayer()
     {
