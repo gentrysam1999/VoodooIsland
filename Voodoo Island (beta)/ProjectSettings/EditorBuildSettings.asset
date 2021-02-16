@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/group3/Butler.unity
+    path: 
     guid: 76a1a48a48b9a48f999f2eaf4da22257
   - enabled: 0
     path: Assets/Scenes/TestScenes/tile test.unity
@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/group4/Finish.unity
+    guid: f1c3563b69f4e00499e78063ea688cd4
   m_configObjects: {}

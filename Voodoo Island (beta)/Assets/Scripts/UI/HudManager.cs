@@ -101,7 +101,7 @@ public class HudManager : MonoBehaviour
             Time.timeScale = 1f;
         }
 
-        if (Input.GetKey(KeyCode.Escape) && Note.reading == false)
+        if (Input.GetKeyDown(KeyCode.Escape) && Note.reading == false)
         {
             // If user presses ESC, show the pause menu in pause mode
             pauseMenu.ShowPause();
