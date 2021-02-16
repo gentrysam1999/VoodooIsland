@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class Witch : MonoBehaviour
 {
@@ -75,9 +76,12 @@ public class Witch : MonoBehaviour
             Destroy(other.gameObject);
             health --;
             witch.Play();
+
             if(health <= 0)
             {
                 Destroy(gameObject);
+                SceneManager.LoadScene("Finish");
+
             }
         }
         if (other.tag == "WitchTarget")

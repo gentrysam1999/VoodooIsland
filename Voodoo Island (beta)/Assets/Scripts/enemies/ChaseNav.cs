@@ -17,6 +17,7 @@ public class ChaseNav : MonoBehaviour
     public AudioSource chomp;
     public AudioSource slime;
     public AudioSource growl;
+    public GameObject Dead;
 
 
     void Start()
@@ -89,7 +90,14 @@ public class ChaseNav : MonoBehaviour
             Destroy(other.gameObject);
             if (health <= 0)
             {
+                Vector3 pos = transform.position;
+                Quaternion rotation = transform.rotation;
                 Destroy(gameObject);
+                if (Dead != null)
+                {
+                    GameObject DeadMonster = Instantiate(Dead, pos, rotation);
+                }
+                
             }
         }
     }

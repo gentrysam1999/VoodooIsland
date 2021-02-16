@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class Credits : MonoBehaviour
 {
-    float speed = 0.2f;
-    bool crawling = false;
     public Text creditText;
 
     void Start()
@@ -21,7 +19,6 @@ public class Credits : MonoBehaviour
 
         creditText.text = creds;
 
-        crawling = true;
     }
 
     public void backtoMain()
@@ -31,14 +28,6 @@ public class Credits : MonoBehaviour
 
     void Update()
     {
-     if (!crawling)
-     {
-      return;
-     }
-     transform.Translate(Vector3.up * Time.deltaTime * speed);
-     // if (gameObject.transform.position.y > .8)
-     // {
-       // crawling = false;
-     // }
+
     }
-  }
+}

@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: -5807099663321354742
     second: Mouth enemy 5
+  - first:
+      213: 7985253371725656092
+    second: Enemy 2_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -286,6 +289,27 @@ TextureImporter:
       bones: []
       spriteID: a0ea070af99096fa0800000000000000
       internalID: -5807099663321354742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy 2_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 37
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10b23742a151de60800000000000000
+      internalID: 7985253371725656092
       vertices: []
       indices: 
       edges: []

@@ -21,6 +21,8 @@ public class Shooting : MonoBehaviour
     public GameObject p;
     private Player pl;
 
+    public int bulletsFired = 0;
+
     public bool reloading = false;
     private float reloadTimeLeft = 0;
     public AudioSource gunShot;
@@ -79,6 +81,7 @@ public class Shooting : MonoBehaviour
                     {
                         gunShot.Play();
                         bulletsInClip--;
+                        bulletsFired++;
                         shoot();
                     }
 
@@ -115,5 +118,10 @@ public class Shooting : MonoBehaviour
             rb.AddForce(-(firePoint.up) * bulletForce, ForceMode2D.Impulse);
             fireCoolDownTimeLeft = fireCooldownTime;
         }
+    }
+
+    public void SavePlayer()
+    {
+        GlobalControl.Instance.bulletsFired = bulletsFired;
     }
 }

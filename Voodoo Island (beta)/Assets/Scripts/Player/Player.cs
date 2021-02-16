@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     public int ammo;
 
     //set the players speed. 
-    public float speed = 25; // was originally 30, debuffed until later
+    public float speed = 20; // was originally 30, debuffed until later
 
     //set this to true if the player has key in their inventory
     public bool hasKey = false;
@@ -92,7 +92,7 @@ public class Player : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         //if the player is no longer on a key they can't pick it up
-        if(other.tag == "Key" || other.tag == "VoodooPickUp" || other.tag == "HealthPickUp")
+        if(other.tag == "Key" || other.tag == "VoodooPickUp" || other.tag == "HealthPickUp" || other.tag == "Needle")
         {
             canPickUp = false;
         }
@@ -136,7 +136,7 @@ public class Player : MonoBehaviour
     {
         if (needle == 1) // first buff
         {
-            speed = 35;
+            speed = 40;
         } 
         else if(needle == 2) // second buff
         {
