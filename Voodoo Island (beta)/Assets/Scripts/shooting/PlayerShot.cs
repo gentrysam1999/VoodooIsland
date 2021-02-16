@@ -58,6 +58,11 @@ public class PlayerShot : Shooting
 
         }
     }
+
+    void Start()
+    {
+        bulletsFired = GlobalControl.Instance.bulletsFired;
+    }
     public bool isReloading()
     {
         return reloading;
