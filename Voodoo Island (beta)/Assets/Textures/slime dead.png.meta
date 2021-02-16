@@ -1,28 +1,13 @@
 fileFormatVersion: 2
-guid: ad9499c92e45643faa2ec6669433ab5f
+guid: 6c8e42666ed3540559c111a14a6a4f71
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7806976050856398930
-    second: Mouth enemy 1
+      213: 4589483289892159382
+    second: slime dead_0
   - first:
-      213: -5620556579119131400
-    second: Eye enemy
-  - first:
-      213: -7887481178748576459
-    second: Mouth enemy 2
-  - first:
-      213: 7279241670917311338
-    second: Mouth enemy 3
-  - first:
-      213: -5807109298010737745
-    second: Mouth enemy 4
-  - first:
-      213: -5807099663321354742
-    second: Mouth enemy 5
-  - first:
-      213: 7985253371725656092
-    second: Enemy 2_6
+      213: -773145096039608962
+    second: slime dead_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -168,139 +153,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mouth enemy 1
+      name: slime dead_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 55
-        width: 25
-        height: 9
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2501749ea53f75c60800000000000000
-      internalID: 7806976050856398930
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Eye enemy
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 55
-        width: 25
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f49e9df195cff1b0800000000000000
-      internalID: -5620556579119131400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mouth enemy 2
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 42
-        width: 25
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53d9c1858a90a8290800000000000000
-      internalID: -7887481178748576459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mouth enemy 3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 25
-        width: 25
-        height: 14
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6b4f3d8bbf050560800000000000000
-      internalID: 7279241670917311338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mouth enemy 4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 42
-        width: 25
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa3b3306cd0096fa0800000000000000
-      internalID: -5807109298010737745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mouth enemy 5
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 25
-        width: 25
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0ea070af99096fa0800000000000000
-      internalID: -5807099663321354742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Enemy 2_6
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 3
-        width: 37
-        height: 15
+        x: 7
+        y: 32
+        width: 49
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,8 +167,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c10b23742a151de60800000000000000
-      internalID: 7985253371725656092
+      spriteID: 69ffc9c6cbe11bf30800000000000000
+      internalID: 4589483289892159382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime dead_1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 7
+        width: 49
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d49b6a1ac3545f0800000000000000
+      internalID: -773145096039608962
       vertices: []
       indices: 
       edges: []
