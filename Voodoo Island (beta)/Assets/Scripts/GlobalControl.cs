@@ -13,6 +13,7 @@ public class GlobalControl : MonoBehaviour
     public bool hasDoll;
     public float speed = 25;
     public int bulletsFired;
+    public int healthPickUpsUsed;
 
     void Awake()
     {
