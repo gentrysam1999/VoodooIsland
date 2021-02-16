@@ -50,7 +50,7 @@ public class PlayerShot : Shooting
                 {
                     gunShot.Play();
                     bulletsInClip--;
-                    bulletsFired++;
+                    GlobalControl.Instance.bulletsFired++;
                     shoot();
                 }
 
@@ -59,10 +59,7 @@ public class PlayerShot : Shooting
         }
     }
 
-    void Start()
-    {
-        bulletsFired = GlobalControl.Instance.bulletsFired;
-    }
+
     public bool isReloading()
     {
         return reloading;
@@ -72,8 +69,4 @@ public class PlayerShot : Shooting
         return bulletsInClip;
     }
 
-    public void SavePlayer()
-    {
-        GlobalControl.Instance.bulletsFired = bulletsFired;
-    }
 }
