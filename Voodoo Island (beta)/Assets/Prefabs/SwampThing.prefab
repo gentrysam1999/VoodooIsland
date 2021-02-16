@@ -193,7 +193,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8672212278924398376}
   serializedVersion: 6
-  lengthInSec: 0.1
+  lengthInSec: 0.2
   simulationSpeed: 3
   stopAction: 0
   cullingMode: 0
@@ -438,7 +438,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 1
-      minScalar: 0.2
+      minScalar: 0.4
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1018,7 +1018,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 15
+      scalar: 100
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4941,7 +4941,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -5024,6 +5024,7 @@ MonoBehaviour:
   chomp: {fileID: 8333868464824674668}
   slime: {fileID: 1486196376783128643}
   growl: {fileID: 6518161888267705126}
+  Dead: {fileID: 8998901637677227252, guid: 740927a0cc0d248ceb545e3e937d8910, type: 3}
 --- !u!61 &5952103525655962430
 BoxCollider2D:
   m_ObjectHideFlags: 0
