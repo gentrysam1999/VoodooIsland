@@ -5053,7 +5053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   mouth: 0
-  health: 5
+  health: 3
   chomp: {fileID: 0}
   slime: {fileID: 504989254}
   growl: {fileID: 2557268488154300795}
@@ -5349,7 +5349,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 100165415486130735, guid: 4113a4288777f40888f5cebfec108416,
     type: 3}
   fireCooldownTime: 1
+  player: {fileID: 0}
   bulletForce: 22
   gunShot: {fileID: 504989254}
-  player: {fileID: 0}
-  particles: {fileID: 0}
