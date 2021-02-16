@@ -11,7 +11,7 @@ public class GlobalControl : MonoBehaviour
     public int Ammo = 24;
     public int needle = 0;
     public bool hasDoll;
-    public int speed = 25;
+    public float speed = 25;
 
     void Awake()
     {
