@@ -716,6 +716,11 @@ PrefabInstance:
       propertyPath: fireCooldownTime
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5784160221484120513, guid: 0e34794e754854fcc92fb5bfa6a00540,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1273011273}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e34794e754854fcc92fb5bfa6a00540, type: 3}
 --- !u!1 &135062199
@@ -3825,6 +3830,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5784160221484120513, guid: 0e34794e754854fcc92fb5bfa6a00540,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1273011273}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e34794e754854fcc92fb5bfa6a00540, type: 3}
 --- !u!4 &1061964453 stripped
@@ -14751,6 +14761,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5784160221484120513, guid: 0e34794e754854fcc92fb5bfa6a00540,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1273011273}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e34794e754854fcc92fb5bfa6a00540, type: 3}
 --- !u!4 &1409127031 stripped
