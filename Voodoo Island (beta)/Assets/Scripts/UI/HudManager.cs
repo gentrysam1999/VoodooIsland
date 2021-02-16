@@ -132,14 +132,14 @@ public class HudManager : MonoBehaviour
             key.SetActive(false);
         }
 
-        Shooting s = pl.GetComponentInChildren<Shooting>();
-        if (s.reloading)
+        PlayerShot s = pl.GetComponentInChildren<PlayerShot>();
+        if (s.isReloading())
         {
             ammoText.text = "load\n-ing";
         }
         else
         {
-            ammoText.text = s.bulletsInClip.ToString();
+            ammoText.text = s.getBullets().ToString();
         }
         hudHealth.value = pl.health;
 

@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 907567728}
   - component: {fileID: 907567729}
   - component: {fileID: 907567730}
-  - component: {fileID: 1612069457}
+  - component: {fileID: 3015653953556880902}
   m_Layer: 8
   m_Name: Big_Jim
   m_TagString: Player
@@ -764,7 +764,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1612069457
+--- !u!114 &3015653953556880902
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -773,9 +773,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1739131449584644219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b5fa45ffa1f57744b2f8a5bb023cca9, type: 3}
+  m_Script: {fileID: 11500000, guid: 723d1d417e5e44a349c48d12067d8cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firePoint: {fileID: 579796557189474766}
+  bulletPrefab: {fileID: 6596009037242770398, guid: 8e65d0dbc073f406f9bf00139621b692,
+    type: 3}
+  fireCooldownTime: 0.2
+  bulletForce: 50
+  bulletsFired: 0
+  gunShot: {fileID: 907567730}
+  reloadTime: 2
+  clipSize: 6
+  bulletsInClip: 0
 --- !u!1 &1739131449940486101
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,15 +925,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6596009037242770398, guid: 8e65d0dbc073f406f9bf00139621b692,
     type: 3}
   fireCooldownTime: 0
-  player: {fileID: 0}
   bulletForce: 100
-  autoShoot: 0
-  particles: {fileID: 0}
-  reloadTime: 2
-  clipSize: 6
-  bulletsInClip: 0
-  p: {fileID: 1739131449584644219}
-  reloading: 0
+  bulletsFired: 0
   gunShot: {fileID: 907567730}
 --- !u!1 &1739131450247707760
 GameObject:

@@ -7,14 +7,20 @@ using UnityEngine.SceneManagement;
 public class Witch : MonoBehaviour
 {
 
-    public int health = 20;
+
+    public float attackLength = 5;
+
+    public int health = 40;
 
     public GameObject locations;
+
+    public GameObject location2;
 
     //public Transform player;
 
     //The witch travel too her children
     private Transform[] places;
+    private Transform[] places2;
 
     //Target location for the witch
     private Transform target;
@@ -41,8 +47,10 @@ public class Witch : MonoBehaviour
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         places = locations.GetComponentsInChildren<Transform>();
+        places2 = location2.GetComponentsInChildren<Transform>();
 
         target = places[lastLocation];
+        
 
 
     }
@@ -87,18 +95,37 @@ public class Witch : MonoBehaviour
         if (other.tag == "WitchTarget")
         {
             //choose a new random target location for the witch to go too
-            int newLocation = Random.Range(1, places.Length);
 
-            // check it is not the current location
-            while (newLocation == lastLocation)
+            if (health < 20)
             {
-                newLocation = Random.Range(0, places.Length);
-            }
-            
+                int newLocation2 = Random.Range(1, places2.Length);
 
-            //move to the nextLocation;
-            target = places[newLocation];
-            lastLocation = newLocation;
+                // check it is not the current location
+                while (newLocation2 == lastLocation)
+                {
+                    newLocation2 = Random.Range(0, places2.Length);
+                }
+
+
+                //move to the nextLocation;
+                target = places2[newLocation2];
+                lastLocation = newLocation2;
+            }
+            else
+            {
+                int newLocation = Random.Range(1, places.Length);
+
+                // check it is not the current location
+                while (newLocation == lastLocation)
+                {
+                    newLocation = Random.Range(0, places.Length);
+                }
+
+
+                //move to the nextLocation;
+                target = places[newLocation];
+                lastLocation = newLocation;
+            }
         }
     }
 }
