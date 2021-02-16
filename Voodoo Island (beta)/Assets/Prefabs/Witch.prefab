@@ -10170,9 +10170,9 @@ GameObject:
   - component: {fileID: 1869919681}
   - component: {fileID: 1869919682}
   - component: {fileID: -7597863876692105860}
-  - component: {fileID: 8040389041265618319}
   - component: {fileID: 19909145}
   - component: {fileID: 19909146}
+  - component: {fileID: 3266660324289381961}
   m_Layer: 0
   m_Name: Witch
   m_TagString: Untagged
@@ -10258,7 +10258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackLength: 5
-  health: 20
+  health: 30
   locations: {fileID: 0}
   location2: {fileID: 0}
   witch: {fileID: 19909146}
@@ -10273,7 +10273,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 1479372276
   m_Radius: 2
-  m_Speed: 20
+  m_Speed: 30
   m_Acceleration: 12
   avoidancePriority: 1
   m_AngularSpeed: 120
@@ -10299,27 +10299,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 75
   numPoints: 128
---- !u!114 &8040389041265618319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8315074956665261995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bd821610abb043fe8e57231bfcea29e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firePoint: {fileID: 806028669}
-  bulletPrefab: {fileID: 8601745858695736818, guid: 4313cf3ee95fb4866be870a0277354d4,
-    type: 3}
-  fireCooldownTime: 2
-  bulletForce: 25
-  bulletsFired: 0
-  gunShot: {fileID: 19909145}
-  player: {fileID: 0}
-  particles: {fileID: 0}
 --- !u!82 &19909145
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10512,6 +10491,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3266660324289381961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8315074956665261995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 442889bc948b84516b46d16f0676d21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 806028669}
+  bulletPrefab: {fileID: 8601745858695736818, guid: 4313cf3ee95fb4866be870a0277354d4,
+    type: 3}
+  fireCooldownTime: 1
+  bulletForce: 25
+  gunShot: {fileID: 19909145}
+  particles: {fileID: 4873791904422228898}
+  phaseLen: 5
+  fireCoolDownMod: 2
+  player: {fileID: 0}
 --- !u!1 &8519730482254826731
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,7 +9,8 @@ public class Shooting : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public float fireCooldownTime;
-    
+    public Transform player;
+
     public float bulletForce = 20f;
     
 

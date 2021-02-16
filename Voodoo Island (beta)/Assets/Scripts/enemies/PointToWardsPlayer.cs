@@ -9,7 +9,7 @@ public class PointToWardsPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        WitchShooting w = gameObject.transform.parent.parent.GetComponentInParent<WitchShooting>();
+        Shooting w = gameObject.transform.parent.parent.GetComponentInParent<Shooting>();
         target = w.player;
     }
 
