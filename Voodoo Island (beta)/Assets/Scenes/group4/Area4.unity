@@ -427,6 +427,11 @@ PrefabInstance:
       objectReference: {fileID: 89303852}
     - target: {fileID: 8040389041265618319, guid: 90f952778ad6443218842f39d6c779db,
         type: 3}
+      propertyPath: particles
+      value: 
+      objectReference: {fileID: 704191890}
+    - target: {fileID: 8040389041265618319, guid: 90f952778ad6443218842f39d6c779db,
+        type: 3}
       propertyPath: bulletForce
       value: 30
       objectReference: {fileID: 0}
@@ -568,6 +573,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e25fbb1c443a6a8419720988e2b10eb0, type: 3}
+--- !u!198 &704191890 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4873791904422228898, guid: 90f952778ad6443218842f39d6c779db,
+    type: 3}
+  m_PrefabInstance: {fileID: 430579033}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &942691528
 GameObject:
   m_ObjectHideFlags: 0
