@@ -92,7 +92,7 @@ public class Player : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         //if the player is no longer on a key they can't pick it up
-        if(other.tag == "Key" || other.tag == "VoodooPickUp" || other.tag == "HealthPickUp")
+        if(other.tag == "Key" || other.tag == "VoodooPickUp" || other.tag == "HealthPickUp" || other.tag == "Needle")
         {
             canPickUp = false;
         }
