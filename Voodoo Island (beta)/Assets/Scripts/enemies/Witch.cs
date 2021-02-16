@@ -103,7 +103,7 @@ public class Witch : MonoBehaviour
                 // check it is not the current location
                 while (newLocation2 == lastLocation)
                 {
-                    newLocation2 = Random.Range(0, places2.Length);
+                    newLocation2 = Random.Range(1, places2.Length);
                 }
 
 
