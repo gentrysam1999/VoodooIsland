@@ -77,11 +77,6 @@ public class HudManager : MonoBehaviour
         key.SetActive(false);
     }
 
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
-
     public void ContinueGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
