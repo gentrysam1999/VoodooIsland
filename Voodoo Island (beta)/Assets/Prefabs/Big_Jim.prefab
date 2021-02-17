@@ -390,6 +390,7 @@ MonoBehaviour:
   ammoMax: 24
   health: 0
   healthPickUpsUsed: 0
+  ps: {fileID: 0}
   ammo: 0
   speed: 30
   hasKey: 0
@@ -784,7 +785,7 @@ MonoBehaviour:
   player: {fileID: 0}
   bulletForce: 50
   gunShot: {fileID: 907567730}
-  reloadTime: 1
+  reloadTime: 1.2
   clipSize: 6
   bulletsFired: 0
 --- !u!1 &1739131449940486101

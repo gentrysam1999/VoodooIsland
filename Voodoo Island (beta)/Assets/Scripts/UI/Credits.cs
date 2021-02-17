@@ -12,9 +12,9 @@ public class Credits : MonoBehaviour
     {
         // init text here, more space to work than in the Inspector (but you could do that instead)
         string creds = "TEAM CHAMELEON\n\n";
-        creds += "Art Director:\nSam Gentry\n";
-        creds += "Game Design:\nJacob Cone\n";
-        creds += "Programming:\nSean Cartman\n";
+        creds += "Art, Animation and Characters:\nSam Gentry\n";
+        creds += "Game Design / UI:\nJacob Cone\n";
+        creds += "Programming and AI:\nSean Cartman\n";
         creds += "Level Design / Artist:\nCastipher McSkimming\n";
 
         creditText.text = creds;
