@@ -14,6 +14,7 @@ public class GlobalControl : MonoBehaviour
     public float speed = 25;
     public int bulletsFired;
     public int healthPickUpsUsed;
+    public int deaths;
 
     void Awake()
     {

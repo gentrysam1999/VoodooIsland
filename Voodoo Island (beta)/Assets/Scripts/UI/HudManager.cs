@@ -39,6 +39,7 @@ public class HudManager : MonoBehaviour
     public Sprite noNeedle;
 
     public GameObject key;
+    int deaths = GlobalControl.Instance.deaths;
 
     // Health value currently displayed
     float health;
@@ -157,6 +158,8 @@ public class HudManager : MonoBehaviour
             hPanel.SetActive(false);
             inventoryGrid.SetActive(false);
             pauseMenuPanel.SetActive(false);
+            deaths++;
+            GlobalControl.Instance.deaths = deaths;
         }
 
         if (pl.time > 0f && pl.hasDoll == true)
