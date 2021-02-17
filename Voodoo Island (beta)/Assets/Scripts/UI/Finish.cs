@@ -42,7 +42,14 @@ public class Finish : MonoBehaviour
             stats += "YOU IGNORED THE DOLL\n";
         }
         stats += "YOU USED: " + healthPickUpsUsed + " HEALTH PICKUPS\n";
-        stats += "YOU DIED: " + deaths + " TIMES\n";
+        if (deaths == 1)
+        {
+            stats += "YOU DIED: " + deaths + " TIME\n";
+        }
+        else
+        {
+            stats += "YOU DIED: " + deaths + " TIMES\n";
+        }
 
         statsText.text = stats;
 
