@@ -17,7 +17,6 @@ public class Note : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InteractKey = GameObject.Find("InteractKey");
         InteractKey.SetActive(false);
         evilStatue = false;
     }
@@ -102,11 +101,6 @@ public class Note : MonoBehaviour
                     textObject.text = "COLLECT THE THREE NEEDLES. SURVIVE. KILL THE WITCH. \n...[The Witch?]";
                     header.text = "Ragged carving at foot of statue";
                 }
-                else if (objname == "NoteAboutWitch")
-                {
-                    textObject.text = "I've equipped a few of the workmen with guns. I'm sorry dear. I'm going with them too. Keep the doors locked unless you know for certain it is us. The Witch will be around here somewhere. She can't hide forever.";
-                    header.text = "Note about 'Witch'";
-                }
                 else if (objname == "ShoppingList")
                 {
                     textObject.text = "Dear George, I hate to be a bother, but we're short on fresh vegetables. When you place your next order, would you please be able to get some … [the letter is otherwise illegible]";
@@ -117,9 +111,14 @@ public class Note : MonoBehaviour
                     textObject.text = "The words 'I WON'T LET IT HAPPEN' are scrawled in messy handwriting down the page.\nWhoever wrote this must surely be insane.";
                     header.text = "Strange Note";
                 }
+                else if (objname == "VoodooBook")
+                {
+                    textObject.text = "Needles within a doll can't be removed without the destruction of its sister needle, while also holding the doll. This linking allows for the practitioner to keep the curse going, even if the target finds the doll.";
+                    header.text = "Book on Voodoo";
+                }
                 else if (objname == "VoodooNote")
                 {
-                    textObject.text = "A voodoo doll is used to cripple the target. Three needles are then placed within the doll replica of the target. This then allows the practitioner to hurt remotely. Needles can only be removed with other needles...";
+                    textObject.text = "A voodoo doll is used to cripple the target. Three needles are then placed within the doll replica of the target. This then allows the practitioner to hurt remotely. Needles can only be removed by...";
                     header.text = "Extract from a book";
                 }
                 else if (objname == "LockedNursery")
