@@ -60,7 +60,7 @@ public class EnemySight : MonoBehaviour
             if (playerhit.collider != null)
             {
     
-                if(playerhit.distance < wallHit.distance+5f)
+                if(playerhit.distance < wallHit.distance)
                 {
                     hasHit = true;
                 }
