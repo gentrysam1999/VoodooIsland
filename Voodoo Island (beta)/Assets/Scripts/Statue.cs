@@ -8,7 +8,7 @@ public class Statue : MonoBehaviour
     public Sprite regStatue;
     public Sprite altStatue;
     public GameObject statueNote;
-    public static float targetTime = 10.0f;
+    public static float targetTime = 7.0f;
 
 
     // Start is called before the first frame update
@@ -27,6 +27,5 @@ public class Statue : MonoBehaviour
             spriteRenderer.sprite = altStatue;
             statueNote.name = "StatueNote";
         }
-
     }
 }
