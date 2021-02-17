@@ -39,6 +39,7 @@ public class HudManager : MonoBehaviour
     public Sprite noNeedle;
 
     public GameObject key;
+    int deaths = GlobalControl.Instance.deaths;
 
     // Health value currently displayed
     float health;
@@ -114,18 +115,18 @@ public class HudManager : MonoBehaviour
             voodooDoll.SetActive(true);
         }
         // the below code is to do with the needles and what happens when you pick them up
-        if (pl.needle == 1)
+        if (pl.needle == 1 && pl.hasDoll == true)
         {
             voodooDollImage.sprite = oneNeedle;
             VoodooBuff.text = "YOU NOW RUN FASTER";
         }
-        else if (pl.needle == 2)
+        else if (pl.needle == 2 && pl.hasDoll == true)
         {
             voodooDollImage.sprite = twoNeedle;
             healthSlider.maxValue = 7;
             VoodooBuff.text = "YOU NOW HAVE MORE HEALTH";
         }
-        else if (pl.needle == 3)
+        else if (pl.needle == 3 && pl.hasDoll == true)
         {
             voodooDollImage.sprite = noNeedle;
             VoodooBuff.text = "YOU NOW RELOAD FASTER";
@@ -157,9 +158,11 @@ public class HudManager : MonoBehaviour
             hPanel.SetActive(false);
             inventoryGrid.SetActive(false);
             pauseMenuPanel.SetActive(false);
+            deaths++;
+            GlobalControl.Instance.deaths = deaths;
         }
 
-        if (pl.time > 0f)
+        if (pl.time > 0f && pl.hasDoll == true)
         {
             VoodooTextObject.SetActive(true);
             pl.time -= Time.deltaTime;
