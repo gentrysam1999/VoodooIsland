@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Witch : MonoBehaviour
@@ -11,6 +12,8 @@ public class Witch : MonoBehaviour
     public float attackLength = 5;
 
     public int health = 40;
+
+    public Slider witchHealthSlider;
 
     public GameObject locations;
 
@@ -50,7 +53,8 @@ public class Witch : MonoBehaviour
         places2 = location2.GetComponentsInChildren<Transform>();
 
         target = places[lastLocation];
-        
+        witchHealthSlider.value = health;
+
 
 
     }
@@ -67,6 +71,8 @@ public class Witch : MonoBehaviour
             agent.SetDestination(target.transform.position);
             Navigate.DebugDrawPath(agent.path.corners);
         }
+        witchHealthSlider.value = health;
+        Debug.Log(health);
     }
 
     void OnTriggerEnter2D(Collider2D other)
