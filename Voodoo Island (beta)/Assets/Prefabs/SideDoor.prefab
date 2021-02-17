@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1276560732224568058}
   - component: {fileID: 985902736}
   - component: {fileID: 1251295394}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SideDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
