@@ -10,6 +10,7 @@ public class Finish : MonoBehaviour
     int bulletsFired;
     bool hasDoll;
     int needle;
+    int healthPickUpsUsed;
 
     // Start is called before the first frame update
     void Start()
@@ -17,8 +18,9 @@ public class Finish : MonoBehaviour
         needle = GlobalControl.Instance.needle;
         hasDoll = GlobalControl.Instance.hasDoll;
         bulletsFired = GlobalControl.Instance.bulletsFired;
+        int healthPickUpsUsed = GlobalControl.Instance.healthPickUpsUsed;
 
-        string stats = "YOU WIN\n\n";
+    string stats = "YOU WIN\n\n";
         stats += "Big Jim staggered away from the Witch, and looked upon the accursed mansion he had struggled through. \nThe mansion was collapsing in on itself, burying the voodoo curse ... for now!\n\n";
         stats += "YOU FIRED: " + bulletsFired + " BULLETS\n";
         if (needle == 1)
@@ -37,6 +39,7 @@ public class Finish : MonoBehaviour
         {
             stats += "YOU IGNORED THE DOLL\n";
         }
+        stats += "YOU USED: " + healthPickUpsUsed + " HEALTH PICKUPS\n";
 
         statsText.text = stats;
 

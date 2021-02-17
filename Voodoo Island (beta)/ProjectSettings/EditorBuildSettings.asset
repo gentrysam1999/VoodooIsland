@@ -5,12 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 76a1a48a48b9a48f999f2eaf4da22257
-  - enabled: 0
-    path: Assets/Scenes/TestScenes/tile test.unity
-    guid: 3f7cb77b25c3f4c6fa4bde7f12406995
   - enabled: 1
     path: Assets/Scenes/group1/MainMenu.unity
     guid: a61a9c818bf9f438699f22e753482de5
@@ -29,10 +23,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/group4/Area4.unity
     guid: 4fe363d4cd596564ab033b9769d7cb2c
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/group4/Finish.unity
     guid: f1c3563b69f4e00499e78063ea688cd4
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/TestScenes/tile test.unity
+    guid: 3f7cb77b25c3f4c6fa4bde7f12406995
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
