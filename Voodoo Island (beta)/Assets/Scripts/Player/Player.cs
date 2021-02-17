@@ -138,6 +138,8 @@ public class Player : MonoBehaviour
     // This method is used for the upgrades that are acquired to counter the debuffs from the Witch
     void NeedleUp()
     {
+        needle++;
+        GlobalControl.Instance.needle = needle;
         if (hasDoll != false)
         {
             if (needle == 1) // first buff
@@ -242,8 +244,6 @@ public class Player : MonoBehaviour
                 }
                 if(colliderTagName == "Needle")
                 {
-                    needle++;
-                    GlobalControl.Instance.needle = needle;
                     Destroy(pickupItem);
                     obtained.Play();
                     NeedleUp();
