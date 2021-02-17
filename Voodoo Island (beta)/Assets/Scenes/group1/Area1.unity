@@ -211,7 +211,6 @@ GameObject:
   m_Component:
   - component: {fileID: 19530942}
   - component: {fileID: 19530943}
-  - component: {fileID: 19530944}
   - component: {fileID: 19530945}
   m_Layer: 0
   m_Name: voodoo Jim_2
@@ -286,19 +285,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &19530944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 19530941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1d5b0d3531904da2a3fbb068dd6d151, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractKey: {fileID: 956846289}
 --- !u!61 &19530945
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -573,12 +559,12 @@ PrefabInstance:
     - target: {fileID: 503130591539826830, guid: 9019e2defc4c81840b479b79f9fdb1fa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 503130591539826830, guid: 9019e2defc4c81840b479b79f9fdb1fa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -84.4
+      value: -14.8
       objectReference: {fileID: 0}
     - target: {fileID: 503130591539826830, guid: 9019e2defc4c81840b479b79f9fdb1fa,
         type: 3}
