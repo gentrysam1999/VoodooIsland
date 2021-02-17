@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
 
     public int health;
 
+    int healthMax;
+
     public int healthPickUpsUsed;
 
     public PlayerShot ps;
@@ -153,6 +155,8 @@ public class Player : MonoBehaviour
             else if (needle == 2) // second buff
             {
                 health = 7;
+                healthMax = 7;
+                GlobalControl.Instance.healthMax = healthMax;
             }
             else if (needle == 3) // third and final buff
             {
@@ -171,6 +175,9 @@ public class Player : MonoBehaviour
         hasDoll = GlobalControl.Instance.hasDoll;
         speed = GlobalControl.Instance.speed;
         healthPickUpsUsed = GlobalControl.Instance.healthPickUpsUsed;
+        healthMax = GlobalControl.Instance.healthMax;
+
+        healthMax = 5;
         
 
         //do not allow the agent compoent to rotate the player
@@ -238,7 +245,7 @@ public class Player : MonoBehaviour
                   hasDoll = true;
 
                 }
-                if (colliderTagName == "HealthPickUp")
+                if (colliderTagName == "HealthPickUp" && health < healthMax)
                 {
                     health++;
                     healthPickUpsUsed++;
