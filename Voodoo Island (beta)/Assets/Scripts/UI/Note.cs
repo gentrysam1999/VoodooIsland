@@ -17,7 +17,6 @@ public class Note : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InteractKey = GameObject.Find("InteractKey");
         InteractKey.SetActive(false);
         evilStatue = false;
     }
