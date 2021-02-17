@@ -42,6 +42,7 @@ public class DoorSetActive : MonoBehaviour, IDoor
     {
         
         animator.SetBool("Open", true);
+        gameObject.tag = "Untagged";
         door.Play();
         StartCoroutine(OpenDelay());
         //navmeshobstacle.enabled = false;
@@ -51,6 +52,7 @@ public class DoorSetActive : MonoBehaviour, IDoor
     public void CloseDoor()
     {
         animator.SetBool("Open", false);
+        gameObject.tag = "Door";
         StartCoroutine(CloseDelay());
         //navmeshobstacle.enabled = true;
     }

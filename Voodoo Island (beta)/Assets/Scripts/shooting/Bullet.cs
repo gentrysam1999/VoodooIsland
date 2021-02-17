@@ -16,5 +16,13 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
             //Debug.Log("destroy");
         }
+
+        if (other.tag == "Door")
+        {
+            Debug.Log("hit");
+            Destroy(gameObject);
+        }
+
+
     }
 }
