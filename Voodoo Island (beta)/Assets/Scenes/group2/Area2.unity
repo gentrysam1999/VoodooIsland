@@ -1819,6 +1819,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 907567727}
+    - target: {fileID: 5613128299286217560, guid: 1962b90ba72684a72bd3e825eda489ac,
+        type: 3}
+      propertyPath: radius
+      value: 32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1962b90ba72684a72bd3e825eda489ac, type: 3}
 --- !u!4 &542690645 stripped
@@ -3220,7 +3225,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 627927843e506475fb564492e81c9b6b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f547cca1c8648414b80c8dd2289fd2ac, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3384,6 +3389,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9157171848892199374, guid: eb46ab1eabdcc422584351274bfe0aa5,
+        type: 3}
+      propertyPath: radius
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb46ab1eabdcc422584351274bfe0aa5, type: 3}
 --- !u!4 &1049828995 stripped
@@ -3463,6 +3473,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157171848892199374, guid: eb46ab1eabdcc422584351274bfe0aa5,
+        type: 3}
+      propertyPath: radius
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb46ab1eabdcc422584351274bfe0aa5, type: 3}
@@ -14813,6 +14828,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 907567727}
+    - target: {fileID: 5613128299286217560, guid: 1962b90ba72684a72bd3e825eda489ac,
+        type: 3}
+      propertyPath: radius
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1962b90ba72684a72bd3e825eda489ac, type: 3}
 --- !u!4 &1584980334 stripped
@@ -15097,6 +15117,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 907567727}
+    - target: {fileID: 5613128299286217560, guid: 1962b90ba72684a72bd3e825eda489ac,
+        type: 3}
+      propertyPath: radius
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1962b90ba72684a72bd3e825eda489ac, type: 3}
 --- !u!4 &1703466267 stripped
@@ -20575,6 +20600,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 907567727}
+    - target: {fileID: 5613128299286217560, guid: 1962b90ba72684a72bd3e825eda489ac,
+        type: 3}
+      propertyPath: radius
+      value: 32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1962b90ba72684a72bd3e825eda489ac, type: 3}
 --- !u!4 &2019322481 stripped
