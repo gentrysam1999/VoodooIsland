@@ -8,21 +8,14 @@ public class Bullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //Check if key
-        if (other.tag == "Wall")
+        if (other.tag == "Wall" || other.tag == "Door")
         {
-            Debug.Log("hit");
+            //Debug.Log("hit");
             //GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
             //Destroy(effect, 5f);
             Destroy(gameObject);
             //Debug.Log("destroy");
         }
-
-        if (other.tag == "Door")
-        {
-            Debug.Log("hit");
-            Destroy(gameObject);
-        }
-
 
     }
 }

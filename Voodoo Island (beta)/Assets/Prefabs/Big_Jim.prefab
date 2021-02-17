@@ -389,6 +389,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammoMax: 24
   health: 0
+  healthPickUpsUsed: 0
+  ps: {fileID: 0}
   ammo: 0
   speed: 30
   hasKey: 0
@@ -779,13 +781,13 @@ MonoBehaviour:
   firePoint: {fileID: 579796557189474766}
   bulletPrefab: {fileID: 6596009037242770398, guid: 8e65d0dbc073f406f9bf00139621b692,
     type: 3}
-  fireCooldownTime: 0.2
+  fireCooldownTime: 0.15
+  player: {fileID: 0}
   bulletForce: 50
-  bulletsFired: 0
   gunShot: {fileID: 907567730}
-  reloadTime: 2
+  reloadTime: 1.2
   clipSize: 6
-  bulletsInClip: 0
+  bulletsFired: 0
 --- !u!1 &1739131449940486101
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,8 +927,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6596009037242770398, guid: 8e65d0dbc073f406f9bf00139621b692,
     type: 3}
   fireCooldownTime: 0
+  player: {fileID: 0}
   bulletForce: 100
-  bulletsFired: 0
   gunShot: {fileID: 907567730}
 --- !u!1 &1739131450247707760
 GameObject:

@@ -6,10 +6,13 @@ using UnityEngine.AI;
 
 public class DoorSetActive : MonoBehaviour, IDoor
 {
+
+    //public GameObject box;
+
     private Animator animator;
     private AudioSource door;
     private bool isOpen = false;
-
+    private BoxCollider2D box;
     private NavMeshObstacle navmeshobstacle;
 
     IEnumerator OpenDelay()
@@ -43,6 +46,7 @@ public class DoorSetActive : MonoBehaviour, IDoor
         
         animator.SetBool("Open", true);
         gameObject.tag = "Untagged";
+        gameObject.layer = 0;
         door.Play();
         StartCoroutine(OpenDelay());
         //navmeshobstacle.enabled = false;
@@ -53,6 +57,7 @@ public class DoorSetActive : MonoBehaviour, IDoor
     {
         animator.SetBool("Open", false);
         gameObject.tag = "Door";
+        gameObject.layer = 9;
         StartCoroutine(CloseDelay());
         //navmeshobstacle.enabled = true;
     }

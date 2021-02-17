@@ -5107,7 +5107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 3
-  numPoints: 64
+  numPoints: 32
 --- !u!82 &1486196376783128643
 AudioSource:
   m_ObjectHideFlags: 0

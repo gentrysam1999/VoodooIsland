@@ -83,7 +83,7 @@ public class EnemySight : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.yellow;
 
         // Compute the angle between two triangles in the cricle
         float delta = 2f * Mathf.PI / (float)(numPoints - 1);
