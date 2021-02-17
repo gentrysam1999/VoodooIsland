@@ -25,11 +25,11 @@ public class Finish : MonoBehaviour
         stats += "YOU FIRED: " + bulletsFired + " BULLETS\n";
         if (needle == 1)
         {
-            stats += "YOU PICKED UP: " + needle + " NEEDLE\n";
+            stats += "YOU FOUND AND DESTROYED: " + needle + " NEEDLE\n";
         }
         else
         {
-            stats += "YOU PICKED UP: " + needle + " NEEDLES\n";
+            stats += "YOU FOUND AND DESTROYED: " + needle + " NEEDLES\n";
         }
         if (hasDoll == true)
         {
