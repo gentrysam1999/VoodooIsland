@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
 
     public int healthPickUpsUsed;
 
+    public PlayerShot ps;
+
     //set the starting ammo
     public int ammo;
 
@@ -152,7 +154,7 @@ public class Player : MonoBehaviour
             }
             else if (needle == 3) // third and final buff
             {
-                // not sure what the final buff should be
+                ps.reloadTime = 0.8f;
             }
         }
     }
