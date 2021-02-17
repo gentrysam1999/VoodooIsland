@@ -92,7 +92,7 @@ public class Note : MonoBehaviour
                 }
                 else if (objname == "RegularStatueNote")
                 {
-                    textObject.text = "This site is dedicated to Maria Farthing, for her dedication to nature and continued preservation of the island we call home.";
+                    textObject.text = "This site is dedicated to Maria Farthing, for her dedication to nature\nand continued preservation of the island we call home.";
                     header.text = "Inscription at foot of the statue";
                     evilStatue = true;
                 }
@@ -118,7 +118,7 @@ public class Note : MonoBehaviour
                 }
                 else if (objname == "VoodooNote")
                 {
-                    textObject.text = "A voodoo doll is used to cripple the target. Three needles are then placed within the doll replica of the target. This then allows the practitioner to hurt remotely. Needles can only be removed by...";
+                    textObject.text = "A voodoo doll is used to cripple the target. Three needles are placed within the doll replica of the target. This then allows the practitioner to hurt the target remotely. Needles can only be removed by...";
                     header.text = "Extract from a book";
                 }
                 else if (objname == "LockedNursery")
