@@ -51,6 +51,8 @@ public class Player : MonoBehaviour
 
     public int needle = 0;
 
+    public float time;
+
     //pickUpName
     private string colliderTagName;
 
@@ -246,6 +248,7 @@ public class Player : MonoBehaviour
                 }
                 if(colliderTagName == "Needle")
                 {
+                    time = 3.0f;
                     Destroy(pickupItem);
                     obtained.Play();
                     NeedleUp();

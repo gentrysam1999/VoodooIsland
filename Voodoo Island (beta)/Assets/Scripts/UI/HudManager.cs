@@ -12,6 +12,9 @@ public class HudManager : MonoBehaviour
     // the text element found in textbox
     public static Text note;
 
+    public GameObject VoodooTextObject;
+    public Text VoodooBuff;
+
     // the text box that contains how much ammo you have left
     public static Text ammoText;
 
@@ -82,8 +85,8 @@ public class HudManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    // Update is called once per frame
-    void Update()
+      // Update is called once per frame
+        void Update()
     {
         if (Note.reading == true)
         {
@@ -106,28 +109,33 @@ public class HudManager : MonoBehaviour
             // If user presses ESC, show the pause menu in pause mode
             pauseMenu.ShowPause();
         }
-
         if (pl.hasDoll == true)
         {
             voodooDoll.SetActive(true);
         }
+        // the below code is to do with the needles and what happens when you pick them up
         if (pl.needle == 1)
         {
             voodooDollImage.sprite = oneNeedle;
-        } 
+            VoodooBuff.text = "YOU NOW RUN FASTER";
+        }
         else if (pl.needle == 2)
         {
             voodooDollImage.sprite = twoNeedle;
             healthSlider.maxValue = 7;
-        } else if (pl.needle == 3)
+            VoodooBuff.text = "YOU NOW HAVE MORE HEALTH";
+        }
+        else if (pl.needle == 3)
         {
             voodooDollImage.sprite = noNeedle;
+            VoodooBuff.text = "YOU NOW RELOAD FASTER";
         }
 
         if (pl.hasKey == true)
         {
             key.SetActive(true);
-        } else
+        }
+        else
         {
             key.SetActive(false);
         }
@@ -150,5 +158,14 @@ public class HudManager : MonoBehaviour
             inventoryGrid.SetActive(false);
             pauseMenuPanel.SetActive(false);
         }
+
+        if (pl.time > 0f)
+        {
+            VoodooTextObject.SetActive(true);
+            pl.time -= Time.deltaTime;
+        } else
+        {
+            VoodooTextObject.SetActive(false);
         }
     }
+}

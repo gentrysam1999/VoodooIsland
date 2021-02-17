@@ -13,7 +13,7 @@ public class Credits : MonoBehaviour
         // init text here, more space to work than in the Inspector (but you could do that instead)
         string creds = "TEAM CHAMELEON\n\n";
         creds += "Art, Animation and Characters:\nSam Gentry\n";
-        creds += "Game Design / UI:\nJacob Cone\n";
+        creds += "Game Design / UI / Story:\nJacob Cone\n";
         creds += "Programming and AI:\nSean Cartman\n";
         creds += "Level Design / Artist:\nCastipher McSkimming\n";
 
