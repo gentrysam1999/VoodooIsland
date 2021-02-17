@@ -9,7 +9,7 @@ public class DoorSetActive : MonoBehaviour, IDoor
     private Animator animator;
     private AudioSource door;
     private bool isOpen = false;
-
+    private BoxCollider2D box;
     private NavMeshObstacle navmeshobstacle;
 
     IEnumerator OpenDelay()

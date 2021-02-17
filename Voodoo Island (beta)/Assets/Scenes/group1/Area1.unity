@@ -133,16 +133,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: inactivedoor
       objectReference: {fileID: 0}
-    - target: {fileID: 1276560732224568060, guid: 424cf6a173ba4604db3614c5c340e87e,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1276560732224568062, guid: 424cf6a173ba4604db3614c5c340e87e,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1276560732224568063, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}
       propertyPath: m_RootOrder
@@ -198,8 +188,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1276560732224568062, guid: 424cf6a173ba4604db3614c5c340e87e, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 424cf6a173ba4604db3614c5c340e87e, type: 3}
 --- !u!1 &19530941
 GameObject:
@@ -554,6 +543,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VoodooNote
+      objectReference: {fileID: 0}
+    - target: {fileID: 503130591539826829, guid: 9019e2defc4c81840b479b79f9fdb1fa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 503130591539826830, guid: 9019e2defc4c81840b479b79f9fdb1fa,
         type: 3}
@@ -1229,6 +1223,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SwampThing
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814799452281987741, guid: eb46ab1eabdcc422584351274bfe0aa5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8814799452281987751, guid: eb46ab1eabdcc422584351274bfe0aa5,
         type: 3}
@@ -10400,6 +10399,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mouth enemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 495380653408570540, guid: 1962b90ba72684a72bd3e825eda489ac,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 495380653408570542, guid: 1962b90ba72684a72bd3e825eda489ac,
         type: 3}
       propertyPath: m_RootOrder
@@ -10955,6 +10959,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: inactivedoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276560732224568048, guid: 424cf6a173ba4604db3614c5c340e87e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1276560732224568060, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}
@@ -11835,6 +11844,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mouth enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 495380653408570540, guid: 1962b90ba72684a72bd3e825eda489ac,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 495380653408570542, guid: 1962b90ba72684a72bd3e825eda489ac,
         type: 3}
       propertyPath: m_RootOrder
@@ -12114,10 +12128,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2611922089175307137, guid: 4c6c4c31b9c754ca7a49981f8ca0d2b3,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4253682088603206233, guid: 4c6c4c31b9c754ca7a49981f8ca0d2b3,
         type: 3}
       propertyPath: m_Name
       value: doorF
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253682088603206233, guid: 4c6c4c31b9c754ca7a49981f8ca0d2b3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4253682088603206233, guid: 4c6c4c31b9c754ca7a49981f8ca0d2b3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 4253682088603206235, guid: 4c6c4c31b9c754ca7a49981f8ca0d2b3,
         type: 3}
@@ -12173,6 +12202,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8101066226593578452, guid: 4c6c4c31b9c754ca7a49981f8ca0d2b3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c6c4c31b9c754ca7a49981f8ca0d2b3, type: 3}
@@ -38553,6 +38587,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: doorH
+      objectReference: {fileID: 0}
+    - target: {fileID: 1687377305866462474, guid: 47f908730abd82b42a19141024e9bd88,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47f908730abd82b42a19141024e9bd88, type: 3}

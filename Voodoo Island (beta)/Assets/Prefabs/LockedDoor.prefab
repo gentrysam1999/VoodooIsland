@@ -137,10 +137,15 @@ PrefabInstance:
       propertyPath: m_Extents.y
       value: 0.275
       objectReference: {fileID: 0}
+    - target: {fileID: 3775633280354767387, guid: 4c6c4c31b9c754ca7a49981f8ca0d2b3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4253682088603206233, guid: 4c6c4c31b9c754ca7a49981f8ca0d2b3,
         type: 3}
       propertyPath: m_Name
-      value: doorH
+      value: LockedDoor
       objectReference: {fileID: 0}
     - target: {fileID: 4253682088603206235, guid: 4c6c4c31b9c754ca7a49981f8ca0d2b3,
         type: 3}
