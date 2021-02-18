@@ -11,7 +11,7 @@ public class Witch : MonoBehaviour
 
     public float attackLength = 5;
 
-    public int health = 40;
+    public int health = 60;
 
     public Slider witchHealthSlider;
 
@@ -101,8 +101,15 @@ public class Witch : MonoBehaviour
         if (other.tag == "WitchTarget")
         {
             //choose a new random target location for the witch to go too
+            makeMove();
 
-            if (health < 20)
+        }
+    }
+    void makeMove()
+    {
+        {
+
+            if (health < 35)
             {
                 int newLocation2 = Random.Range(1, places2.Length);
 
@@ -132,6 +139,13 @@ public class Witch : MonoBehaviour
                 target = places[newLocation];
                 lastLocation = newLocation;
             }
+        }
+    }
+    public void checkMovement()
+    {
+        if (agent.velocity.x == 0 || agent.velocity.y == 0)
+        {
+            makeMove();
         }
     }
 }
