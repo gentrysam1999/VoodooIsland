@@ -21,6 +21,7 @@ TagManager:
   - VoodooPickUp
   - Needle
   - Note
+  - furniture
   layers:
   - Default
   - TransparentFX
