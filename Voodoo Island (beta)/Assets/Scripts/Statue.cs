@@ -23,7 +23,7 @@ public class Statue : MonoBehaviour
     void Update()
     {
         targetTime -= Time.deltaTime;
-        if (targetTime <= 0f && Note.evilStatue == true)
+        if (targetTime <= 0f)
         {
             spriteRenderer.sprite = altStatue;
             statueNote.name = "StatueNote";

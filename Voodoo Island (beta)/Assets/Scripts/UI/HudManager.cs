@@ -87,6 +87,11 @@ public class HudManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void QuitGame()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
       // Update is called once per frame
         void Update()
     {

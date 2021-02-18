@@ -13,7 +13,7 @@ public class End : MonoBehaviour
     void Start()
     {
         string message = "Big Jim staggered away from the Witch, and looked upon the accursed mansion he had struggled through. \nThe mansion was collapsing in on itself, burying the voodoo curse ... for now!\n\n";
-        string message2 = "...press enter for stats";
+        string message2 = "...PRESS ANY KEY TO SEE YOUR STATS";
 
         statsText.text = message;
         statsText2.text = message2;
@@ -22,7 +22,7 @@ public class End : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("return"))
+        if (Input.anyKeyDown && !Input.GetButtonDown("Fire1"))
         {
             SceneManager.LoadScene("Finish");
         }
