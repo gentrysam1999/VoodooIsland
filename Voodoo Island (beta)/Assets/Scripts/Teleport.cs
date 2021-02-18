@@ -22,16 +22,28 @@ public class Teleport : MonoBehaviour
         {
             SceneManager.LoadScene("Area2");
             player.SavePlayer();
+            if (GlobalControl.Instance.level < 1)
+            {
+                GlobalControl.Instance.level = 1;
+            }
         }
         else if (other.tag == "Living")
         {
             SceneManager.LoadScene("Area3");
             player.SavePlayer();
+            if (GlobalControl.Instance.level < 2)
+            {
+                GlobalControl.Instance.level = 2;
+            }
         }
         else if (other.tag == "Jetty")
         {
             SceneManager.LoadScene("Area4");
             player.SavePlayer();
+            if (GlobalControl.Instance.level < 3)
+            {
+                GlobalControl.Instance.level = 3;
+            }
         }
     }
 }
