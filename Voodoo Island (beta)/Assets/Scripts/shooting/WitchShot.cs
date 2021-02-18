@@ -60,6 +60,7 @@ public class WitchShot : Shooting
         else
         {
             p1Shoot();
+            w.checkMovement();
         }
 
     }
