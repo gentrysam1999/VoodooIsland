@@ -10861,6 +10861,11 @@ PrefabInstance:
       objectReference: {fileID: 1858396660}
     - target: {fileID: 503130591539826828, guid: 9019e2defc4c81840b479b79f9fdb1fa,
         type: 3}
+      propertyPath: rustle
+      value: 
+      objectReference: {fileID: 1751581624}
+    - target: {fileID: 503130591539826828, guid: 9019e2defc4c81840b479b79f9fdb1fa,
+        type: 3}
       propertyPath: headShot
       value: 
       objectReference: {fileID: 1460914060}
@@ -10868,7 +10873,7 @@ PrefabInstance:
         type: 3}
       propertyPath: lightning
       value: 
-      objectReference: {fileID: 1751581618}
+      objectReference: {fileID: 1751581623}
     - target: {fileID: 503130591539826828, guid: 9019e2defc4c81840b479b79f9fdb1fa,
         type: 3}
       propertyPath: textObject
@@ -10942,6 +10947,11 @@ PrefabInstance:
     - target: {fileID: 503130591539826830, guid: 9019e2defc4c81840b479b79f9fdb1fa,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8152027541430498881, guid: 9019e2defc4c81840b479b79f9fdb1fa,
+        type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12076,7 +12086,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1043240594}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1751581618
+--- !u!82 &1751581623
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12172,6 +12182,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &1751581624 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8152027541430498881, guid: 9019e2defc4c81840b479b79f9fdb1fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 1043240594}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1785016518
 GameObject:
   m_ObjectHideFlags: 0
