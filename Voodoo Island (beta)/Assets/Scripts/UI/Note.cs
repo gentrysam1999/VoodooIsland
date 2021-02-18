@@ -34,7 +34,9 @@ public class Note : MonoBehaviour
     {
         // Check the tag of the object the player
         // has collided with
+        
         objname = gameObject.name;
+        Debug.Log(other.tag);
         if (other.tag == "Player")
         {
             InteractKey.SetActive(true); // false to hide, true to show
