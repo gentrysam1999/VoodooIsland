@@ -13,7 +13,7 @@ public class Witch : MonoBehaviour
 
     public int health = 60;
 
-    public Slider witchHealthSlider;
+    private Slider slider;
 
     public GameObject locations;
 
@@ -42,10 +42,6 @@ public class Witch : MonoBehaviour
     void Start()
     {
         
-        
-
-
-        
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -53,7 +49,9 @@ public class Witch : MonoBehaviour
         places2 = location2.GetComponentsInChildren<Transform>();
 
         target = places[lastLocation];
-        witchHealthSlider.value = health;
+        slider = GetComponentInChildren<Slider>();
+        slider.maxValue = health;
+        slider.value = health;
 
 
 
@@ -71,8 +69,9 @@ public class Witch : MonoBehaviour
             agent.SetDestination(target.transform.position);
             Navigate.DebugDrawPath(agent.path.corners);
         }
-        witchHealthSlider.value = health;
-        Debug.Log(health);
+        slider.value = health;
+
+        //Debug.Log(health);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -109,7 +108,7 @@ public class Witch : MonoBehaviour
     {
         {
 
-            if (health < 35)
+            if (health < 30)
             {
                 int newLocation2 = Random.Range(1, places2.Length);
 
