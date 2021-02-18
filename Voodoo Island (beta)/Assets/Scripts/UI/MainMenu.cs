@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+    //Main menu
     public void StartGame()
     {
         // Load the first area
@@ -27,5 +29,33 @@ public class MainMenu : MonoBehaviour
     {
         // Quit the application
         Application.Quit();
+    }
+
+
+
+
+    //level selects
+    public void SceneSelect()
+    {
+        SceneManager.LoadScene("SceneSelect");
+    }
+    public void Area1()
+    {
+        SceneManager.LoadScene("Area1");
+    }
+
+    public void Area2()
+    {
+        SceneManager.LoadScene("Area2");
+    }
+
+    public void Area3()
+    {
+        SceneManager.LoadScene("Area3");
+    }
+
+    public void Area4()
+    {
+        SceneManager.LoadScene("Area4");
     }
 }
