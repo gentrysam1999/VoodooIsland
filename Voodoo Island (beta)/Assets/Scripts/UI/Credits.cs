@@ -15,7 +15,7 @@ public class Credits : MonoBehaviour
         creds += "Art, Animation and Characters:\nSam Gentry\n";
         creds += "Game Design / UI / Story:\nJacob Cone\n";
         creds += "Programming and AI:\nSean Cartman\n";
-        creds += "Level Design / Artist:\nCastipher McSkimming\n";
+        creds += "Level Design / Artist / Sound:\nCastipher McSkimming\n";
 
         creditText.text = creds;
 
