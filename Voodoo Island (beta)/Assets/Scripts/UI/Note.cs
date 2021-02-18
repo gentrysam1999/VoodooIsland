@@ -11,16 +11,19 @@ public class Note : MonoBehaviour
     public Text textObject;
     public Text header;
     public Image headShot;
-    public AudioSource rustle;
-    public AudioSource lightning;
+    //public AudioSource rustle;
+    //public AudioSource lightning;
     public Sprite img;
     public static bool evilStatue;
+
+    private AudioSource[] audios;
+
 
     IEnumerator SoundDelay()
     {
         //yield on a new YieldInstruction that waits for 3 seconds.
         yield return new WaitForSeconds(5);
-        lightning.Play();
+        audios[2].Play();
     }
 
     // Start is called before the first frame update
@@ -28,6 +31,7 @@ public class Note : MonoBehaviour
     {
         InteractKey.SetActive(false);
         evilStatue = false;
+        audios = GetComponents<AudioSource>();
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -36,7 +40,7 @@ public class Note : MonoBehaviour
         // has collided with
         
         objname = gameObject.name;
-        Debug.Log(other.tag);
+        //Debug.Log(other.tag);
         if (other.tag == "Player")
         {
             InteractKey.SetActive(true); // false to hide, true to show
@@ -44,7 +48,15 @@ public class Note : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 reading = true;
-                rustle.Play();
+                if(transform.parent != null && transform.parent.tag == "Door")
+                {
+                    audios[1].Play();
+                }
+                else
+                {
+                    audios[0].Play();
+                }
+                
                 InteractKey.SetActive(false);
                 headShot.sprite = img;
                 if (objname == "NoExit")
