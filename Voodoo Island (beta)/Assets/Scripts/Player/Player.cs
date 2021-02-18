@@ -156,7 +156,6 @@ public class Player : MonoBehaviour
             {
                 health = 7;
                 healthMax = 7;
-                GlobalControl.Instance.healthMax = healthMax;
             }
             else if (needle == 3) // third and final buff
             {
@@ -177,7 +176,14 @@ public class Player : MonoBehaviour
         healthPickUpsUsed = GlobalControl.Instance.healthPickUpsUsed;
         healthMax = GlobalControl.Instance.healthMax;
 
-        healthMax = 5;
+        if (needle >= 2)
+        {
+            healthMax = 7;
+        }
+        else
+        {
+            healthMax = 5;
+        }
         
 
         //do not allow the agent compoent to rotate the player
@@ -297,5 +303,6 @@ public class Player : MonoBehaviour
         GlobalControl.Instance.HP = health;
         GlobalControl.Instance.hasDoll = hasDoll;
         GlobalControl.Instance.speed = speed;
+        GlobalControl.Instance.healthMax = healthMax;
     }
 }
