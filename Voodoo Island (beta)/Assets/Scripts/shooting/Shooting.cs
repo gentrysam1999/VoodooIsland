@@ -21,9 +21,6 @@ public class Shooting : MonoBehaviour
         currentBullet = bulletPrefab;
     }
 
-    
-
-    
     public AudioSource gunShot;
 
 

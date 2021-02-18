@@ -8,6 +8,7 @@ public class PauseMenuManager : MonoBehaviour
 {
     // References to text objects on the panel
     public Text resumeText = null;
+    public Text quitText = null;
 
     // Array storing text objct with index
     // indicating the current selection
@@ -17,9 +18,6 @@ public class PauseMenuManager : MonoBehaviour
     // Indicates whether the game in paused mode
     bool pauseGame;
 
-    public Slider Volume;
-    public AudioMixer mixer;
-
     // Use this for initialization
     void Start()
     {
@@ -27,9 +25,9 @@ public class PauseMenuManager : MonoBehaviour
         // so create an array with 2 references
         // and set the first referect ot resumeText
         // and second reference to quitText
-        optionArray = new Text[1];
+        optionArray = new Text[2];
         optionArray[0] = resumeText;
-        Volume.value = 1;
+        optionArray[1] = quitText;
     }
 
     // Show the pause menu in pause mode (the
@@ -42,6 +40,8 @@ public class PauseMenuManager : MonoBehaviour
         // to "Resume"
         resumeText.text = "Resume";
         // Show the panel
+
+        quitText.text = "Quit to Main Menu";
         gameObject.SetActive(true);
     }
 
@@ -82,22 +82,12 @@ public class PauseMenuManager : MonoBehaviour
                 Hide();
                 break;
 
-            // For the restart option just reload current scene
-            case "Restart":
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                break;
-
             // For the quit option load the main menu scene         
-            case "Quit":
+            case "Quit to Main Menu":
                 SceneManager.LoadScene("MainMenu");
                 break;
 
         }
-    }
-
-    public void SetVolume(float sliderValue)
-    {
-        mixer.SetFloat("MainMixer", Mathf.Log10(sliderValue) * 20);
     }
 
     // Update is called once per frame
@@ -106,30 +96,26 @@ public class PauseMenuManager : MonoBehaviour
         // Get a reference to the currently selected text box   
         Text currentSelection = optionArray[optionIdx];
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S))
         {
             // When user presses down arrow, go to next option
             optionIdx++;
         }
-        else if (Input.GetKey(KeyCode.UpArrow))
+        else if (Input.GetKey(KeyCode.W))
         {
             // When user presses up arrow, go to previous option
             optionIdx--;
         }
-        else if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Escape))
+        else if (Input.GetKeyDown(KeyCode.Return) || Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.Space))
         {
             // If uses presses Enter, execute
             // the command corresponding to the current option
             ExecuteCommand(currentSelection.text);
         }
-        /* else if (Input.GetKeyDown(KeyCode.X))
+        else if (Input.GetKeyDown(KeyCode.Escape) && pauseGame == true)
         {
-            SetVolume(Volume.value = Volume.value + 0.1f);
+            Hide();
         }
-        else if (Input.GetKeyDown(KeyCode.Z))
-        {
-            SetVolume(Volume.value = Volume.value - 0.1F);
-        } */
         // Make sure that the option index indicator is within the range
         // of the number of options
         if (optionIdx < 0)
@@ -139,6 +125,11 @@ public class PauseMenuManager : MonoBehaviour
         else if (optionIdx >= optionArray.Length)
         {
             optionIdx = optionArray.Length - 1;
+        }
+        // Set the font colour of the all option text boxes to white   
+        for (int i = 0; i < optionArray.Length; i++)
+        {
+            optionArray[i].color = Color.white;
         }
         // Set the font colour of the currently selected text box
         // to yellow
