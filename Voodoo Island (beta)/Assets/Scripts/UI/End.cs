@@ -22,7 +22,7 @@ public class End : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.anyKeyDown && !Input.GetButtonDown("Fire1"))
         {
             SceneManager.LoadScene("Finish");
         }
