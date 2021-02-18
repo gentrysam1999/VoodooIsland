@@ -124,28 +124,12 @@ public class Player : MonoBehaviour
         }
     }*/
 
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        //Check if the player is on a key and allow the player to pick up a key
-        if ( other.tag == "BulletPickUp")
-        {
-            pickupItem = other.gameObject;
-            canPickUp = true;
-            colliderTagName = other.tag;
-
-            if (other.tag == "BulletPickUp")
-            {
-                ammoPickup = other.gameObject.GetComponent<AmmoPickup>();
-            }
-
-        }
-    }
 
     // This method is used for the upgrades that are acquired to counter the debuffs from the Witch
     void NeedleUp()
     {
         needle++;
-        GlobalControl.Instance.needle = needle;
+        //GlobalControl.Instance.needle = needle;
         if (hasDoll != false)
         {
             if (needle == 1) // first buff
@@ -304,5 +288,7 @@ public class Player : MonoBehaviour
         GlobalControl.Instance.hasDoll = hasDoll;
         GlobalControl.Instance.speed = speed;
         GlobalControl.Instance.healthMax = healthMax;
+        GlobalControl.Instance.needle = needle;
     }
+
 }
