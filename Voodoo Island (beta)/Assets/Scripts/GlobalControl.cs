@@ -16,6 +16,7 @@ public class GlobalControl : MonoBehaviour
     public int healthPickUpsUsed;
     public int deaths;
     public int healthMax;
+    public int level = 0;
 
     void Awake()
     {
