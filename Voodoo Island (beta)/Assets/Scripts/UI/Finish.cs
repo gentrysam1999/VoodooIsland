@@ -23,7 +23,6 @@ public class Finish : MonoBehaviour
         healthPickUpsUsed = GlobalControl.Instance.healthPickUpsUsed;
 
     string stats = "YOU WIN\n\n";
-        stats += "Big Jim staggered away from the Witch, and looked upon the accursed mansion he had struggled through. \nThe mansion was collapsing in on itself, burying the voodoo curse ... for now!\n\n";
         stats += "YOU FIRED: " + bulletsFired + " BULLETS\n";
         if (needle == 1)
         {

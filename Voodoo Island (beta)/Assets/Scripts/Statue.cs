@@ -16,6 +16,7 @@ public class Statue : MonoBehaviour
     {
         spriteRenderer.sprite = regStatue;
         statueNote.name = "RegularStatueNote";
+        
     }
 
     // Update is called once per frame

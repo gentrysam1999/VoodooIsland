@@ -19,6 +19,8 @@ public class Witch : MonoBehaviour
 
     public GameObject location2;
 
+    public Animator animator;
+
     //public Transform player;
 
     //The witch travel too her children
@@ -37,6 +39,7 @@ public class Witch : MonoBehaviour
     public AudioSource witch;
 
     public AudioSource Shot;
+
 
     // Start is called before the first frame update
     void Start()
@@ -74,7 +77,7 @@ public class Witch : MonoBehaviour
         //Debug.Log(health);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+        void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Bullet")
         {
@@ -93,8 +96,7 @@ public class Witch : MonoBehaviour
             if(health <= 0)
             {
                 Destroy(gameObject);
-                SceneManager.LoadScene("Finish");
-
+                SceneManager.LoadScene("End");
             }
         }
         if (other.tag == "WitchTarget")
