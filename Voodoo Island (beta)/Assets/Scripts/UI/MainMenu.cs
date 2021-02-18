@@ -11,6 +11,10 @@ public class MainMenu : MonoBehaviour
         GlobalControl.Instance.needle = needle;
         int health = 5;
         GlobalControl.Instance.HP = health;
+        GlobalControl.Instance.hasDoll = false;
+        GlobalControl.Instance.bulletsFired = 0;
+        GlobalControl.Instance.healthPickUpsUsed = 0;
+        GlobalControl.Instance.deaths = 0;
         SceneManager.LoadScene("Area1");
     }
 
