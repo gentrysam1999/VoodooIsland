@@ -11,8 +11,17 @@ public class Note : MonoBehaviour
     public Text textObject;
     public Text header;
     public Image headShot;
+    public AudioSource rustle;
+    public AudioSource lightning;
     public Sprite img;
     public static bool evilStatue;
+
+    IEnumerator SoundDelay()
+    {
+        //yield on a new YieldInstruction that waits for 3 seconds.
+        yield return new WaitForSeconds(5);
+        lightning.Play();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +42,7 @@ public class Note : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 reading = true;
+                rustle.Play();
                 InteractKey.SetActive(false);
                 headShot.sprite = img;
                 if (objname == "NoExit")
@@ -92,9 +102,10 @@ public class Note : MonoBehaviour
                 }
                 else if (objname == "RegularStatueNote")
                 {
-                    textObject.text = "This site is dedicated to Maria Farthing, for her dedication to nature and continued preservation of the island we call home.";
+                    textObject.text = "This site is dedicated to Maria Farthing, for her dedication to nature\nand continued preservation of the island we call home.";
                     header.text = "Inscription at foot of the statue";
                     evilStatue = true;
+                    StartCoroutine(SoundDelay());
                 }
                 else if (objname == "StatueNote")
                 {
@@ -118,7 +129,7 @@ public class Note : MonoBehaviour
                 }
                 else if (objname == "VoodooNote")
                 {
-                    textObject.text = "A voodoo doll is used to cripple the target. Three needles are then placed within the doll replica of the target. This then allows the practitioner to hurt remotely. Needles can only be removed by...";
+                    textObject.text = "A voodoo doll is used to cripple the target. Three needles are placed within the doll replica of the target. This then allows the practitioner to hurt the target remotely. Needles can only be removed by...";
                     header.text = "Extract from a book";
                 }
                 else if (objname == "LockedNursery")

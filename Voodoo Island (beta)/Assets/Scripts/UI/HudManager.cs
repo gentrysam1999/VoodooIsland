@@ -12,6 +12,9 @@ public class HudManager : MonoBehaviour
     // the text element found in textbox
     public static Text note;
 
+    public GameObject VoodooTextObject;
+    public Text VoodooBuff;
+
     // the text box that contains how much ammo you have left
     public static Text ammoText;
 
@@ -36,6 +39,7 @@ public class HudManager : MonoBehaviour
     public Sprite noNeedle;
 
     public GameObject key;
+    int deaths = GlobalControl.Instance.deaths;
 
     // Health value currently displayed
     float health;
@@ -82,8 +86,8 @@ public class HudManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    // Update is called once per frame
-    void Update()
+      // Update is called once per frame
+        void Update()
     {
         if (Note.reading == true)
         {
@@ -106,28 +110,33 @@ public class HudManager : MonoBehaviour
             // If user presses ESC, show the pause menu in pause mode
             pauseMenu.ShowPause();
         }
-
         if (pl.hasDoll == true)
         {
             voodooDoll.SetActive(true);
         }
-        if (pl.needle == 1)
+        // the below code is to do with the needles and what happens when you pick them up
+        if (pl.needle == 1 && pl.hasDoll == true)
         {
             voodooDollImage.sprite = oneNeedle;
-        } 
-        else if (pl.needle == 2)
+            VoodooBuff.text = "YOU NOW RUN FASTER";
+        }
+        else if (pl.needle == 2 && pl.hasDoll == true)
         {
             voodooDollImage.sprite = twoNeedle;
             healthSlider.maxValue = 7;
-        } else if (pl.needle == 3)
+            VoodooBuff.text = "YOU NOW HAVE MORE HEALTH";
+        }
+        else if (pl.needle == 3 && pl.hasDoll == true)
         {
             voodooDollImage.sprite = noNeedle;
+            VoodooBuff.text = "YOU NOW RELOAD FASTER";
         }
 
         if (pl.hasKey == true)
         {
             key.SetActive(true);
-        } else
+        }
+        else
         {
             key.SetActive(false);
         }
@@ -149,6 +158,17 @@ public class HudManager : MonoBehaviour
             hPanel.SetActive(false);
             inventoryGrid.SetActive(false);
             pauseMenuPanel.SetActive(false);
+            deaths++;
+            GlobalControl.Instance.deaths = deaths;
         }
+
+        if (pl.time > 0f && pl.hasDoll == true)
+        {
+            VoodooTextObject.SetActive(true);
+            pl.time -= Time.deltaTime;
+        } else
+        {
+            VoodooTextObject.SetActive(false);
         }
     }
+}
