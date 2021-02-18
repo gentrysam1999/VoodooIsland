@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour
         GlobalControl.Instance.bulletsFired = 0;
         GlobalControl.Instance.healthPickUpsUsed = 0;
         GlobalControl.Instance.deaths = 0;
-        SceneManager.LoadScene("Area1");
+        SceneManager.LoadScene("intro");
     }
 
     public void Credits()
