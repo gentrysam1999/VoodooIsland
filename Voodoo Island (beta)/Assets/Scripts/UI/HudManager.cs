@@ -39,7 +39,7 @@ public class HudManager : MonoBehaviour
     public Sprite noNeedle;
 
     public GameObject key;
-    int deaths = GlobalControl.Instance.deaths;
+    int deaths;
 
     // Health value currently displayed
     float health;
@@ -54,6 +54,7 @@ public class HudManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        deaths = GlobalControl.Instance.deaths;
         note = GameObject.Find("Textbox").GetComponent<Text>();
 
         ammoText = GameObject.Find("ammonum").GetComponent<Text>();
