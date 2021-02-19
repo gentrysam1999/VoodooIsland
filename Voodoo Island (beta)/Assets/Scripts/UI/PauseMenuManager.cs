@@ -96,17 +96,17 @@ public class PauseMenuManager : MonoBehaviour
         // Get a reference to the currently selected text box   
         Text currentSelection = optionArray[optionIdx];
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             // When user presses down arrow, go to next option
             optionIdx++;
         }
-        else if (Input.GetKey(KeyCode.W))
+        else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             // When user presses up arrow, go to previous option
             optionIdx--;
         }
-        else if (Input.GetKeyDown(KeyCode.Return) || Input.GetButtonDown("Fire1") || Input.GetKeyDown(KeyCode.Space))
+        else if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
         {
             // If uses presses Enter, execute
             // the command corresponding to the current option
