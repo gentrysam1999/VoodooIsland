@@ -96,6 +96,7 @@ public class Witch : MonoBehaviour
             if(health <= 0)
             {
                 Destroy(gameObject);
+                GetComponent<WitchShot>().player.gameObject.GetComponent<Player>().SavePlayer();
                 SceneManager.LoadScene("End");
             }
         }
