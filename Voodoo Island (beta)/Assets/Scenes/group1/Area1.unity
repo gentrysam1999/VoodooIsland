@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: inactivedoor
       objectReference: {fileID: 0}
+    - target: {fileID: 1276560732224568059, guid: 424cf6a173ba4604db3614c5c340e87e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1276560732224568060, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}
       propertyPath: m_IsTrigger
@@ -161,7 +166,7 @@ PrefabInstance:
     - target: {fileID: 1276560732224568063, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1276560732224568063, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}
@@ -12045,12 +12050,12 @@ PrefabInstance:
     - target: {fileID: 1739131449584644213, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.5
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 1739131449584644213, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -153.4
+      value: -152
       objectReference: {fileID: 0}
     - target: {fileID: 1739131449584644213, guid: 23c0f6d76f76a4825bb65275dfe7ce01,
         type: 3}

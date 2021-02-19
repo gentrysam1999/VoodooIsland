@@ -138,7 +138,7 @@ public class Player : MonoBehaviour
             }
             else if (needle == 2) // second buff
             {
-                health = 7;
+                health += 2;
                 healthMax = 7;
             }
             else if (needle == 3) // third and final buff
