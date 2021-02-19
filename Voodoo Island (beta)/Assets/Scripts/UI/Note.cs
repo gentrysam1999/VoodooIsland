@@ -23,6 +23,7 @@ public class Note : MonoBehaviour
     {
         //yield on a new YieldInstruction that waits for 3 seconds.
         yield return new WaitForSeconds(3);
+        GetComponentInParent<Statue>().spooky();
         audios[2].Play();
     }
 
