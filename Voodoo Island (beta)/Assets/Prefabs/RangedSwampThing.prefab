@@ -5350,5 +5350,5 @@ MonoBehaviour:
     type: 3}
   fireCooldownTime: 1
   player: {fileID: 0}
-  bulletForce: 22
+  bulletForce: 30
   gunShot: {fileID: 504989254}
