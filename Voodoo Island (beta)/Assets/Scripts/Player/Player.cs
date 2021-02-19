@@ -251,7 +251,7 @@ public class Player : MonoBehaviour
                     NeedleUp();
                 }
             }
-            setScene();
+            //setScene();
 
         }
 

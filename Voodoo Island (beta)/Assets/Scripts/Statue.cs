@@ -8,7 +8,6 @@ public class Statue : MonoBehaviour
     public Sprite regStatue;
     public Sprite altStatue;
     public GameObject statueNote;
-    public static float targetTime = 7.0f;
 
 
     // Start is called before the first frame update
@@ -20,13 +19,10 @@ public class Statue : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void spooky()
     {
-        targetTime -= Time.deltaTime;
-        if (targetTime <= 0f)
-        {
-            spriteRenderer.sprite = altStatue;
-            statueNote.name = "StatueNote";
-        }
+        spriteRenderer.sprite = altStatue;
+        statueNote.name = "StatueNote";
+       
     }
 }
