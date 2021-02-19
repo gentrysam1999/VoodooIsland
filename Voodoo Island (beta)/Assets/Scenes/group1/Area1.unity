@@ -11081,7 +11081,7 @@ PrefabInstance:
         type: 3}
       propertyPath: img
       value: 
-      objectReference: {fileID: 5854221785500267996, guid: 805ceb9f2366d9e46b27a3fed53ecd64,
+      objectReference: {fileID: 21300000, guid: 4c3f49c84e0004eeca750490cc1a22a8,
         type: 3}
     - target: {fileID: 503130591539826828, guid: 9019e2defc4c81840b479b79f9fdb1fa,
         type: 3}
