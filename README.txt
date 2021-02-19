@@ -14,14 +14,18 @@ if you want to make it easier make sure to pick up the needles which increase yo
 
 Controls
 
--WASD  = Player movement
--Mouse1 = Player shoot
--E = interact
--R = reload
+- WASD  = Player movement
+- Mouse1 = Player shoot
+- E = interact
+- R = reload
+- Esc = Pause / Resume
+- W/S = navigate pause menu
+- Space = perform action in pause menu
 
 Known Issues
 
 -Enemy pathfinding acts strangely in the courtyard. 
 -Witch gets stuck occasionally
 -Doors occasionally interrupt enemy pathfinding. 
+-Tiles sometimes flicker
 

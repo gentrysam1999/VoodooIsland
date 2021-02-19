@@ -238,7 +238,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -10259,9 +10259,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackLength: 5
   health: 30
-  witchHealthSlider: {fileID: 0}
   locations: {fileID: 0}
   location2: {fileID: 0}
+  animator: {fileID: 0}
   witch: {fileID: 19909146}
   Shot: {fileID: 19909145}
 --- !u!195 &1869919682
