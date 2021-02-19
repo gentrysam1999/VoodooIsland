@@ -3546,10 +3546,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4491737054571327354, guid: 47f71ed51714343d7a946bf0817f6cc3,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4491737054571327356, guid: 47f71ed51714343d7a946bf0817f6cc3,
         type: 3}
       propertyPath: m_Name
       value: Healthpickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491737056500652204, guid: 47f71ed51714343d7a946bf0817f6cc3,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47f71ed51714343d7a946bf0817f6cc3, type: 3}
