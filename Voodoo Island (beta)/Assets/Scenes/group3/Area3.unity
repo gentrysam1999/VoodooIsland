@@ -6901,6 +6901,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: doortohall
       objectReference: {fileID: 0}
+    - target: {fileID: 1276560732224568048, guid: 424cf6a173ba4604db3614c5c340e87e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1276560732224568058, guid: 424cf6a173ba4604db3614c5c340e87e,
         type: 3}
       propertyPath: m_Shape
