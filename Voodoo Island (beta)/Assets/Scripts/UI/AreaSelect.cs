@@ -24,7 +24,7 @@ public class AreaSelect : MonoBehaviour
         {
             button.interactable = GlobalControl.Instance.level >= 2;
         }
-        else if (gameObject.name == "Button3")
+        else if (gameObject.name == "Button4")
         {
             button.interactable = GlobalControl.Instance.level >= 3;
         }

@@ -39,6 +39,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("SceneSelect");
     }
+    public void BackToMain()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
     public void Area1()
     {
         SceneManager.LoadScene("Area1");
