@@ -17,11 +17,11 @@ public class PlayerShot : Shooting
     new void Update()
     {
         base.Update();
-        if (reloading)
+        if (reloading && Time.timeScale != 0)
         {
-
+           
             reloadTimeLeft -= Time.fixedDeltaTime;
-            
+
             if (reloadTimeLeft <= 0)
             {
 
@@ -29,6 +29,7 @@ public class PlayerShot : Shooting
                 reloading = false;
 
             }
+          
         }
         if ((Input.GetKeyDown(KeyCode.R) || bulletsInClip == 0) && reloading == false && bulletsInClip < clipSize)
         {

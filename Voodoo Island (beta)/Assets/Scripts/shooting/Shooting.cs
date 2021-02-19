@@ -26,7 +26,7 @@ public class Shooting : MonoBehaviour
 
     protected void Update()
     {
-        if (fireCoolDownTimeLeft > 0)
+        if (fireCoolDownTimeLeft > 0 && Time.timeScale != 0)
         {
             fireCoolDownTimeLeft -= Time.fixedDeltaTime;
         }
