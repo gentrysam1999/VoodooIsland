@@ -12,6 +12,8 @@ who returns home only to find that a mysterious force has taken over his childho
 the mansion fighting enemies at every corner. If you want a story make sure you stop to read the notes and 
 if you want to make it easier make sure to pick up the needles which increase your stats along the way. 
 
+All sounds from free sound.org
+
 Controls
 
 - WASD  = Player movement
@@ -28,4 +30,5 @@ Known Issues
 -Witch gets stuck occasionally
 -Doors occasionally interrupt enemy pathfinding. 
 -Tiles sometimes flicker
+-can shoot when paused
 
