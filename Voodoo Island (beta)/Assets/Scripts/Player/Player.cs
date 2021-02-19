@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
     //Pick Up Sound
     public AudioSource obtained;
 
-    public int needle = 0;
+    public int needle;
 
     public float time;
 
