@@ -24,4 +24,6 @@ Known Issues
 -Enemy pathfinding acts strangely in the courtyard. 
 -Witch gets stuck occasionally
 -Doors occasionally interrupt enemy pathfinding. 
+-Area3 may lag a little upon first load
+-Tiles sometimes flicker
 
